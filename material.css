@@ -87,6 +87,54 @@
     color: var(--primary-dark);
 }
 
+/* Tag pills */
+/* Adapted from https://github.com/kepano/obsidian-minimal/blob/master/obsidian.css */
+
+/* Preview */
+.frontmatter-container .tag,
+a.tag {
+  background-color:var(--background-secondary);
+  color:var(--primary-dark);
+  font-size:var(--smaller);
+  padding:3px 12px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  margin:2px 0 0 0;
+  border-radius:14px;
+}
+a.tag:hover {
+  color:var(--text-normal);
+}
+/* Editor */
+.cm-s-obsidian span.cm-hashtag {
+  background-color:var(--background-secondary);
+  color:var(--primary-dark);
+  font-size:var(--smaller);
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  margin:2px 0;
+  vertical-align:middle;
+  padding-top:1px;
+  border-left:none;
+  border-right:none;
+  padding-bottom:2px;
+  cursor:text;
+}
+span.cm-hashtag.cm-hashtag-begin {
+  border-top-left-radius:14px;
+  border-bottom-left-radius:14px;
+  padding-left:8px;
+  border-right:none;
+}
+span.cm-hashtag.cm-hashtag-end {
+  border-top-right-radius:14px;
+  border-bottom-right-radius:14px;
+  border-left:none;
+  padding-right:8px;
+}
+
 /* Headers */
 
 .empty-state-title,

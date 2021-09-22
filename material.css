@@ -107,6 +107,27 @@ a.tag {
 a.tag:hover {
   color:var(--text-normal);
 }
+
+/* Hide the # character in front of a tag in Preview */
+/* Thanks to `@Klaas`: https://discord.com/channels/686053708261228577/702656734631821413/890122749459197993 */
+/* Currently not working, review later */
+
+/* a.tag {
+  position: relative;
+  padding-left: 3px;
+}
+
+a.tag:after {
+  background: var(--background-primary);
+  position: absolute;
+  content: " ";
+  top: 0;
+  bottom: 0;
+  width: 0.66rem;
+  left: 0px;
+  border-radius: 4px;
+} */
+
 /* Editor */
 .cm-s-obsidian span.cm-hashtag {
   background-color: var(--primary-faint);

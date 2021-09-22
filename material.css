@@ -1,5 +1,8 @@
 :root {
+  /* ------------- */
   /* # TYPOGRAPHY */
+  /* ------------- */
+
   /* ## Fonts */
   --default-font: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -9,15 +12,15 @@
   --font-monospace: "Roboto Mono", monospace;
 
     /* ## Sizes */
-    --smaller: 0.875rem;
+    --smaller: 0.875rem; /* Equal to 14px */
 
-  /* ## Weights */
+  /* ## Font weights */
   --light: 350;
   --regular: 400;
   --medium: 500;
   --bold: 700;
 
-  /* ## Headings */
+  /* ## Heading sizes */
   --h1: 2.5rem;
   --h2: 2rem;
   --h3: 1.5rem;
@@ -27,7 +30,9 @@
 }
 
 .theme-light {
+    /* ------------- */
     /* # COLOURS */
+    /* ------------- */
     --primary: #705dcf;
     --primary-rgb: 112, 93, 207;
     --primary-light: #a38bff;
@@ -36,7 +41,6 @@
     --secondary-rgb: 187, 206, 93;
     --secondary-light: #bbce5d;
     --secondary-dark: #bbce5d;
-
 
     --background-primary: #ffffff;
     --background-primary-alt: #f5f6f8;
@@ -74,12 +78,16 @@
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
     --highlight-mix-blend-mode: darken;
 }
-
-/* Code */
+/* ------------- */
+/* # Body */
+/* ------------- */
+/* Code blocks */
 
 .markdown-preview-view code {
     color: var(--primary-dark);
 }
+
+/* Headers */
 
 .empty-state-title,
 .markdown-preview-view h1,
@@ -144,15 +152,17 @@
   letter-spacing: 0.009375rem;
   color: var(--h6-color);
 }
-
-/* File explorer */
+/* ------------- */
+/* # File explorer */
+/* ------------- */
 .nav-file-title-content, .nav-folder-title-content {
     font-size: var(--smaller);
     padding: 0px 4px;
 }
 
-/* left sidebar */
-
+/* ------------- */
+/* # Left sidebar */
+/* ------------- */
 .workspace-drawer.mod-left {
       border-radius: 0px 6px 0 0;
 }
@@ -169,15 +179,16 @@
 .workspace-drawer-tab-container > * {
     border-top: 1px solid var(--background-secondary-alt);
 }
-
-/* Top Bar */
+/* ------------- */
+/* # Top (Header) Bar */
+/* ------------- */
 .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
     border-bottom: none;
     box-shadow: 0 1px 6px 0px var(--text-muted);
     background-color: var(--primary);
 }
 
-/* Title */
+/* ## Title */
 .is-mobile .view-header-title,
 .workspace-leaf.mod-active .view-header-title {
   line-height: 50px;
@@ -195,19 +206,16 @@
     top: 3px;
 }
 
-/* Nav bar */
+/* Hamburger menu */
 .view-header-icon {
     color: var(--background-primary-alt);
-}
-
-.workspace-drawer-tab-option-item-icon, .workspace-drawer-active-tab-icon {
-    color: var(--primary-dark);
 }
 
 /* -------------- */
 /* Quick Action */
 /* -------------- */
 
+/* Text input animation */
 .is-mobile input[type='text'] {
     display: block;
     width: 100%;
@@ -228,15 +236,11 @@
 }
 
 input[type='text']:active, input[type='search']:active, input[type='email']:active, input[type='password']:active, input[type='number']:active, input[type='text']:focus, input[type='search']:focus, input[type='email']:focus, input[type='password']:focus, input[type='number']:focus {
-    /* border-top: none;
-    border-bottom: 2px solid var(--interactive-accent) !important;
-    border-left: none;
-    border-right: none;
-    outline-width: 10px; */
     border: none;
   background-size: 100% 2px;
 }
 
+/* Quick switcher selection item */
 .suggestion-item.is-selected {
  background-color: var(--secondary-light);
 }

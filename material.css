@@ -36,6 +36,7 @@
     --primary: #705dcf;
     --primary-rgb: 112, 93, 207;
     --primary-light: #a38bff;
+    --primary-faint: rgba(var(--primary-rgb),0.15);
     --primary-dark: #3c339d;
     --secondary: #bbce5d;
     --secondary-rgb: 187, 206, 93;
@@ -87,14 +88,14 @@
     color: var(--primary-dark);
 }
 
-/* Tag pills */
+/* Tags */
 /* Adapted from https://github.com/kepano/obsidian-minimal/blob/master/obsidian.css */
 
 /* Preview */
 .frontmatter-container .tag,
 a.tag {
-  background-color:var(--background-secondary);
-  color:var(--primary-dark);
+  background-color: var(--primary-faint);
+  color: var(--text-normal);
   font-size:var(--smaller);
   padding:3px 12px;
   text-align:center;
@@ -108,8 +109,8 @@ a.tag:hover {
 }
 /* Editor */
 .cm-s-obsidian span.cm-hashtag {
-  background-color:var(--background-secondary);
-  color:var(--primary-dark);
+  background-color: var(--primary-faint);
+  color: var(--text-normal);
   font-size:var(--smaller);
   text-align:center;
   text-decoration:none;

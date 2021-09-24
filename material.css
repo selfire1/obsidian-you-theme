@@ -323,8 +323,8 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     display: flex;
     padding: 5px;
     position: absolute;
-    top: 43rem;
-    left: 18rem;
+    top: 42rem;
+    left: 19rem;
     background-color: var(--primary);
     justify-content: center;
     align-items: center;
@@ -341,8 +341,8 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     padding: 5px;
     box-shadow: 0 1px 6px 0px var(--text-muted);
     position: absolute;
-    top: 43rem;
-    left: 18rem;
+    top: 42rem;
+    left: 19rem;
     background-color: var(--secondary-light);
     justify-content: center;
     align-items: center;

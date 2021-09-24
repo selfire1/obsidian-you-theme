@@ -328,9 +328,10 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     background-color: var(--primary);
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    box-shadow: 0 1px 6px 0px var(--text-muted);
 }
 
 /* Preview */
@@ -338,13 +339,14 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     color: var(--text-normal);
     display: flex;
     padding: 5px;
+    box-shadow: 0 1px 6px 0px var(--text-muted);
     position: relative;
     top: 45rem;
     left: 1rem;
     background-color: var(--secondary-light);
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
 }

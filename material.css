@@ -351,3 +351,14 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     height: 60px;
     border-radius: 60px;
 }
+
+/* Mobile Toolbar */
+/* workspace content to go underneath toolbar */
+.is-mobile .workspace-leaf-content > .view-content > .markdown-source-view {
+  height: 100%;
+}
+
+.is-mobile .mobile-toolbar {
+  border-top: none;
+  background-color: var(--secondary-light);
+}

@@ -319,22 +319,23 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 /* Edit */
 [aria-label="Edit (⌘+Click to edit in new pane)"], 
 [aria-label="Edit (Ctrl+Click to edit in new pane)"] {
-    color: var(--background-primary);
-    display: flex;
-    padding: 5px;
-    position: absolute;
-    top: 42rem;
-    left: 19rem;
-    background-color: var(--primary);
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-    box-shadow: 0 1px 6px 0px var(--text-muted);
+  color: var(--background-primary);
+  display: flex;
+  padding: 5px;
+  position: absolute;
+  top: 42rem;
+  left: 19rem;
+  background-color: var(--primary);
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  box-shadow: 0 1px 6px 0px var(--text-muted);
 }
 
 /* Preview */
+[aria-label="Preview (⌘+Click to open in new pane)"], 
 [aria-label="Preview (Ctrl+Click to open in new pane)"] {
     color: var(--text-normal);
     display: flex;

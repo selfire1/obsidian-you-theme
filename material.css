@@ -329,7 +329,7 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
  background-color: var(--secondary-light);
 }
 
-/* Floating Action Button */
+/* Floating Action Button (FAB)*/
 /* Edit */
 [aria-label="Edit (⌘+Click to edit in new pane)"], 
 [aria-label="Edit (Ctrl+Click to edit in new pane)"] {
@@ -358,7 +358,7 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     position: absolute;
     top: 42rem;
     left: 19rem;
-    background-color: var(--secondary-light);
+    background-color: var(--secondary);
     justify-content: center;
     align-items: center;
     width: 60px;
@@ -374,5 +374,11 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 
 .is-mobile .mobile-toolbar {
   border-top: none;
-  background-color: var(--secondary-light);
+  border-radius: 0;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.is-mobile .mobile-toolbar-option {
+  color: var(--secondary-dark);
 }

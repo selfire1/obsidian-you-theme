@@ -98,7 +98,9 @@
 /* ------------- */
 /* Code blocks */
 
-.markdown-preview-view code {
+.markdown-preview-view code,
+.cm-s-obsidian .HyperMD-codeblock,
+.cm-s-obsidian span.cm-inline-code {
     color: var(--primary-dark);
 }
 
@@ -376,7 +378,6 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
   border-top: none;
   border-radius: 0;
   background-color: var(--background-primary);
-  color: var(--text-normal);
 }
 
 .is-mobile .mobile-toolbar-option {

@@ -46,9 +46,10 @@
     --primary-dark: hsl(var(--primary-h), var(--primary-s), 40%);
     
     /* Secondary (Secondary in Hex: #bbce5d)*/
-    --secondary-h: 70;
-    --secondary-s: 54%;
-    --secondary-l: 59%;
+    /* --secondary-h: 70; */
+    --secondary-h: calc(var(--primary-h) + 180);
+    --secondary-s: var(--primary-s);
+    --secondary-l: var(--primary-l);
     
     --secondary: hsl(var(--secondary-h),var(--secondary-s), var(--secondary-l));
     --secondary-faint: hsl(var(--secondary-h), var(--secondary-s), 93%);

@@ -99,7 +99,7 @@
 /* ------------- */
 /* Lists */
 ul > li::marker, ol > li::marker {
-    color: var(--primary-faint);
+    color: var(--primary-light);
 }
 
 /* Internal links */

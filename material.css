@@ -445,3 +445,14 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 .is-mobile .mobile-toolbar-option {
   color: var(--secondary-dark);
 }
+
+/* Settings */
+/* Reduce space between settings */
+.vertical-tab-nav-item {
+      padding: 5px 6px 10px 24px;
+}
+
+/* Headers */
+.vertical-tab-header-group-title {
+  color: var(--primary-light);
+}

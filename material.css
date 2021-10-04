@@ -110,6 +110,16 @@ span.cm-hmd-frontmatter {
   font-family: var(--default-font) !important;
 }
 
+/* Frontmatter / Metadata container */
+.frontmatter-container {
+  border: none;
+  border-radius: 8px;
+}
+.frontmatter-container .frontmatter-container-header {
+  font-weight: var(--medium);
+  font-size: var(--smallest);
+}
+
 /* Code blocks */
 .markdown-preview-view code,
 .cm-s-obsidian .HyperMD-codeblock,

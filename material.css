@@ -347,8 +347,8 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
   display: flex;
   padding: 5px;
   position: absolute;
-  top: 42rem;
-  left: 19rem;
+  top: 1300%;
+  left: 70%;
   background-color: var(--primary);
   justify-content: center;
   align-items: center;
@@ -366,8 +366,8 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     padding: 5px;
     box-shadow: 0 1px 6px 0px var(--text-muted);
     position: absolute;
-    top: 42rem;
-    left: 19rem;
+    top: 1300%;
+    left: 70%;
     background-color: var(--secondary);
     justify-content: center;
     align-items: center;

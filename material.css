@@ -12,6 +12,7 @@
   --font-monospace: "Roboto Mono", monospace;
 
     /* ## Sizes */
+    --smallest: 0.75rem; /* Equal to px */
     --smaller: 0.875rem; /* Equal to 14px */
 
   /* ## Font Weights */
@@ -102,8 +103,14 @@
   font-weight: var(--medium);
 }
 
-/* Code blocks */
+/* Frontmatter */
+span.cm-hmd-frontmatter {
+  font-size: var(--smallest);
+  color: var(--primary-light);
+  font-family: var(--default-font) !important;
+}
 
+/* Code blocks */
 .markdown-preview-view code,
 .cm-s-obsidian .HyperMD-codeblock,
 .cm-s-obsidian span.cm-inline-code {

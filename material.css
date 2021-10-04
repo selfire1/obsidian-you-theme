@@ -273,6 +273,7 @@ span.cm-hashtag.cm-hashtag-end {
 /* ------------- */
 /* # Left sidebar */
 /* ------------- */
+/*  */
 
 /* Top buttons */
 .is-mobile .workspace-drawer-actions, .is-mobile .nav-buttons-container {
@@ -288,10 +289,39 @@ span.cm-hashtag.cm-hashtag-end {
   margin: 0px 6px 0px 6px;
 }
 
-/* Hide vault name */
-.nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title {
+.workspace-drawer-tab-container > * {
+  border-top: none !important;
+}
+
+/* Significantly simplify left and right bars */
+.nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title,
+.workspace-drawer-header-name,
+.workspace-drawer-header-icon,
+.workspace-drawer-header-left {
   display: none;
 }
+
+.workspace-drawer-header {
+  border: none !important;
+}
+
+
+/* Comment in for less simplification */
+/* Right drawer */
+/* 
+.workspace-drawer-header-info {
+  display: none;
+}
+
+.workspace-drawer-header-name-text {
+  color: var(--text-muted);
+  font-size: var(--smaller);
+}
+
+.workspace-drawer-header {
+  border-bottom: 1px solid var(--background-secondary-alt);
+  padding: 10px 20px 5px 20px;
+} */
 
 /* ------------- */
 /* # File explorer */
@@ -334,7 +364,7 @@ span.cm-hashtag.cm-hashtag-end {
     border-top: 1px solid var(--background-secondary-alt);
 }
 /* ------------- */
-/* # Top (Title) Bar */
+/* # Title Bar */
 /* ------------- */
 .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header,
 .workspace-leaf.mod-active .view-header,
@@ -342,6 +372,10 @@ span.cm-hashtag.cm-hashtag-end {
     border-bottom: none;
     box-shadow: 0 1px 6px 0px var(--text-muted);
     background-color: var(--primary);
+}
+
+svg.vertical-three-dots {
+  color: var(--primary);
 }
 
 /* ## Title */

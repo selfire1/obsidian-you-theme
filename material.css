@@ -97,6 +97,11 @@
 /* ------------- */
 /* # Body */
 /* ------------- */
+/* Lists */
+ul > li::marker, ol > li::marker {
+    color: var(--primary-faint);
+}
+
 /* Internal links */
 .markdown-preview-view .internal-link {
   text-decoration: none;
@@ -197,6 +202,9 @@ span.cm-hashtag.cm-hashtag-end {
 }
 
 /* Headers */
+.cm-formatting-header {
+  color: var(--primary-light) !important;
+}
 
 .empty-state-title,
 .markdown-preview-view h1,
@@ -276,8 +284,8 @@ span.cm-hashtag.cm-hashtag-end {
 .nav-action-button {
   color: var(--primary);
   transform: scale(.8);
-    padding: 5px 8px 0px 8px;
-    margin: 0px 6px 0px 6px;
+  padding: 5px 8px 0px 8px;
+  margin: 0px 6px 0px 6px;
 }
 
 /* Hide vault name */
@@ -390,7 +398,12 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 
 /* Quick switcher selection item */
 .suggestion-item.is-selected {
- background-color: var(--secondary-light);
+ background-color: var(--primary-faint);
+}
+
+.suggestion-highlight {
+    font-weight: bold;
+    color: var(--primary);
 }
 
 /* Floating Action Button (FAB)*/
@@ -452,7 +465,7 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
       padding: 5px 6px 10px 24px;
 }
 
-/* Headers */
+/* Setting Headers */
 .vertical-tab-header-group-title {
   color: var(--primary-light);
 }

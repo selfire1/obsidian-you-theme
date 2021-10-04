@@ -261,17 +261,54 @@ span.cm-hashtag.cm-hashtag-end {
   letter-spacing: 0.009375rem;
   color: var(--h6-color);
 }
-/* ------------- */
-/* # File explorer */
-/* ------------- */
-.nav-file-title-content, .nav-folder-title-content {
-    font-size: var(--smaller);
-    padding: 0px 4px;
-}
 
 /* ------------- */
 /* # Left sidebar */
 /* ------------- */
+
+/* Top buttons */
+.is-mobile .workspace-drawer-actions, .is-mobile .nav-buttons-container {
+    background-color: var(--primary-faint);
+    border-radius: 20px;
+    margin: 0 10px 3px;
+}
+
+.nav-action-button {
+  color: var(--primary);
+  transform: scale(.8);
+    padding: 5px 8px 0px 8px;
+    margin: 0px 6px 0px 6px;
+}
+
+/* Hide vault name */
+.nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title {
+  display: none;
+}
+
+/* ------------- */
+/* # File explorer */
+/* ------------- */
+.nav-file-title-content, 
+.nav-folder-title-content {
+    font-size: var(--smaller);
+    padding: 0px 4px;
+    font-weight: var(--medium);
+}
+
+/* Files */
+.is-mobile .nav-file-title,
+.is-mobile .outline, 
+.is-mobile .tag-container {
+  padding: 1px 10px 0 14px;
+  color: var(--text-muted);
+  font-size: var(--smaller);
+  font-weight: var(--light);
+}
+
+/* Folders */
+
+
+
 .workspace-drawer.mod-left {
       border-radius: 0px 6px 0 0;
 }

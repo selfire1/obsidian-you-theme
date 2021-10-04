@@ -99,6 +99,7 @@
 /* Internal links */
 .markdown-preview-view .internal-link {
   text-decoration: none;
+  font-weight: var(--medium);
 }
 
 /* Code blocks */
@@ -271,9 +272,11 @@ span.cm-hashtag.cm-hashtag-end {
     border-top: 1px solid var(--background-secondary-alt);
 }
 /* ------------- */
-/* # Top (Header) Bar */
+/* # Top (Title) Bar */
 /* ------------- */
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
+.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header,
+.workspace-leaf.mod-active .view-header,
+.is-mobile .view-header {
     border-bottom: none;
     box-shadow: 0 1px 6px 0px var(--text-muted);
     background-color: var(--primary);

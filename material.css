@@ -99,7 +99,7 @@
 /* ------------- */
 /* Lists */
 ul > li::marker, ol > li::marker {
-    color: var(--primary-light);
+    color: var(--text-muted);
 }
 
 /* Internal links */
@@ -110,8 +110,8 @@ ul > li::marker, ol > li::marker {
 
 /* Frontmatter */
 span.cm-hmd-frontmatter {
-  font-size: var(--smallest);
-  color: var(--primary-light);
+  font-size: var(--smaller);
+  color: var(--text-muted);
   font-family: var(--default-font) !important;
 }
 

@@ -330,8 +330,6 @@ span.cm-hashtag.cm-hashtag-end {
 }
 
 /* Suggestions */
-
-
 .is-mobile .suggestion-container.mod-search-suggestion {
   max-height: 40%;
   min-height: 30%;
@@ -591,4 +589,17 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 /* Pulling down */
 .pull-down-action {
   border-radius: 0 0 var(--medium-radius) var(--medium-radius);
+}
+
+/* PLUGINS */
+/* Dataview Tables */
+.table-view-table > thead > tr > th {
+  border-bottom: none !important;
+  font-weight: var(--medium);
+  font-size: var(--editor-font-size);
+  padding: var(--editor-font-size);
+}
+
+tr {
+    border-top: 1px solid var(--background-secondary-alt);
 }

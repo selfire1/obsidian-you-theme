@@ -102,6 +102,18 @@
 /* ------------- */
 /* # Body */
 /* ------------- */
+
+/* Blockquotes */
+/* Callout boxes from Vileplume: https://github.com/hungsu/vileplume-obsidian */
+.markdown-preview-view blockquote {
+border-radius: var(--big-radius);
+border: 1px solid rgba(255,255,255,0.03);
+padding: 10px 20px;
+position: relative;
+box-shadow: -10px -10px 30px rgba(255,255,255,0.05), 10px 10px 30px rgba(0,0,0,0.2);
+background-color: var(--background-primary-alt) !important
+}
+
 /* Lists */
 ul > li::marker, ol > li::marker {
     color: var(--text-muted);

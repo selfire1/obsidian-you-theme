@@ -278,7 +278,45 @@ span.cm-hashtag.cm-hashtag-end {
 /* ------------- */
 /* # Left sidebar */
 /* ------------- */
-/*  */
+
+/* Branding */
+.workspace-drawer-header::before {
+  content: 'Obsidian ';
+  margin: 10px;
+  font-weight: bold;
+  font-size: var(--h4);
+  color: var(--primary-dark);
+  clear: right;
+  display: block;
+}
+
+.workspace-drawer-header::after {
+  content: 'You';
+  margin: 10px;
+  font-size: var(--h4);
+  color: var(--secondary);
+  transform: translate(-15px, 0px);
+  clear: right;
+  display: block;
+}
+
+.workspace-drawer-header {
+  border-bottom: 1px solid var(--background-secondary-alt);
+
+}
+
+.workspace-drawer-header-name-text {
+  color: var(--text-muted);
+  font-size: var(--smaller);
+}
+
+/* Search */
+.workspace-leaf-content[data-type='search'] .nav-action-button {
+  transform: scale(.8);
+  margin: none;
+  padding: none;
+}
+
 
 /* Top buttons */
 .is-mobile .workspace-drawer-actions, .is-mobile .nav-buttons-container {
@@ -305,28 +343,6 @@ span.cm-hashtag.cm-hashtag-end {
 .workspace-drawer-header-left {
   display: none;
 }
-
-.workspace-drawer-header {
-  border: none !important;
-}
-
-
-/* Comment in for less simplification */
-/* Right drawer */
-/* 
-.workspace-drawer-header-info {
-  display: none;
-}
-
-.workspace-drawer-header-name-text {
-  color: var(--text-muted);
-  font-size: var(--smaller);
-}
-
-.workspace-drawer-header {
-  border-bottom: 1px solid var(--background-secondary-alt);
-  padding: 10px 20px 5px 20px;
-} */
 
 /* ------------- */
 /* # File explorer */
@@ -444,6 +460,10 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 .suggestion-item.is-selected {
  background-color: var(--primary-faint);
 }
+
+.is-mobile .suggestion-hotkey {
+    display:none;
+  }
 
 .suggestion-highlight {
     font-weight: bold;

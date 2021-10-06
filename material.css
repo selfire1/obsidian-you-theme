@@ -329,6 +329,15 @@ span.cm-hashtag.cm-hashtag-end {
   padding: none;
 }
 
+/* Suggestions */
+
+
+.is-mobile .suggestion-container.mod-search-suggestion {
+  max-height: 40%;
+  min-height: 30%;
+  min-width: 100%;
+}
+
 
 /* Top buttons */
 .is-mobile .workspace-drawer-actions, .is-mobile .nav-buttons-container {

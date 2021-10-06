@@ -503,3 +503,9 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 .vertical-tab-header-group-title {
   color: var(--primary-light);
 }
+
+/* Prompts (Quick switcher) */
+.is-mobile .modal, .is-mobile .prompt, .is-mobile .suggestion-container {
+    border-radius: 24px 24px 0 0;
+    padding: 15px 20px;
+}

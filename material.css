@@ -11,9 +11,14 @@
   --reveal-font: var(--default-font);
   --font-monospace: "Roboto Mono", monospace;
 
-    /* ## Sizes */
-    --smallest: 0.75rem; /* Equal to px */
-    --smaller: 0.875rem; /* Equal to 14px */
+  /* ## Font Sizes */
+  --smallest: 0.75rem; /* Equal to px */
+  --smaller: 0.875rem; /* Equal to 14px */
+
+  /* Roundness */
+  --big-radius: 24px;
+  --medium-radius: 14px;
+  --small-radius: 8px;
 
   /* ## Font Weights */
   --light: 350;
@@ -118,7 +123,7 @@ span.cm-hmd-frontmatter {
 /* Frontmatter / Metadata container */
 .frontmatter-container {
   border: none;
-  border-radius: 8px;
+  border-radius: var(--small-radius);
 }
 .frontmatter-container .frontmatter-container-header {
   font-weight: var(--medium);
@@ -146,7 +151,7 @@ a.tag {
   text-decoration:none;
   display:inline-block;
   margin:2px 0 0 0;
-  border-radius:14px;
+  border-radius:var(--medium-radius);
 }
 a.tag:hover {
   color:var(--text-normal);
@@ -189,14 +194,14 @@ a.tag:after {
   cursor:text;
 }
 span.cm-hashtag.cm-hashtag-begin {
-  border-top-left-radius:14px;
-  border-bottom-left-radius:14px;
+  border-top-left-radius:var(--medium-radius);
+  border-bottom-left-radius:var(--medium-radius);
   padding-left:8px;
   border-right:none;
 }
 span.cm-hashtag.cm-hashtag-end {
-  border-top-right-radius:14px;
-  border-bottom-right-radius:14px;
+  border-top-right-radius:var(--medium-radius);
+  border-bottom-right-radius:var(--medium-radius);
   border-left:none;
   padding-right:8px;
 }
@@ -277,13 +282,13 @@ span.cm-hashtag.cm-hashtag-end {
 
 /* Top buttons */
 .is-mobile .workspace-drawer-actions, .is-mobile .nav-buttons-container {
-    background-color: var(--primary-faint);
-    border-radius: 20px;
-    margin: 0 10px 3px;
+    background-color: var(--background-secondary);
+    border-radius: var(--big-radius);
+    margin: 0 10px 5px;
 }
 
 .nav-action-button {
-  color: var(--primary);
+  color: var(--text-muted);
   transform: scale(.8);
   padding: 5px 8px 0px 8px;
   margin: 0px 6px 0px 6px;
@@ -343,10 +348,15 @@ span.cm-hashtag.cm-hashtag-end {
   font-weight: var(--light);
 }
 
+/* Highlighted file */
+.nav-file-title.is-active, .nav-folder-title.is-active, body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder-title:hover {
+  background-color: var(--primary-faint);
+  color: var(--primary-dark);
+  border-radius: var(--small-radius);
+}
+
+
 /* Folders */
-
-
-
 .workspace-drawer.mod-left {
       border-radius: 0px 6px 0 0;
 }
@@ -419,7 +429,7 @@ svg.vertical-three-dots {
     background: 
     linear-gradient(var(--primary), var(--primary)) bottom / 0% 2px no-repeat
     var(--background-secondary-alt);
-    border-radius: 6px 6px 0px 0px;
+    border-radius: var(--small-radius) var(--small-radius) 0px 0px;
   transition: .2s;
   transition-delay: .5s;
     
@@ -496,7 +506,34 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 /* Settings */
 /* Reduce space between settings */
 .vertical-tab-nav-item {
-      padding: 5px 6px 10px 24px;
+  padding: 0px 6px 10px 24px;
+}
+
+/* Style setting headers */
+.vertical-tab-header-group-title {
+  padding: 6px 6px 6px 26px;
+}
+
+/* Add divider line */
+.vertical-tab-header-group {
+      border-bottom: 1px solid var(--background-secondary-alt);
+}
+.vertical-tab-header-group:last-of-type {
+      border-bottom: none;
+}
+
+/* Height */
+.is-mobile .modal, .is-mobile .prompt, .is-mobile .suggestion-container {
+    max-height: calc(100% - 100px);
+    min-height: calc(100% - 100px);
+}
+
+/* Buttons */
+.is-mobile button {
+    text-transform: uppercase;
+    letter-spacing: 0.09375rem;
+    font-size: var(--smallest);
+    border-radius: var(--big-radius);
 }
 
 /* Setting Headers */
@@ -506,6 +543,11 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 
 /* Prompts (Quick switcher) */
 .is-mobile .modal, .is-mobile .prompt, .is-mobile .suggestion-container {
-    border-radius: 24px 24px 0 0;
+    border-radius: var(--big-radius) var(--big-radius) 0 0;
     padding: 15px 20px;
+}
+
+/* Pulling down */
+.pull-down-action {
+  border-radius: 0 0 var(--medium-radius) var(--medium-radius);
 }

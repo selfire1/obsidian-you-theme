@@ -103,6 +103,11 @@
 /* # Body */
 /* ------------- */
 
+/* Images */
+img {
+  border-radius: var(--small-radius);
+}
+
 /* Blockquotes */
 /* Callout boxes from Vileplume: https://github.com/hungsu/vileplume-obsidian */
 .markdown-preview-view blockquote {

@@ -291,11 +291,10 @@ span.cm-hashtag.cm-hashtag-end {
 /* # Left sidebar */
 /* ------------- */
 
-/* Branding */
+/* Branding "Obsidian You" */
 .workspace-drawer-header::before {
   content: 'Obsidian ';
   margin: 10px;
-  font-weight: bold;
   font-size: var(--h4);
   color: var(--primary-dark);
   clear: right;
@@ -305,6 +304,7 @@ span.cm-hashtag.cm-hashtag-end {
 .workspace-drawer-header::after {
   content: 'You';
   margin: 10px;
+  font-weight: var(--bold);
   font-size: var(--h4);
   color: var(--secondary);
   transform: translate(-15px, 0px);

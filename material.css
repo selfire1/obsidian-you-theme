@@ -4,7 +4,7 @@
   /* ------------- */
 
   /* ## Fonts */
-  --default-font: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --default-font: "Roboto", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --mermaid-font: var(--default-font);
@@ -591,11 +591,13 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
   border-radius: 0 0 var(--medium-radius) var(--medium-radius);
 }
 
-/* Pulling from the left (navigating back */
-.pull-action,
+/* Pulling from the left (navigating back
+Trying to target but it's not these:
+*/
+/* .pull-action,
 .pull-out-action {
   border-right: var(--medium-radius);
-}
+} */
 
 /* PLUGINS */
 /* Dataview Tables */

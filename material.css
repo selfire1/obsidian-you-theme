@@ -591,6 +591,11 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
   border-radius: 0 0 var(--medium-radius) var(--medium-radius);
 }
 
+/* Pulling from the left (navigating back */
+.pull-out-action {
+  border-right: var(--medium-radius);
+}
+
 /* PLUGINS */
 /* Dataview Tables */
 .table-view-table > thead > tr > th {

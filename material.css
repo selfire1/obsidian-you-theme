@@ -592,6 +592,7 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 }
 
 /* Pulling from the left (navigating back */
+.pull-action,
 .pull-out-action {
   border-right: var(--medium-radius);
 }

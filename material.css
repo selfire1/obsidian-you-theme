@@ -502,7 +502,9 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
   display: flex;
   padding: 5px;
   position: absolute;
-  top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
+  /* With Advanced Mobile Toolbar: */
+  /* top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count))); */
+  top: calc(90vh - 48px);
   left: 80vw;
   transform: translate(-50%, -50%);
   background-color: var(--primary);
@@ -522,7 +524,9 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     padding: 5px;
     box-shadow: 0 1px 6px 0px var(--text-muted);
     position: absolute;
-    top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
+    /* With Advanced Mobile Toolbar: */
+    /* top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count))); */
+    top: calc(90vh - 48px);
     left: 80vw;
     transform: translate(-50%, -50%);
     background-color: var(--secondary);

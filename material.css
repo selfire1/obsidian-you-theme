@@ -175,7 +175,7 @@ input[type=checkbox]:checked {
 .markdown-preview-view .markdown-embed-content { 
   border-radius: var(--big-radius);
   max-height: unset;
-  background-color: var(--background-primary-alt);
+  background-color: var(--primary-faint);
 }
 
 /* the link on the top right corner*/

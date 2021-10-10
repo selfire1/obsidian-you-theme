@@ -617,7 +617,7 @@ svg.vertical-three-dots {
     border-right: none;
     font-size: 17px;
     background: 
-    linear-gradient(var(--primary), var(--primary)) bottom / 0% 2px no-repeat
+    linear-gradient(var(--secondary), var(--secondary)) bottom / 0% 2px no-repeat
     var(--background-secondary-alt);
     border-radius: var(--small-radius) var(--small-radius) 0px 0px;
   transition: .2s;
@@ -688,7 +688,7 @@ body:not(.advanced-toolbar-mode) [aria-label="Preview (Ctrl+Click to open in new
 /* Edit Colours */
 [aria-label="Edit (⌘+Click to edit in new pane)"], 
 [aria-label="Edit (Ctrl+Click to edit in new pane)"] {
-  color: var(--text-normal);
+  color: var(--background-primary);
   background-color: var(--secondary);
 
 }

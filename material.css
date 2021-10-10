@@ -219,10 +219,11 @@ span.cm-hmd-frontmatter {
 }
 
 /* Code blocks */
+/* Inline:  .cm-s-obsidian span.cm-inline-code  */
 .markdown-preview-view code,
-.cm-s-obsidian .HyperMD-codeblock,
-.cm-s-obsidian span.cm-inline-code {
+.cm-s-obsidian .HyperMD-codeblock {
     color: var(--primary-dark);
+    font-family: var(--font-monospace);
 }
 
 /* Tags */

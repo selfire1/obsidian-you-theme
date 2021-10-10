@@ -506,7 +506,6 @@ span.cm-hashtag.cm-hashtag-end {
   font-size: var(--smaller);
   padding: 0px 0px;
   font-weight: var(--medium);
-  color: var(--text-normal);
 }
 
 /* Files */
@@ -526,7 +525,7 @@ span.cm-hashtag.cm-hashtag-end {
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: var(--primary-faint);
-  color: var(--primary-dark) !important;
+  color: var(--primary-dark);
   border-radius: var(--small-radius);
 }
 

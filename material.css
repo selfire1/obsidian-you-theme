@@ -641,10 +641,6 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
   20px 19px 80px rgba(0, 0, 0, 0.2)
 ;
 
-
-
-
-
 }
 
 /* Preview */
@@ -671,6 +667,16 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     width: 60px;
     height: 60px;
     border-radius: 60px;
+}
+
+/* Shrink FAB on small displays */
+@media screen and (max-height: 400px) {
+  [aria-label="Edit (⌘+Click to edit in new pane)"], 
+[aria-label="Edit (Ctrl+Click to edit in new pane)"],
+[aria-label="Preview (⌘+Click to open in new pane)"], 
+[aria-label="Preview (Ctrl+Click to open in new pane)"] {
+      transform: scale(0.8) translate(-50%, -50%);
+}
 }
 
 /* Mobile Toolbar */

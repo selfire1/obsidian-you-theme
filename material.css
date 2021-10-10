@@ -672,6 +672,7 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 .is-mobile .modal-setting-back-button {
   border-top-left-radius: var(--big-radius);
   border-top-right-radius: var(--big-radius);
+  overflow: hidden;
 }
 
 /* Style setting headers */

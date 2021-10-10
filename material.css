@@ -28,7 +28,7 @@
   --light: 350;
   --regular: 400;
   --medium: 500;
-  --bold: 700;
+  --bold: 650;
 
   /* ## Heading sizes */
   --h1: 2.5rem;
@@ -651,7 +651,7 @@ input[type="number"]:focus {
 }
 
 .suggestion-highlight {
-  font-weight: bold;
+  font-weight: var(--bold);
   color: var(--primary);
 }
 

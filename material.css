@@ -84,7 +84,7 @@
     --text-faint: #999999;
     --text-error: #800000;
     --text-error-hover: #990000;
-    --text-highlight-bg: rgba(255, 255, 0, 0.4);
+    --text-highlight-bg: var(--primary-faint);
     --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
     --text-selection: rgba(204, 230, 255, 0.99);
     --text-on-accent: #f2f2f2;
@@ -385,6 +385,18 @@ span.cm-hashtag.cm-hashtag-end {
   display: none;
 }
 
+/* Right sidebar */
+.backlink-pane, .outgoing-link-pane {
+  padding: 0 11px;
+}
+
+/* Backlink counts */
+.tree-item-flair-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ------------- */
 /* # File explorer */
 /* ------------- */
@@ -410,8 +422,12 @@ span.cm-hashtag.cm-hashtag-end {
   font-weight: var(--light);
 }
 
-/* Highlighted file */
-.nav-file-title.is-active, .nav-folder-title.is-active, body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder-title:hover {
+/* Highlighted file or backlink */
+.nav-file-title.is-active,
+.tree-item-self.is-clickable:hover,
+.nav-folder-title.is-active, 
+body:not(.is-grabbing) .nav-file-title:hover, 
+body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: var(--primary-faint);
   color: var(--primary-dark);
   border-radius: var(--small-radius);

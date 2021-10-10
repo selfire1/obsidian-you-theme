@@ -526,16 +526,16 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 /* Edit */
 [aria-label="Edit (⌘+Click to edit in new pane)"], 
 [aria-label="Edit (Ctrl+Click to edit in new pane)"] {
-  color: var(--background-primary);
+  color: var(--text-normal);
   display: flex;
   padding: 5px;
   position: absolute;
   /* With Advanced Mobile Toolbar: */
   /* top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count))); */
   top: calc(90vh - 48px);
-  left: 80vw;
+  left: 82vw;
   transform: translate(-50%, -50%);
-  background-color: var(--primary);
+  background-color: var(--secondary);
   justify-content: center;
   align-items: center;
   width: 60px;
@@ -547,7 +547,7 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 /* Preview */
 [aria-label="Preview (⌘+Click to open in new pane)"], 
 [aria-label="Preview (Ctrl+Click to open in new pane)"] {
-    color: var(--text-normal);
+    color: var(--background-primary);
     display: flex;
     padding: 5px;
     box-shadow: 0 1px 6px 0px var(--text-muted);
@@ -555,9 +555,9 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     /* With Advanced Mobile Toolbar: */
     /* top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count))); */
     top: calc(90vh - 48px);
-    left: 80vw;
+    left: 82vw;
     transform: translate(-50%, -50%);
-    background-color: var(--secondary);
+    background-color: var(--primary);
     justify-content: center;
     align-items: center;
     width: 60px;

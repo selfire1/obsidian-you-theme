@@ -180,7 +180,13 @@ border-radius: var(--big-radius);
 border: 1px solid rgba(255,255,255,0.03);
 padding: 10px 20px;
 position: relative;
-box-shadow: -10px -10px 30px rgba(255,255,255,0.05), 10px 10px 30px rgba(0,0,0,0.2);
+box-shadow:
+  0.9px 0.9px 3.6px rgba(0, 0, 0, 0.017),
+  2.5px 2.4px 10px rgba(0, 0, 0, 0.025),
+  6px 5.7px 24.1px rgba(0, 0, 0, 0.033),
+  20px 19px 80px rgba(0, 0, 0, 0.05)
+;
+
 background-color: var(--background-primary-alt) !important
 }
 
@@ -529,7 +535,13 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .workspace-leaf.mod-active .view-header,
 .is-mobile .view-header {
     border-bottom: none;
-    box-shadow: 0 1px 6px 0px var(--text-muted);
+    box-shadow:
+  0.9px 0.9px 3.6px rgba(0, 0, 0, 0.035),
+  2.5px 2.4px 10px rgba(0, 0, 0, 0.05),
+  6px 5.7px 24.1px rgba(0, 0, 0, 0.065),
+  20px 19px 80px rgba(0, 0, 0, 0.1)
+;
+
     background-color: var(--primary);
 }
 
@@ -622,7 +634,17 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
   width: 60px;
   height: 60px;
   border-radius: 60px;
-  box-shadow: 0 1px 6px 0px var(--text-muted);
+  box-shadow:
+  0.9px 0.9px 3.6px rgba(0, 0, 0, 0.07),
+  2.5px 2.4px 10px rgba(0, 0, 0, 0.1),
+  6px 5.7px 24.1px rgba(0, 0, 0, 0.13),
+  20px 19px 80px rgba(0, 0, 0, 0.2)
+;
+
+
+
+
+
 }
 
 /* Preview */
@@ -631,7 +653,12 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
     color: var(--background-primary);
     display: flex;
     padding: 5px;
-    box-shadow: 0 1px 6px 0px var(--text-muted);
+    box-shadow:
+  0.9px 0.9px 3.6px rgba(0, 0, 0, 0.07),
+  2.5px 2.4px 10px rgba(0, 0, 0, 0.1),
+  6px 5.7px 24.1px rgba(0, 0, 0, 0.13),
+  20px 19px 80px rgba(0, 0, 0, 0.2)
+;
     position: absolute;
     /* With Advanced Mobile Toolbar: */
     /* top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count))); */

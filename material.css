@@ -103,6 +103,11 @@
 /* # Body */
 /* ------------- */
 
+/* Checkboxes */
+input[type=checkbox]:checked {
+  filter: grayscale(100%);
+}
+
 /* Embeds */
 /* Naked Embeds (modified from death_au (https://forum.obsidian.md/t/naked-embeds-css-tweak/72) */
 .markdown-embed-title { display: none; }

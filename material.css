@@ -510,7 +510,6 @@ span.cm-hashtag.cm-hashtag-end {
 
 /* Files */
 .is-mobile .nav-file-title,
-.is-mobile .outline,
 .is-mobile .tag-container {
   padding: 1px 11px 0 11px;
   color: var(--text-muted);

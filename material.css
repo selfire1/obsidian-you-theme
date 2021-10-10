@@ -526,7 +526,7 @@ span.cm-hashtag.cm-hashtag-end {
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: var(--primary-faint);
-  color: var(--primary-dark);
+  color: var(--primary-dark) !important;
   border-radius: var(--small-radius);
 }
 

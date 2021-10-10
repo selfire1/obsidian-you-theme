@@ -4,9 +4,9 @@
   /* ------------- */
 
   /* ## Fonts */
-  --default-font: "Roboto", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-preview: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-editor: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --default-font: var(--font-preview);
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
   --font-monospace: "Roboto Mono",monospace, Menlo,SFMono-Regular,Consolas;
@@ -36,7 +36,7 @@
   --h6: 0.875rem;
 }
 
-.theme-light {
+.theme-light {  
     /* ------------- */
     /* # COLOURS */
     /* ------------- */
@@ -52,7 +52,7 @@
     --primary-light: hsl(var(--primary-h), var(--primary-s), 73%);
     --primary-dark: hsl(var(--primary-h), var(--primary-s), 40%);
     
-    /* Secondary (Secondary in Hex: #bbce5d)*/
+    /* Secondary (Default secondary in Hex: #bbce5d)*/
     /* --secondary-h: 70; */
     --secondary-h: calc(var(--primary-h) + 180);
     --secondary-s: var(--primary-s);
@@ -103,6 +103,25 @@
 /* ------------- */
 /* # Body */
 /* ------------- */
+
+/* Fonts */
+/* Preview */
+  .popover,
+  .vertical-tab-content-container,
+  .workspace-leaf-content[data-type=markdown] {
+    font-family: var(--font-preview);
+  }
+
+  /* Editor */
+  .markdown-source-view .cm-s-obsidian .cm-hmd-frontmatter,
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-source-view,
+.cm-s-obsidian .cm-formatting-hashtag, 
+.cm-s-obsidian,
+.cm-s-obsidian span.cm-formatting-task {
+
+  font-family:var(--font-editor);
+}
 
 /* Scroll bars */
 /* Inspired by Minimal by kepano: https://github.com/kepano/obsidian-minimal/blob/master/obsidian.css */
@@ -207,6 +226,14 @@ span.cm-hmd-frontmatter {
   font-size: var(--smaller);
   color: var(--text-muted);
   font-family: var(--default-font) !important;
+}
+
+.markdown-preview-section .frontmatter code,
+.theme-dark .frontmatter .token,
+.theme-light .frontmatter .token,
+.theme-dark pre.frontmatter[class*="language-yaml"],
+.theme-light pre.frontmatter[class*="language-yaml"] {
+  font-family:var(--font-preview);
 }
 
 /* Frontmatter / Metadata container */
@@ -618,19 +645,32 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 }
 
 /* Floating Action Button (FAB)*/
-/* Edit */
-[aria-label="Edit (⌘+Click to edit in new pane)"], 
-[aria-label="Edit (Ctrl+Click to edit in new pane)"] {
-  color: var(--text-normal);
+/* Advanced Mobile Toolbar Mode */
+[aria-label="Edit (⌘+Click to edit in new pane)"],
+[aria-label="Edit (Ctrl+Click to edit in new pane)"],
+[aria-label="Preview (⌘+Click to open in new pane)"],
+[aria-label="Preview (Ctrl+Click to open in new pane)"] {
+  top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
+}
+
+/* Advanced Mobile Toolbar Mode disabled */
+[aria-label="Edit (⌘+Click to edit in new pane)"]:not(.advanced-toolbar-mode),
+[aria-label="Edit (Ctrl+Click to edit in new pane)"]:not(.advanced-toolbar-mode),
+[aria-label="Preview (⌘+Click to open in new pane)"]:not(.advanced-toolbar-mode),
+[aria-label="Preview (Ctrl+Click to open in new pane)"]:not(.advanced-toolbar-mode) {
+  top: calc(90vh - 48px);
+}
+
+/* Shared styling */
+[aria-label="Edit (⌘+Click to edit in new pane)"],
+[aria-label="Edit (Ctrl+Click to edit in new pane)"],
+[aria-label="Preview (⌘+Click to open in new pane)"],
+[aria-label="Preview (Ctrl+Click to open in new pane)"] {
   display: flex;
   padding: 5px;
   position: absolute;
-  /* With Advanced Mobile Toolbar: */
-  /* top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count))); */
-  top: calc(90vh - 48px);
   left: 82vw;
   transform: translate(-50%, -50%);
-  background-color: var(--secondary);
   justify-content: center;
   align-items: center;
   width: 60px;
@@ -641,34 +681,22 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
   2.5px 2.4px 10px rgba(0, 0, 0, 0.1),
   6px 5.7px 24.1px rgba(0, 0, 0, 0.13),
   20px 19px 80px rgba(0, 0, 0, 0.2)
-;
+  ;
+}
+
+/* Edit Colours */
+[aria-label="Edit (⌘+Click to edit in new pane)"], 
+[aria-label="Edit (Ctrl+Click to edit in new pane)"] {
+  color: var(--text-normal);
+  background-color: var(--secondary);
 
 }
 
-/* Preview */
+/* Preview Colours */
 [aria-label="Preview (⌘+Click to open in new pane)"], 
 [aria-label="Preview (Ctrl+Click to open in new pane)"] {
     color: var(--background-primary);
-    display: flex;
-    padding: 5px;
-    box-shadow:
-  0.9px 0.9px 3.6px rgba(0, 0, 0, 0.07),
-  2.5px 2.4px 10px rgba(0, 0, 0, 0.1),
-  6px 5.7px 24.1px rgba(0, 0, 0, 0.13),
-  20px 19px 80px rgba(0, 0, 0, 0.2)
-;
-    position: absolute;
-    /* With Advanced Mobile Toolbar: */
-    /* top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count))); */
-    top: calc(90vh - 48px);
-    left: 82vw;
-    transform: translate(-50%, -50%);
     background-color: var(--primary);
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
 }
 
 /* Shrink FAB on small displays */
@@ -680,6 +708,7 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
       transform: scale(0.8) translate(-50%, -50%);
 }
 }
+
 
 /* Mobile Toolbar */
 /* workspace content to go underneath toolbar */
@@ -773,3 +802,61 @@ Trying to target but it's not these:
 tr {
     border-top: 1px solid var(--background-secondary-alt);
 }
+
+/* Style Settings */
+/* @settings
+
+name: Obsidian You
+id: title
+settings:
+    - 
+        id: colour-header
+        title: Colours
+        type: heading
+        level: 2
+        collapsed: false
+    - 
+        id: primary
+        title: Primary Colour
+        description: Automatically generates a colour palette
+        type: variable-color
+        opacity: false
+        format: hsl-split
+        default: '#705dcf'
+    - 
+        id: font-header
+        title: Fonts
+        type: heading
+        level: 2
+        collapsed: false
+    - 
+        id: font-preview
+        title: Preview Font
+        description: Used in preview mode
+        type: variable-text
+        default: -apple-system, "Roboto, "Inter", BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    - 
+        id: font-editor
+        title: Editor Font
+        description: Used in editor mode
+        type: variable-text
+        default: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    - 
+        id: font-monospacee
+        title: Monospace Font
+        description: Used in code
+        type: variable-text
+        default: Menlo, "Roboto Mono", monospace,SFMono-Regular,Consolas;
+    - 
+        id: other-header
+        title: Additional settings
+        type: heading
+        level: 2
+        collapsed: false
+    - 
+        id: advanced-toolbar-mode
+        title: Advanced toolbar mode
+        description: Adapts automatically to avanced mobile toolbar
+        type: class-toggle
+*/
+

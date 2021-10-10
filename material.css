@@ -506,6 +506,7 @@ span.cm-hashtag.cm-hashtag-end {
   font-size: var(--smaller);
   padding: 0px 0px;
   font-weight: var(--medium);
+  color: var(--text-normal);
 }
 
 /* Files */

@@ -654,12 +654,13 @@ input[type='text']:active, input[type='search']:active, input[type='email']:acti
 }
 
 /* Advanced Mobile Toolbar Mode disabled */
-[aria-label="Edit (⌘+Click to edit in new pane)"]:not(.advanced-toolbar-mode),
-[aria-label="Edit (Ctrl+Click to edit in new pane)"]:not(.advanced-toolbar-mode),
-[aria-label="Preview (⌘+Click to open in new pane)"]:not(.advanced-toolbar-mode),
-[aria-label="Preview (Ctrl+Click to open in new pane)"]:not(.advanced-toolbar-mode) {
+body:not(.advanced-toolbar-mode) [aria-label="Edit (⌘+Click to edit in new pane)"],
+body:not(.advanced-toolbar-mode) [aria-label="Edit (Ctrl+Click to edit in new pane)"],
+body:not(.advanced-toolbar-mode) [aria-label="Preview (⌘+Click to open in new pane)"],
+body:not(.advanced-toolbar-mode) [aria-label="Preview (Ctrl+Click to open in new pane)"] {
   top: calc(90vh - 48px);
 }
+
 
 /* Shared styling */
 [aria-label="Edit (⌘+Click to edit in new pane)"],

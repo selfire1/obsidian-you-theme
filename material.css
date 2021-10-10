@@ -569,6 +569,14 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: var(--primary);
 }
 
+/* Style hamburger menu */
+/* Replace icon */
+svg.three-horizontal-bars {
+  background-color: currentColor;
+}
+svg.three-horizontal-bars {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' /%3E%3C/svg%3E");
+}
 svg.vertical-three-dots {
   color: var(--primary);
 }
@@ -594,6 +602,7 @@ svg.vertical-three-dots {
 /* Hamburger menu */
 .view-header-icon {
   color: var(--background-primary-alt);
+  padding-left: 15px;
 }
 
 /* -------------- */

@@ -9,7 +9,8 @@
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
-  --font-monospace: "Roboto Mono", monospace;
+  --font-monospace: "Roboto Mono",monospace, Menlo,SFMono-Regular,Consolas;
+
 
   /* ## Font Sizes */
   --smallest: 0.75rem; /* Equal to px */

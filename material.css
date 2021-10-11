@@ -109,6 +109,13 @@
 
 /* Fonts */
 /* Preview */
+.workspace-drawer-tab-option-item-title, 
+.workspace-drawer-active-tab-title,
+.nav-file-title-content, 
+.nav-folder-title-content,
+.tree-item-inner,
+.is-mobile .suggestion-item,
+input[type="text"]:active, input[type="search"]:active, input[type="email"]:active, input[type="password"]:active, input[type="number"]:active, input[type="text"]:focus, input[type="search"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus,
 .popover,
 .vertical-tab-content-container,
 .workspace-leaf-content[data-type="markdown"] {
@@ -889,7 +896,7 @@ settings:
         title: Preview Font
         description: Used in preview mode
         type: variable-text
-        default: -apple-system, "Roboto, "Inter", BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+        default:  Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
     - 
         id: font-editor
         title: Editor Font

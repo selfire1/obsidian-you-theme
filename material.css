@@ -109,13 +109,21 @@
 
 /* Fonts */
 /* Preview */
+<<<<<<< HEAD
 /* .workspace-drawer-tab-option-item-title, 
+=======
+.workspace-drawer-tab-option-item-title, 
+>>>>>>> 0f2af025697928f5722f7c5e155a8d20ee59de24
 .workspace-drawer-active-tab-title,
 .nav-file-title-content, 
 .nav-folder-title-content,
 .tree-item-inner,
 .is-mobile .suggestion-item,
+<<<<<<< HEAD
 input[type="text"]:active, input[type="search"]:active, input[type="email"]:active, input[type="password"]:active, input[type="number"]:active, input[type="text"]:focus, input[type="search"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, */
+=======
+input[type="text"]:active, input[type="search"]:active, input[type="email"]:active, input[type="password"]:active, input[type="number"]:active, input[type="text"]:focus, input[type="search"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus,
+>>>>>>> 0f2af025697928f5722f7c5e155a8d20ee59de24
 .popover,
 .vertical-tab-content-container,
 .workspace-leaf-content[data-type="markdown"] {

@@ -149,11 +149,11 @@
     --background-modifier-cover: rgba(0, 0, 0, 0.8);
     --text-accent: var(--primary);
     --text-accent-hover: var(--primary-light);
-    --text-normal: #dcddde;
+    --text-normal: rgba(222, 222, 222,0.87);
     --text-muted: #999;
     --text-muted-rgb: 153, 153, 153;
     --text-faint: #666;
-    --text-error: #ff3333;
+    --text-error: #cf6679;
     --text-error-hover: #990000;
     --text-highlight-bg: var(--primary-faint);
     --text-highlight-bg-active: rgba(255, 128, 0, 0.4);

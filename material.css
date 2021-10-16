@@ -134,10 +134,10 @@
   /* Background colours */
 
     /* Standard Colours */
-    --background-primary: hsl(0, 0%, 7%);
-    --background-primary-alt: hsl(0, 0%, 9%);
-    --background-secondary: hsl(0, 0%, 12%);
-    --background-secondary-alt: hsl(0, 0%, 15%);
+    --background-primary: hsl(0, 0%, 7%); /* 02dp */
+    --background-primary-alt: hsl(0, 0%, 9%); /* 04dp */
+    --background-secondary: hsl(0, 0%, 12%); /* 08dp */
+    --background-secondary-alt: hsl(0, 0%, 15%); /* 16dp */
     --background-modifier-border: #333;
     --background-modifier-form-field: rgba(0, 0, 0, 0.3);
     --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);

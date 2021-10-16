@@ -631,39 +631,66 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 /* ------------- */
 /* # Title Bar */
 /* ------------- */
-.workspace-split.mod-root
+/* Light Mode */
+.theme-light .workspace-split.mod-root
   > .workspace-leaf:first-of-type:last-of-type
   .view-header,
-.workspace-leaf.mod-active .view-header,
-.is-mobile .view-header {
+.theme-light .workspace-leaf.mod-active .view-header,
+.theme-light .is-mobile .view-header {
   border-bottom: none;
   box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.035),
     2.5px 2.4px 10px rgba(0, 0, 0, 0.05), 6px 5.7px 24.1px rgba(0, 0, 0, 0.065),
     20px 19px 80px rgba(0, 0, 0, 0.1);
-
   background-color: var(--primary);
+}
+
+/* Dark Mode */
+.theme-dark .workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header,
+.theme-dark .workspace-leaf.mod-active .view-header,
+.theme-dark .is-mobile .view-header {
+  border-bottom: none;
+  box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.035),
+    2.5px 2.4px 10px rgba(0, 0, 0, 0.05), 6px 5.7px 24.1px rgba(0, 0, 0, 0.065),
+    20px 19px 80px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-secondary-alt);
+  color: var(--primary);
 }
 
 /* Style hamburger menu */
 /* Replace icon */
-svg.three-horizontal-bars {
+.three-horizontal-bars {
   background-color: currentColor;
+}
+.theme-dark .three-horizontal-bars {
+  filter: invert(100%);
 }
 svg.three-horizontal-bars {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' /%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' /%3E%3C/svg%3E");
 }
-svg.vertical-three-dots {
+.theme-light .vertical-three-dots {
   color: var(--primary);
+}
+.theme-dark .vertical-three-dots {
+  color: var(--background-secondary-alt);
 }
 
 /* ## Title */
-.is-mobile .view-header-title,
-.workspace-leaf.mod-active .view-header-title {
+.theme-light .is-mobile .view-header-title,
+.theme-light .workspace-leaf.mod-active .view-header-title {
   line-height: 50px;
   font-size: var(--h5);
   font-weight: var(--regular);
   color: var(--background-primary);
+}
+.theme-dark .is-mobile .view-header-title,
+.theme-dark .workspace-leaf.mod-active .view-header-title {
+  line-height: 50px;
+  font-size: var(--h5);
+  font-weight: var(--regular);
+  color: var(--text-normal);
 }
 
 /* Title icons */

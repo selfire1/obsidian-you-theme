@@ -865,11 +865,6 @@ body:not(.advanced-toolbar-mode)
 }
 
 /* Mobile Toolbar */
-/* workspace content to go underneath toolbar */
-.is-mobile .workspace-leaf-content > .view-content > .markdown-source-view {
-  height: 100%;
-}
-
 .is-mobile .mobile-toolbar {
   border-top: none;
   border-radius: 0;

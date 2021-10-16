@@ -924,8 +924,11 @@ body:not(.advanced-toolbar-mode)
 }
 
 /* Setting Headers */
-.vertical-tab-header-group-title {
+.theme-light .vertical-tab-header-group-title {
   color: var(--primary-light);
+}
+.theme-dark .vertical-tab-header-group-title {
+  color: var(--primary-dark);
 }
 
 /* Prompts (Quick switcher) */

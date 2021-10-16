@@ -557,6 +557,10 @@ span.cm-hashtag.cm-hashtag-end {
 }
 
 /* Right sidebar */
+.workspace-drawer.mod-right {
+  border: none;
+}
+
 .backlink-pane,
 .outgoing-link-pane {
   padding: 0 11px;

@@ -116,9 +116,9 @@
   --primary-l: 59%;
 
   --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
-  --primary-faint: hsl(var(--primary-h), var(--primary-s), 93%);
-  --primary-light: hsl(var(--primary-h), var(--primary-s), 73%);
-  --primary-dark: hsl(var(--primary-h), var(--primary-s), 40%);
+  --primary-faint: hsl(var(--primary-h), var(--primary-s), 7%);
+  --primary-light: hsl(var(--primary-h), var(--primary-s), 27%);
+  --primary-dark: hsl(var(--primary-h), var(--primary-s), 60%);
 
   /* Secondary (Default secondary in Hex: #bbce5d)*/
   /* --secondary-h: 70; */

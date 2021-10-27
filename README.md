@@ -10,8 +10,9 @@
 
 ## Features
 ### Dynamic Colour
-![Drake](https://i.imgflip.com/5s1qsg.jpg)
-Pick your favourite colour ([*Illuminating* anyone?](https://www.pantone.com/color-of-the-year-2021). From this source colour a custom pallette gets automatically generated for you. Dynamic colour makes Obsidian personal while not overwhelming with options. You can pick your colour through the plugin [Style Settings](https://github.com/mgmeyers/obsidian-style-settings).
+<img src="https://i.imgflip.com/5s1qsg.jpg" width="250" />
+
+Pick your favourite colour ([*Illuminating*](https://www.pantone.com/color-of-the-year-2021) anyone?). From this source colour a custom pallette gets automatically generated for you. Dynamic colour makes Obsidian personal while not overwhelming with options. You can pick your colour through the plugin [Style Settings](https://github.com/mgmeyers/obsidian-style-settings).
 
 ### Floating Action Button
 Skip the thumb-stretching and have a switch from preview to edit mode right at your fingertips. Shades of dynamic colour quickly indicate which mode you are in.

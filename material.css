@@ -916,7 +916,6 @@ body:not(.advanced-toolbar-mode)
 /* Buttons */
 .is-mobile button,
 .is-mobile .empty-state-action {
-  text-transform: uppercase;
   letter-spacing: 0.09375rem;
   font-size: var(--smallest);
   border-radius: var(--big-radius);

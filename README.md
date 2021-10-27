@@ -1,7 +1,7 @@
 # Obsidian You
-**A theme exclusively for mobile. Take Obsidian on the go, your way.**
-
 ![Obsidian You Overview](https://github.com/selfire1/obsidian-you-theme/blob/main/images/colours.png?raw=true)
+
+**A theme exclusively for mobile. Take Obsidian on the go, your way.**
 
 *Obsidian You was written during [Obsidian October 2021](https://forum.obsidian.md/t/obsidian-october-2021-make-plugins-and-themes-together-and-win-awards/24471).*
 
@@ -10,7 +10,7 @@
 
 ## Features
 ### Dynamic Colour
-![Drake](https://imgflip.com/i/5s1qsg)
+![Drake](https://imgflip.com/i/5s1qsg.jpg)
 Pick your favourite colour ([*Illuminating* anyone?](https://www.pantone.com/color-of-the-year-2021). From this source colour a custom pallette gets automatically generated for you. Dynamic colour makes Obsidian personal while not overwhelming with options. You can pick your colour through the plugin [Style Settings](https://github.com/mgmeyers/obsidian-style-settings).
 
 ### Floating Action Button

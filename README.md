@@ -15,6 +15,8 @@
 Pick your favourite colour ([*Illuminating*](https://www.pantone.com/color-of-the-year-2021) anyone?). From this source colour a custom pallette gets automatically generated for you. Dynamic colour makes Obsidian personal while not overwhelming with options. You can pick your colour through the plugin [Style Settings](https://github.com/mgmeyers/obsidian-style-settings).
 
 ### Floating Action Button
+<img src="https://github.com/selfire1/obsidian-you-theme/blob/main/images/floating-action-button.png?raw=true" width="500" />
+
 Skip the thumb-stretching and have a switch from preview to edit mode right at your fingertips. Shades of dynamic colour quickly indicate which mode you are in.
 
 ### Dark Mode

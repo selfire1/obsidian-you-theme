@@ -1,7 +1,7 @@
 # Obsidian You
 ![Obsidian You Overview](https://github.com/selfire1/obsidian-you-theme/blob/main/images/colours.png?raw=true)
 
-**A theme exclusively designed for mobile. Take Obsidian on the go, your way.**
+**Take Obsidian on the go, your way.** A theme exclusively designed for mobile.
 
 *Obsidian You was written during [Obsidian October 2021](https://forum.obsidian.md/t/obsidian-october-2021-make-plugins-and-themes-together-and-win-awards/24471).*
 
@@ -17,7 +17,7 @@ Pick your favourite colour ([*Illuminating*](https://www.pantone.com/color-of-th
 ### Floating Action Button
 <img src="https://github.com/selfire1/obsidian-you-theme/blob/main/images/floating-action-button.png?raw=true" width="500" />
 
-Skip the thumb-stretching and have a switch from preview to edit mode right at your fingertips. Shades of dynamic colour quickly indicate which mode you are in.
+Skip the thumb-stretching and switch from preview to edit mode right at your fingertips. Shades of dynamic colour quickly indicate which mode you are in.
 
 ### Dark Mode
 <img src="https://github.com/selfire1/obsidian-you-theme/blob/main/images/dark-mode.png?raw=true" width="500" />

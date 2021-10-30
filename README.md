@@ -5,7 +5,7 @@
 
 *Obsidian You was written during [Obsidian October 2021](https://forum.obsidian.md/t/obsidian-october-2021-make-plugins-and-themes-together-and-win-awards/24471).*
 
-> 🚧 Status: Awaiting implementation into Obsidian's community plugins.
+> ✅ Status: Available in Obsidian's Community themes.
 
 ## Goals
 * Reflecting Google's [Material Design Guidelines](https://m3.material.io/) to feel native on Android, and beautiful anywhere else. ✨ 

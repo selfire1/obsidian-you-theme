@@ -1,9 +1,11 @@
-# Obsidian You
+# Obsidian You 🎨
 ![Obsidian You Overview](https://github.com/selfire1/obsidian-you-theme/blob/main/images/colours.png?raw=true)
 
 **Take Obsidian on the go, your way.** A theme exclusively designed for mobile.
 
 *Obsidian You was written during [Obsidian October 2021](https://forum.obsidian.md/t/obsidian-october-2021-make-plugins-and-themes-together-and-win-awards/24471).*
+
+> 🚧 Status: Awaiting implementation into Obsidian's community plugins.
 
 ## Goals
 * Reflecting Google's [Material Design Guidelines](https://m3.material.io/) to feel native on Android, and beautiful anywhere else. ✨ 
@@ -27,6 +29,11 @@ Reduce eye strain and save battery while you're up all night connecting. Your cu
 ## Supported plugins
 * [Style Settings](https://github.com/mgmeyers/obsidian-style-settings): Customise colour, fonts and additional settings.
 * [Obsidian Advanced Toolbar](https://github.com/phibr0/obsidian-advanced-toolbar): Activate in *Style Settings*.
+
+## Additional tools
+* 🌝 [Luna – Dark Mode Helper](https://github.com/selfire1/obsidian-luna-dark-mode): An Obsidian Plugin that switches into Dark Mode based on time or sun position,supporting Mobile.
+* 📱 [Set Mobile Theme](https://github.com/selfire1/obsidian-set-mobile-theme): Load a seperate theme for Obsidian on Desktop and on Mobile.
+* 🎨 [Obsidian You](https://github.com/selfire1/obsidian-you-theme): A personal Obsidian theme designed exclusively for mobile.
 
 ## Acknowledgements
 * Thank you to [mgmeyers](https://github.com/mgmeyers) for providing valuable and detailed feedback,

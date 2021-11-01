@@ -679,18 +679,19 @@ svg.three-horizontal-bars {
 }
 
 /* ## Title */
-.theme-light .is-mobile .view-header-title,
-.theme-light .workspace-leaf.mod-active .view-header-title {
+.is-mobile .view-header-title,
+.workspace-leaf.mod-active .view-header-title {
   line-height: 50px;
   font-size: var(--h5);
   font-weight: var(--regular);
+}
+
+.theme-light .is-mobile .view-header-title,
+.theme-light .workspace-leaf.mod-active .view-header-title {
   color: var(--background-primary);
 }
 .theme-dark .is-mobile .view-header-title,
 .theme-dark .workspace-leaf.mod-active .view-header-title {
-  line-height: 50px;
-  font-size: var(--h5);
-  font-weight: var(--regular);
   color: var(--text-normal);
 }
 

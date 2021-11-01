@@ -682,33 +682,41 @@ svg.three-horizontal-bars {
 .is-mobile .view-header-title,
 .workspace-leaf.mod-active .view-header-title {
   line-height: 50px;
-  font-size: var(--h5);
+  font-size: var(--h4);
   font-weight: var(--regular);
 }
 
 .theme-light .is-mobile .view-header-title,
 .theme-light .workspace-leaf.mod-active .view-header-title {
-  color: var(--background-primary);
+  color: var(--text-normal);
 }
 .theme-dark .is-mobile .view-header-title,
 .theme-dark .workspace-leaf.mod-active .view-header-title {
-  color: var(--text-normal);
+  color: var(--background-primary);
 }
 
 /* Title icons */
 .view-action {
-  margin: 0 8px;
+  display: none;
+  /* margin: 0 8px;
   cursor: pointer;
   color: var(--primary-light);
   position: relative;
-  top: 3px;
+  top: 3px; */
 }
 
 /* Hamburger menu */
 .view-header-icon {
-  color: var(--background-primary-alt);
   padding-left: 20px;
 }
+
+.theme-light .view-header-icon {
+  color: var(--primary);
+}
+
+.theme-dark .view-header-icon {
+  color: var(--background-primary-alt);  
+} 
 
 /* -------------- */
 /* Quick Action */

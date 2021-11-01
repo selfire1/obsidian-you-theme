@@ -1053,13 +1053,13 @@ settings:
         title: Editor Font
         description: Used in editor mode
         type: variable-text
-        default: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+        default: Roboto,"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Microsoft YaHei Light",sans-serif;
     - 
         id: font-monospace
         title: Monospace Font
         description: Used in code
         type: variable-text
-        default: Menlo, "Roboto Mono", monospace,SFMono-Regular,Consolas;
+        default: Menlo,"Roboto Mono",monospace,SFMono-Regular,Consolas;
     - 
         id: other-header
         title: Additional settings

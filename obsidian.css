@@ -695,6 +695,11 @@ svg.three-horizontal-bars {
   color: var(--background-primary);
 }
 
+/* Title bar */
+.titlebar-text {
+  background-color: var(--primary);
+}
+
 /* Title icons */
 .view-action {
   display: none;
@@ -920,9 +925,24 @@ body:not(.advanced-toolbar-mode)
 }
 
 /* Buttons */
+
+/* Filled button */
+button.mod-cta {
+  background-color: var(--primary);
+  color: var(--background-primary);
+}
+
+/* Outlined buttons */
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning),
+button:not(.mod-cta):not(.mod-warning),
+.is-mobile .empty-state-action:not(:nth-child(2)) {
+    background-color: transparent;
+    border: 1px solid var(--text-faint);
+    color: var(--primary);
+}
+
 .is-mobile button,
 .is-mobile .empty-state-action {
-  letter-spacing: 0.09375rem;
   font-size: var(--smallest);
   border-radius: var(--big-radius);
 }

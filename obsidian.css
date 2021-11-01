@@ -504,6 +504,11 @@ span.cm-hashtag.cm-hashtag-end {
   font-size: var(--smaller);
 }
 
+/* Icons */
+.workspace-drawer-tab-option-item-icon, .workspace-drawer-active-tab-icon {
+  color: var(--primary-dark);
+}
+
 /* Search */
 .workspace-leaf-content[data-type="search"] .nav-action-button {
   transform: scale(0.8);

@@ -773,6 +773,7 @@ input[type="number"]:focus {
   color: var(--primary);
 }
 
+
 /* Floating Action Button (FAB)*/
 /* Advanced Mobile Toolbar Mode */
 [aria-label="Edit (⌘+Click to edit in new pane)"],
@@ -814,18 +815,33 @@ body:not(.advanced-toolbar-mode)
     20px 19px 80px rgba(0, 0, 0, 0.2);
 }
 
+/* Pencil SVG */
+svg.pencil {
+  background-color:currentColor;
+}
+
+svg.pencil > path {
+  display:none;
+}
+
+svg.pencil {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:50px;height:50px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z' /%3E%3C/svg%3E");
+  transform: scale(1.3);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:50px;height:50px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z' /%3E%3C/svg%3E");
+}
+
 /* Edit Colours */
 [aria-label="Edit (⌘+Click to edit in new pane)"],
 [aria-label="Edit (Ctrl+Click to edit in new pane)"] {
-  color: var(--background-primary);
-  background-color: var(--secondary);
+  color: var(--secondary-dark);
+  background-color: var(--secondary-faint);
 }
 
 /* Preview Colours */
 [aria-label="Preview (⌘+Click to open in new pane)"],
 [aria-label="Preview (Ctrl+Click to open in new pane)"] {
-  color: var(--background-primary);
-  background-color: var(--primary);
+  color: var(--primary-dark);
+  background-color: var(--primary-faint);
 }
 
 /* Shrink FAB on small displays */
@@ -891,6 +907,12 @@ body:not(.advanced-toolbar-mode)
 }
 
 /* Settings */
+/* Back modal */
+.is-mobile .modal-setting-back-button {
+  background-color: var(--primary-faint);
+}
+
+
 /* Reduce space between settings */
 .vertical-tab-nav-item {
   padding: 0px 6px 10px 24px;

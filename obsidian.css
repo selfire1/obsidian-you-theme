@@ -697,7 +697,7 @@ svg.three-horizontal-bars {
 }
 .theme-dark .is-mobile .view-header-title,
 .theme-dark .workspace-leaf.mod-active .view-header-title {
-  color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 /* Title bar */

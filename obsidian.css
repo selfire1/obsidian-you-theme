@@ -1022,4 +1022,5 @@ settings:
         title: Obsidian You branding
         description: Toggles contrasting branding in the sidebars
         type: class-toggle
+        default: true
 */

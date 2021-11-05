@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "release": "standard-version"
+  },
+  "standard-version": {
+    "t": ""
+  }
+}

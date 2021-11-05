@@ -469,11 +469,11 @@ span.cm-hashtag.cm-hashtag-end {
 /* ------------- */
 
 /* Branding "Obsidian You" */
-.workspace-drawer-header {
+body:not(:not(.advanced-toolbar-mode)).workspace-drawer-header {
   padding: 10px 20px 0 10px;
 }
 
-.workspace-drawer-header::before {
+body:not(:not(.advanced-toolbar-mode)).workspace-drawer-header::before {
   content: "Obsidian ";
   margin: 10px 12px 10px 12px;
   font-size: var(--h4);
@@ -482,7 +482,7 @@ span.cm-hashtag.cm-hashtag-end {
   display: block;
 }
 
-.workspace-drawer-header::after {
+body:not(:not(.advanced-toolbar-mode)).workspace-drawer-header::after {
   content: "You";
   margin: 10px;
   font-weight: var(--bold);
@@ -493,7 +493,7 @@ span.cm-hashtag.cm-hashtag-end {
   display: block;
 }
 
-.workspace-drawer-header {
+body:not(:not(.advanced-toolbar-mode)).workspace-drawer-header {
   border-bottom: 1px solid var(--background-secondary-alt);
 }
 

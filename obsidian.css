@@ -1018,4 +1018,9 @@ settings:
         title: Advanced toolbar mode
         description: Adapts automatically to avanced mobile toolbar
         type: class-toggle
+    - 
+        id: branding
+        title: Obsidian You branding
+        description: Toggles contrasting branding in the sidebars
+        type: class-toggle
 */

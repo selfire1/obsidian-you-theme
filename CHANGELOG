@@ -1,0 +1,39 @@
+## [0.1.1](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.1) (2021-11-05)
+### ✨ NEW
+- feat: ✨ Add German support for FAB [#5](https://github.com/selfire1/obsidian-you-theme/issues/5)
+- feat: ✨ Add toggle for branding in Style Settings [#2](https://github.com/selfire1/obsidian-you-theme/issues/2)
+
+### Misc
+- style: 💄 Show branding based on style settings toggle
+- fix: 🐛 Fix height of community plugins back button [#4](https://github.com/selfire1/obsidian-you-theme/issues/4)
+- fix: 🐛 Target correct setting
+- docs: 📝 Update .gitignore
+
+---
+
+## [0.1.0](https://github.com/selfire1/obsidian-you-theme/releases)
+The first release! Plenty of new things:
+
+### ✨ NEW
+- ✨ NEW: Update FAB to Material 3
+- ✨ NEW: Initialise dark theme colours
+- ✨ NEW: Style empty state screen
+- ✨ NEW: Style Settings Support!
+- ✨ NEW: Style scrollbars
+- ✨ NEW: Style embeds
+- ✨ NEW: Round images
+- ✨ NEW: Try styling navigate back button
+- ✨ NEW: Basic Dataview styling
+- ✨ NEW: Style embeds
+- ✨ NEW: Add sidebar branding
+- ✨ NEW: Add rounded corners to prompts
+- ✨ NEW: Style metadata container
+- ✨ NEW: Format editor frontmatter
+- ✨ NEW: Remove underline for internal links
+- ✨ NEW: iA Quattro as font
+- ✨ NEW: Mobile toolbar colours
+- ✨ NEW: Calculate complimentary colour
+- ✨ NEW: Refactor colours
+- ✨ NEW: Format and colour toolbar
+- ✨ NEW: Add floating action button (FAB)
+- ✨ NEW: Add tag pills

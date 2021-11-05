@@ -466,11 +466,11 @@ span.cm-hashtag.cm-hashtag-end {
 /* ------------- */
 
 /* Branding "Obsidian You" */
-.workspace-drawer-header {
+body:not(:not(.branding)) .workspace-drawer-header {
   padding: 10px 20px 0 10px;
 }
 
-.workspace-drawer-header::before {
+body:not(:not(.branding)) .workspace-drawer-header::before {
   content: "Obsidian ";
   margin: 10px 12px 10px 12px;
   font-size: var(--h4);
@@ -479,7 +479,7 @@ span.cm-hashtag.cm-hashtag-end {
   display: block;
 }
 
-.workspace-drawer-header::after {
+body:not(:not(.branding)) .workspace-drawer-header::after {
   content: "You";
   margin: 10px;
   font-weight: var(--bold);
@@ -490,7 +490,7 @@ span.cm-hashtag.cm-hashtag-end {
   display: block;
 }
 
-.workspace-drawer-header {
+body:not(:not(.branding)) .workspace-drawer-header {
   border-bottom: 1px solid var(--background-secondary-alt);
 }
 
@@ -781,30 +781,30 @@ input[type="number"]:focus {
 
 /* Floating Action Button (FAB)*/
 /* Advanced Mobile Toolbar Mode */
-[aria-label="Edit (⌘+Click to edit in new pane)"],
-[aria-label="Edit (Ctrl+Click to edit in new pane)"],
-[aria-label="Preview (⌘+Click to open in new pane)"],
-[aria-label="Preview (Ctrl+Click to open in new pane)"] {
+[aria-label^="Edit"],
+[aria-label^="Bearbeiten"],
+[aria-label^="Preview"],
+[aria-label^="Vorschau"] {
   top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
 }
 
 /* Advanced Mobile Toolbar Mode disabled */
 body:not(.advanced-toolbar-mode)
-  [aria-label="Edit (⌘+Click to edit in new pane)"],
+  [aria-label^="Edit"],
+  body:not(.advanced-toolbar-mode)
+  [aria-label^="Bearbeiten"],
 body:not(.advanced-toolbar-mode)
-  [aria-label="Edit (Ctrl+Click to edit in new pane)"],
+  [aria-label^="Preview"],
 body:not(.advanced-toolbar-mode)
-  [aria-label="Preview (⌘+Click to open in new pane)"],
-body:not(.advanced-toolbar-mode)
-  [aria-label="Preview (Ctrl+Click to open in new pane)"] {
+  [aria-label^="Vorschau"] {
   top: calc(90vh - 48px);
 }
 
 /* Shared styling */
-[aria-label="Edit (⌘+Click to edit in new pane)"],
-[aria-label="Edit (Ctrl+Click to edit in new pane)"],
-[aria-label="Preview (⌘+Click to open in new pane)"],
-[aria-label="Preview (Ctrl+Click to open in new pane)"] {
+[aria-label^="Edit"],
+[aria-label^="Bearbeiten"],
+[aria-label^="Preview"],
+[aria-label^="Vorschau"] {
   display: flex;
   padding: 5px;
   position: absolute;
@@ -836,25 +836,25 @@ svg.pencil {
 }
 
 /* Edit Colours */
-[aria-label="Edit (⌘+Click to edit in new pane)"],
-[aria-label="Edit (Ctrl+Click to edit in new pane)"] {
-  color: var(--secondary-dark);
-  background-color: var(--secondary-faint);
+[aria-label^="Edit"],
+[aria-label^="Bearbeiten"] {
+  color: var(--background-primary);
+  background-color: var(--secondary);
 }
 
 /* Preview Colours */
-[aria-label="Preview (⌘+Click to open in new pane)"],
-[aria-label="Preview (Ctrl+Click to open in new pane)"] {
-  color: var(--primary-dark);
-  background-color: var(--primary-faint);
+[aria-label^="Preview"],
+[aria-label^="Vorschau"] {
+  color: var(--background-primary);
+  background-color: var(--primary);
 }
 
 /* Shrink FAB on small displays */
 @media screen and (max-height: 400px) {
-  [aria-label="Edit (⌘+Click to edit in new pane)"],
-  [aria-label="Edit (Ctrl+Click to edit in new pane)"],
-  [aria-label="Preview (⌘+Click to open in new pane)"],
-  [aria-label="Preview (Ctrl+Click to open in new pane)"] {
+  [aria-label^="Edit"]
+  [aria-label^="Bearbeiten"],
+  [aria-label^="Preview"],
+  [aria-label^="Vorschau"] {
     transform: scale(0.8) translate(-50%, -50%);
   }
 }
@@ -927,7 +927,6 @@ svg.pencil {
 .is-mobile .modal-setting-back-button {
   border-top-left-radius: var(--big-radius);
   border-top-right-radius: var(--big-radius);
-  overflow: hidden;
 }
 
 /* Style setting headers */
@@ -1070,5 +1069,10 @@ settings:
         id: advanced-toolbar-mode
         title: Advanced toolbar mode
         description: Adapts automatically to avanced mobile toolbar
+        type: class-toggle
+    - 
+        id: branding
+        title: Obsidian You branding
+        description: Toggles contrasting branding in the sidebars
         type: class-toggle
 */

@@ -781,32 +781,20 @@ input[type="number"]:focus {
 
 /* Floating Action Button (FAB)*/
 /* Advanced Mobile Toolbar Mode */
-[aria-label^="Edit"],
-[aria-label^="Preview"],
-[aria-label^="Просмотр"],
-[aria-label^="Редактировать"],
-[aria-label^="Bearbeiten"],
-[aria-label^="Vorschau"] {
+.view-action:first-of-type,
+.view-action:nth-of-type(2) {
   top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
 }
 
 /* Advanced Mobile Toolbar Mode disabled */
-body:not(.advanced-toolbar-mode) [aria-label^="Edit"],
-body:not(.advanced-toolbar-mode) [aria-label^="Preview"],
-body:not(.advanced-toolbar-mode) [aria-label^="Просмотр"],
-body:not(.advanced-toolbar-mode) [aria-label^="Редактировать"],
-body:not(.advanced-toolbar-mode) [aria-label^="Bearbeiten"],
-body:not(.advanced-toolbar-mode) [aria-label^="Vorschau"] {
+body:not(.advanced-toolbar-mode) .view-action:first-of-type,
+body:not(.advanced-toolbar-mode) .view-action:nth-of-type(2) {
   top: calc(90vh - 48px);
 }
 
 /* Shared styling */
-[aria-label^="Edit"],
-[aria-label^="Preview"],
-[aria-label^="Просмотр"],
-[aria-label^="Редактировать"],
-[aria-label^="Bearbeiten"],
-[aria-label^="Vorschau"] {
+.view-action:first-of-type,
+.view-action:nth-of-type(2) {
   display: flex;
   padding: 5px;
   position: absolute;
@@ -837,30 +825,22 @@ svg.pencil {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:50px;height:50px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z' /%3E%3C/svg%3E");
 }
 
-/* Edit Colours */
-[aria-label^="Edit"],
-[aria-label^="Просмотр"],
-[aria-label^="Bearbeiten"] {
+/* Preview */
+.view-action:first-of-type {
+  color: var(--background-primary);
+  background-color: var(--primary);
+}
+/* Editor */
+.view-action:nth-of-type(2) {
   color: var(--background-primary);
   background-color: var(--secondary);
 }
 
-/* Preview Colours */
-[aria-label^="Preview"],
-[aria-label^="Редактировать"],
-[aria-label^="Vorschau"] {
-  color: var(--background-primary);
-  background-color: var(--primary);
-}
 
 /* Shrink FAB on small displays */
 @media screen and (max-height: 400px) {
-  [aria-label^="Edit"]
-  [aria-label^="Preview"],
-  [aria-label^="Просмотр"],
-  [aria-label^="Редактировать"],
-  [aria-label^="Bearbeiten"],
-  [aria-label^="Vorschau"] {
+  .view-action:first-of-type,
+  .view-action:nth-of-type(2) {
     transform: scale(0.8) translate(-50%, -50%);
   }
 }

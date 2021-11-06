@@ -782,28 +782,30 @@ input[type="number"]:focus {
 /* Floating Action Button (FAB)*/
 /* Advanced Mobile Toolbar Mode */
 [aria-label^="Edit"],
-[aria-label^="Bearbeiten"],
 [aria-label^="Preview"],
+[aria-label^="Просмотр"],
+[aria-label^="Редактировать"],
+[aria-label^="Bearbeiten"],
 [aria-label^="Vorschau"] {
   top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
 }
 
 /* Advanced Mobile Toolbar Mode disabled */
-body:not(.advanced-toolbar-mode)
-  [aria-label^="Edit"],
-  body:not(.advanced-toolbar-mode)
-  [aria-label^="Bearbeiten"],
-body:not(.advanced-toolbar-mode)
-  [aria-label^="Preview"],
-body:not(.advanced-toolbar-mode)
-  [aria-label^="Vorschau"] {
+body:not(.advanced-toolbar-mode) [aria-label^="Edit"],
+body:not(.advanced-toolbar-mode) [aria-label^="Preview"],
+body:not(.advanced-toolbar-mode) [aria-label^="Просмотр"],
+body:not(.advanced-toolbar-mode) [aria-label^="Редактировать"],
+body:not(.advanced-toolbar-mode) [aria-label^="Bearbeiten"],
+body:not(.advanced-toolbar-mode) [aria-label^="Vorschau"] {
   top: calc(90vh - 48px);
 }
 
 /* Shared styling */
 [aria-label^="Edit"],
-[aria-label^="Bearbeiten"],
 [aria-label^="Preview"],
+[aria-label^="Просмотр"],
+[aria-label^="Редактировать"],
+[aria-label^="Bearbeiten"],
 [aria-label^="Vorschau"] {
   display: flex;
   padding: 5px;
@@ -837,6 +839,7 @@ svg.pencil {
 
 /* Edit Colours */
 [aria-label^="Edit"],
+[aria-label^="Просмотр"],
 [aria-label^="Bearbeiten"] {
   color: var(--background-primary);
   background-color: var(--secondary);
@@ -844,6 +847,7 @@ svg.pencil {
 
 /* Preview Colours */
 [aria-label^="Preview"],
+[aria-label^="Редактировать"],
 [aria-label^="Vorschau"] {
   color: var(--background-primary);
   background-color: var(--primary);
@@ -852,8 +856,10 @@ svg.pencil {
 /* Shrink FAB on small displays */
 @media screen and (max-height: 400px) {
   [aria-label^="Edit"]
-  [aria-label^="Bearbeiten"],
   [aria-label^="Preview"],
+  [aria-label^="Просмотр"],
+  [aria-label^="Редактировать"],
+  [aria-label^="Bearbeiten"],
   [aria-label^="Vorschau"] {
     transform: scale(0.8) translate(-50%, -50%);
   }

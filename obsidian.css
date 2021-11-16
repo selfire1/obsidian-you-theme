@@ -691,28 +691,15 @@ svg.three-horizontal-bars {
   color: var(--text-normal);
 }
 
-/* Title icons */
-/* .view-action {
-  margin: 0 8px;
-  cursor: pointer;
-  color: var(--primary-light);
-  position: relative;
-  top: 3px;
-} */
+/* Vertical dots */
+/* Minimal titlebar disabled: Show action buttons */
+.body:not(.minimal-title-bar) .theme-light .view-action
+{ color: var(--background-primary-alt); }
+.body:not(.minimal-title-bar) .theme-dark .view-action
+{ color: var(--text-normal); }
 
-/* .is-mobile .view-actions {
-  transform: translateX(0px);
-} */
-
-.theme-light .view-action
- {
-  color: var(--background-primary-alt);
-}
-.theme-dark .view-action
-{
- color: var(--text-normal);
-}
-
+/* Minimal titlebar enabled: Hide action buttons  */
+.body:not(:not(.minimal-title-bar)) .view-action { display: none; }
 
 .vertical-three-dots {
   background-color: currentColor;
@@ -948,10 +935,6 @@ body:not(.advanced-toolbar-mode) .view-action:nth-of-type(2) {
 /* Pulling from the left (navigating back
 Trying to target but it's not these:
 */
-/* .pull-action,
-.pull-out-action {
-  border-right: var(--medium-radius);
-} */
 
 /* PLUGINS */
 /* Dataview Tables */
@@ -1025,6 +1008,12 @@ settings:
         id: branding
         title: Obsidian You branding
         description: Toggles contrasting branding in the sidebars
+        type: class-toggle
+        default: true
+    - 
+        id: minimal-title-bar
+        title: Minimal title bar
+        description: Hides actions to simplify the title bar
         type: class-toggle
         default: true
 */

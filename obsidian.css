@@ -674,12 +674,6 @@ svg.three-horizontal-bars {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' /%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' /%3E%3C/svg%3E");
 }
-.theme-light .vertical-three-dots {
-  color: var(--primary);
-}
-.theme-dark .vertical-three-dots {
-  color: var(--background-secondary);
-}
 
 /* ## Title */
 .theme-light .is-mobile .view-header-title,
@@ -698,12 +692,19 @@ svg.three-horizontal-bars {
 }
 
 /* Title icons */
-.view-action {
+/* .view-action {
   margin: 0 8px;
   cursor: pointer;
   color: var(--primary-light);
   position: relative;
   top: 3px;
+} */
+
+.theme-light .vertical-three-dots {
+  color: var(--text-faint);
+}
+.theme-dark .vertical-three-dots {
+  color: var(--text-muted);
 }
 
 /* Hamburger menu */

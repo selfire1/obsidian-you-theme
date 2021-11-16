@@ -693,13 +693,13 @@ svg.three-horizontal-bars {
 
 /* Vertical dots */
 /* Minimal titlebar disabled: Show action buttons */
-.body:not(.minimal-title-bar) .theme-light .view-action
+body:not(.minimal-title-bar) .theme-light .view-action
 { color: var(--background-primary-alt); }
-.body:not(.minimal-title-bar) .theme-dark .view-action
+body:not(.minimal-title-bar) .theme-dark .view-action
 { color: var(--text-normal); }
 
 /* Minimal titlebar enabled: Hide action buttons  */
-.body:not(:not(.minimal-title-bar)) .view-action { display: none; }
+body:not(:not(.minimal-title-bar)) .view-action { display: none; }
 
 .vertical-three-dots {
   background-color: currentColor;

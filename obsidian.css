@@ -704,9 +704,15 @@ svg.three-horizontal-bars {
   transform: translateX(0px);
 } */
 
-.vertical-three-dots {
-  color: var(--text-faint);
+.theme-light .view-action
+ {
+  color: var(--background-primary-alt);
 }
+.theme-dark .view-action
+{
+ color: var(--text-normal);
+}
+
 
 .vertical-three-dots {
   background-color: currentColor;

@@ -668,17 +668,11 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: currentColor;
 }
 .theme-dark .three-horizontal-bars {
-  filter: invert(100%);
+  color: var(--text-normal);
 }
 svg.three-horizontal-bars {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' /%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' /%3E%3C/svg%3E");
-}
-.theme-light .vertical-three-dots {
-  color: var(--primary);
-}
-.theme-dark .vertical-three-dots {
-  color: var(--background-secondary);
 }
 
 /* ## Title */
@@ -697,14 +691,25 @@ svg.three-horizontal-bars {
   color: var(--text-normal);
 }
 
-/* Title icons */
-.view-action {
-  margin: 0 8px;
-  cursor: pointer;
-  color: var(--primary-light);
-  position: relative;
-  top: 3px;
+/* Vertical dots */
+/* Minimal titlebar disabled: Show action buttons */
+.body:not(.minimal-title-bar) .theme-light .view-action
+{ color: var(--background-primary-alt); }
+.body:not(.minimal-title-bar) .theme-dark .view-action
+{ color: var(--text-normal); }
+
+/* Minimal titlebar enabled: Hide action buttons  */
+.body:not(:not(.minimal-title-bar)) .view-action { display: none; }
+
+.vertical-three-dots {
+  background-color: currentColor;
 }
+
+svg.vertical-three-dots {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z' /%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z' /%3E%3C/svg%3E");
+}
+
 
 /* Hamburger menu */
 .view-header-icon {
@@ -930,10 +935,6 @@ body:not(.advanced-toolbar-mode) .view-action:nth-of-type(2) {
 /* Pulling from the left (navigating back
 Trying to target but it's not these:
 */
-/* .pull-action,
-.pull-out-action {
-  border-right: var(--medium-radius);
-} */
 
 /* PLUGINS */
 /* Dataview Tables */
@@ -1007,6 +1008,12 @@ settings:
         id: branding
         title: Obsidian You branding
         description: Toggles contrasting branding in the sidebars
+        type: class-toggle
+        default: true
+    - 
+        id: minimal-title-bar
+        title: Minimal title bar
+        description: Hides actions to simplify the title bar
         type: class-toggle
         default: true
 */

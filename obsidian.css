@@ -691,16 +691,9 @@ svg.three-horizontal-bars {
   color: var(--text-normal);
 }
 
-/* Vertical dots */
-/* Minimal titlebar disabled: Show action buttons */
-body:not(.minimal-title-bar) .theme-light .view-action
-{ color: var(--background-primary-alt); }
-body:not(.minimal-title-bar) .theme-dark .view-action
-{ color: var(--text-normal); }
+.view-action { display: none; }
 
-/* Minimal titlebar enabled: Hide action buttons  */
-body:not(:not(.minimal-title-bar)) .view-action { display: none; }
-
+/* Replace vertical dots icon */
 .vertical-three-dots {
   background-color: currentColor;
 }
@@ -1008,12 +1001,6 @@ settings:
         id: branding
         title: Obsidian You branding
         description: Toggles contrasting branding in the sidebars
-        type: class-toggle
-        default: true
-    - 
-        id: minimal-title-bar
-        title: Minimal title bar
-        description: Hides actions to simplify the title bar
         type: class-toggle
         default: true
 */

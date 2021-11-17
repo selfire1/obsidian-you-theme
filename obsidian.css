@@ -691,7 +691,9 @@ svg.three-horizontal-bars {
   color: var(--text-normal);
 }
 
-.view-action { display: none; }
+.view-action:not(.page-header-button) {
+    display: none;
+}
 
 /* Replace vertical dots icon */
 .vertical-three-dots {
@@ -762,20 +764,20 @@ input[type="number"]:focus {
 
 /* Floating Action Button (FAB)*/
 /* Advanced Mobile Toolbar Mode */
-.view-action:first-of-type,
-.view-action:nth-of-type(2) {
+.view-action:nth-last-of-type(5),
+.view-action:nth-last-of-type(4) {
   top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
 }
 
 /* Advanced Mobile Toolbar Mode disabled */
-body:not(.advanced-toolbar-mode) .view-action:first-of-type,
-body:not(.advanced-toolbar-mode) .view-action:nth-of-type(2) {
+body:not(.advanced-toolbar-mode) .view-action:nth-last-of-type(5),
+body:not(.advanced-toolbar-mode) .view-action:nth-last-of-type(4) {
   top: calc(90vh - 48px);
 }
 
 /* Shared styling */
-.view-action:first-of-type,
-.view-action:nth-of-type(2) {
+.view-action:nth-last-of-type(5),
+.view-action:nth-last-of-type(4) {
   display: flex;
   padding: 5px;
   position: absolute;
@@ -792,12 +794,12 @@ body:not(.advanced-toolbar-mode) .view-action:nth-of-type(2) {
 }
 
 /* Preview */
-.view-action:first-of-type {
+.view-action:nth-last-of-type(5) {
   color: var(--background-primary);
   background-color: var(--primary);
 }
 /* Editor */
-.view-action:nth-of-type(2) {
+.view-action:nth-last-of-type(4) {
   color: var(--background-primary);
   background-color: var(--secondary);
 }
@@ -805,8 +807,8 @@ body:not(.advanced-toolbar-mode) .view-action:nth-of-type(2) {
 
 /* Shrink FAB on small displays */
 @media screen and (max-height: 400px) {
-  .view-action:first-of-type,
-  .view-action:nth-of-type(2) {
+  .view-action:nth-last-of-type(5),
+  .view-action:nth-last-of-type(4) {
     transform: scale(0.8) translate(-50%, -50%);
   }
 }

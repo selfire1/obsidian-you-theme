@@ -1,3 +1,10 @@
+## [0.1.6](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.6) (2021-11-17)
+### Bug fixes
+- fix: 🐛 Target FAB independent of added buttons (for `Custom Page Header` support)
+
+### Deletions
+- revert: 🔥 Remove option for minimal tite bar
+
 ## [0.1.5](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.5) (2021-11-16)
 ### Bug fixes
 - fix: 🚑️ Fix logic of style settings

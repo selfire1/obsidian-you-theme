@@ -698,6 +698,10 @@ svg.three-horizontal-bars {
     display: none;
 }
 
+.theme-light .view-action {
+  color: var(--background-secondary-alt);
+}
+
 /* Replace vertical dots icon */
 .vertical-three-dots {
   background-color: currentColor;

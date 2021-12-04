@@ -1,0 +1,395 @@
+/* ------------- */
+/* # Body */
+/* ------------- */
+
+/* Fonts */
+.popover,
+.vertical-tab-content-container,
+.workspace-leaf-content[data-type="markdown"] {
+  font-family: var(--font-preview);
+}
+
+/* Editor */
+.markdown-source-view .cm-s-obsidian .cm-hmd-frontmatter,
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-source-view,
+.cm-s-obsidian .cm-formatting-hashtag,
+.cm-s-obsidian,
+.cm-s-obsidian span.cm-formatting-task {
+  font-family: var(--font-editor);
+}
+
+/* Checkboxes */
+input[type="checkbox"]:checked {
+  filter: grayscale(100%);
+}
+
+/* Images */
+img {
+  border-radius: var(--small-radius);
+}
+
+/* Blockquotes */
+/* Callout boxes from Vileplume: https://github.com/hungsu/vileplume-obsidian */
+.markdown-preview-view blockquote {
+  border-radius: var(--big-radius);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 10px 20px;
+  position: relative;
+  box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.017),
+    2.5px 2.4px 10px rgba(0, 0, 0, 0.025), 6px 5.7px 24.1px rgba(0, 0, 0, 0.033),
+    20px 19px 80px rgba(0, 0, 0, 0.05);
+
+  background-color: var(--background-primary-alt) !important;
+}
+
+/* Lists */
+ul > li::marker,
+ol > li::marker {
+  color: var(--text-muted);
+}
+
+/* Internal links */
+.markdown-preview-view .internal-link {
+  text-decoration: none;
+  font-weight: var(--medium);
+}
+
+/* Frontmatter */
+span.cm-hmd-frontmatter {
+  font-size: var(--smaller);
+  color: var(--text-muted);
+  font-family: var(--default-font) !important;
+}
+
+.markdown-preview-section .frontmatter code,
+.theme-dark .frontmatter .token,
+.theme-light .frontmatter .token,
+.theme-dark pre.frontmatter[class*="language-yaml"],
+.theme-light pre.frontmatter[class*="language-yaml"] {
+  font-family: var(--font-preview);
+}
+
+/* Frontmatter / Metadata container */
+.frontmatter-container {
+  border: none;
+  border-radius: var(--small-radius);
+}
+.frontmatter-container .frontmatter-container-header {
+  font-weight: var(--medium);
+  font-size: var(--smallest);
+}
+
+/* Code blocks */
+/* Inline:  .cm-s-obsidian span.cm-inline-code  */
+.markdown-preview-view pre,
+.markdown-preview-view code,
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian .HyperMD-codeblock {
+  color: var(--primary-dark);
+  font-family: var(--font-monospace);
+}
+
+/* ------------- */
+/* # File explorer */
+/* ------------- */
+/* Folder */
+.nav-folder-title-content {
+  padding-left: 0px;
+}
+
+.nav-file-title-content,
+.nav-folder-title-content {
+  font-size: var(--smaller);
+  padding: 0px 0px;
+  font-weight: var(--medium);
+}
+
+/* Files */
+.is-mobile .nav-file-title,
+.is-mobile .tag-container {
+  padding: 1px 11px 0 11px;
+  color: var(--text-muted);
+  font-size: var(--smaller);
+  font-weight: var(--light);
+}
+
+/* Highlighted file or backlink */
+.nav-file-title.is-active,
+.tree-item-self.is-clickable:hover,
+.nav-folder-title.is-active,
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  background-color: var(--primary-faint);
+  color: var(--primary-dark);
+  border-radius: var(--small-radius);
+}
+
+/* -------------- */
+/* Quick Action */
+/* -------------- */
+
+/* Text input animation */
+.is-mobile input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  height: auto;
+  border-top: none;
+  border-bottom: 2px solid var(--text-faint);
+  border-left: none;
+  border-right: none;
+  font-size: 17px;
+  background: linear-gradient(var(--secondary-dark), var(--secondary-dark)) bottom / 0%
+    2px no-repeat var(--background-secondary-alt);
+  border-radius: var(--small-radius) var(--small-radius) 0px 0px;
+  transition: 0.2s;
+  transition-delay: 0.5s;
+}
+
+input[type="text"]:active,
+input[type="search"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+input[type="number"]:active,
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  border: none;
+  background-size: 100% 2px;
+}
+
+/* Quick switcher selection item */
+.suggestion-item.is-selected {
+  background-color: var(--primary-faint);
+}
+
+.is-mobile .suggestion-hotkey {
+  display: none;
+}
+
+.suggestion-highlight {
+  font-weight: var(--bold);
+  color: var(--primary);
+}
+
+
+/* Floating Action Button (FAB)*/
+/* Advanced Mobile Toolbar Mode */
+.view-action:nth-last-of-type(5),
+.view-action:nth-last-of-type(4) {
+  top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
+}
+
+/* Advanced Mobile Toolbar Mode disabled */
+body:not(.advanced-toolbar-mode) .view-action:nth-last-of-type(5),
+body:not(.advanced-toolbar-mode) .view-action:nth-last-of-type(4) {
+  top: calc(90vh - 48px);
+}
+
+/* Shared styling */
+.view-action:nth-last-of-type(5),
+.view-action:nth-last-of-type(4) {
+  display: flex;
+  padding: 5px;
+  position: absolute;
+  left: 82vw;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--big-radius);
+  box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.07),
+    2.5px 2.4px 10px rgba(0, 0, 0, 0.1), 6px 5.7px 24.1px rgba(0, 0, 0, 0.13),
+    20px 19px 80px rgba(0, 0, 0, 0.2);
+}
+
+/* Pencil SVG */
+svg.pencil {
+  background-color:currentColor;
+}
+
+svg.pencil > path {
+  display:none;
+}
+
+svg.pencil {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:50px;height:50px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z' /%3E%3C/svg%3E");
+  transform: scale(1.3);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:50px;height:50px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z' /%3E%3C/svg%3E");
+}
+
+/* Preview */
+.view-action:nth-last-of-type(5) {
+  color: var(--background-primary);
+  background-color: var(--primary);
+}
+/* Editor */
+.view-action:nth-last-of-type(4) {
+  color: var(--background-primary);
+  background-color: var(--secondary);
+}
+
+
+/* Shrink FAB on small displays */
+@media screen and (max-height: 400px) {
+  .view-action:nth-last-of-type(5),
+  .view-action:nth-last-of-type(4) {
+    transform: scale(0.8) translate(-50%, -50%);
+  }
+}
+
+/* Empty State screen */
+.empty-state-title::before {
+    content: ' ';
+    background-size: 80px 80px;
+    height: 80px;
+    width: 80px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M15.5,12C18,12 20,14 20,16.5C20,17.38 19.75,18.21 19.31,18.9L22.39,22L21,23.39L17.88,20.32C17.19,20.75 16.37,21 15.5,21C13,21 11,19 11,16.5C11,14 13,12 15.5,12M15.5,14A2.5,2.5 0 0,0 13,16.5A2.5,2.5 0 0,0 15.5,19A2.5,2.5 0 0,0 18,16.5A2.5,2.5 0 0,0 15.5,14M5,3H19C20.11,3 21,3.89 21,5V13.03C20.5,12.23 19.81,11.54 19,11V5H5V19H9.5C9.81,19.75 10.26,20.42 10.81,21H5C3.89,21 3,20.11 3,19V5C3,3.89 3.89,3 5,3M7,7H17V9H7V7M7,11H12.03C11.23,11.5 10.54,12.19 10,13H7V11M7,15H9.17C9.06,15.5 9,16 9,16.5V17H7V15Z' /%3E%3C/svg%3E");
+    display: block;
+    margin: auto;
+  }
+  
+  .theme-light .empty-state-title::before {
+    /* Filter created with https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(60%) sepia(1%) saturate(0%) hue-rotate(291deg) brightness(89%) contrast(87%);
+}
+  .theme-dark .empty-state-title::before {
+    /* Filter created with https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(68%) sepia(9%) saturate(0%) hue-rotate(155deg) brightness(89%) contrast(87%);
+}
+
+.empty-state-title {
+  font-size: var(--h5);
+  font-weight: var(--regular);
+  text-align: center;
+}
+
+.is-mobile .empty-state-action {
+  background-color: var(--background-secondary-alt);
+  color: var(--text-normal);
+}
+
+.is-mobile .empty-state-action:first-of-type {
+  transform: translate(0px, 60px);
+}  
+
+.is-mobile .empty-state-action:nth-child(2) {
+  transform: translate(0px, -60px);
+  background-color: var(--primary-dark);
+  color: var(--background-primary-alt);
+}
+
+/* Mobile Toolbar */
+.is-mobile .mobile-toolbar {
+  border-top: none;
+  border-radius: 0;
+  background-color: var(--background-primary);
+}
+
+.is-mobile .mobile-toolbar-option {
+  color: var(--secondary-dark);
+}
+
+/* Settings */
+/* Back modal */
+.is-mobile .modal-setting-back-button {
+  background-color: var(--primary-faint);
+}
+
+
+/* Reduce space between settings */
+.vertical-tab-nav-item {
+  padding: 0px 6px 10px 24px;
+}
+
+/* Style back */
+.is-mobile .modal-setting-back-button {
+  border-top-left-radius: var(--big-radius);
+  border-top-right-radius: var(--big-radius);
+}
+
+/* Style setting headers */
+.vertical-tab-header-group-title {
+  padding: 6px 6px 6px 26px;
+}
+
+/* Add divider line */
+.vertical-tab-header-group {
+  border-bottom: 1px solid var(--background-secondary-alt);
+}
+.vertical-tab-header-group:last-of-type {
+  border-bottom: none;
+}
+
+/* Height */
+.is-mobile .modal,
+.is-mobile .prompt,
+.is-mobile .suggestion-container {
+  max-height: calc(100% - 100px);
+  min-height: calc(100% - 100px);
+}
+
+/* Buttons */
+
+/* Filled button */
+button.mod-cta {
+  background-color: var(--primary);
+  color: var(--background-primary);
+}
+
+/* Outlined buttons */
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning),
+button:not(.mod-cta):not(.mod-warning),
+.is-mobile .empty-state-action:not(:nth-child(2)) {
+    background-color: transparent;
+    border: 1px solid var(--text-faint);
+    color: var(--primary);
+}
+
+.is-mobile button,
+.is-mobile .empty-state-action {
+  font-size: var(--smallest);
+  border-radius: var(--big-radius);
+}
+
+/* Setting Headers */
+.theme-light .vertical-tab-header-group-title {
+  color: var(--primary-light);
+}
+.theme-dark .vertical-tab-header-group-title {
+  color: var(--primary-dark);
+}
+
+/* Prompts (Quick switcher) */
+.is-mobile .modal,
+.is-mobile .prompt,
+.is-mobile .suggestion-container {
+  border-radius: var(--big-radius) var(--big-radius) 0 0;
+  padding: 15px 20px;
+}
+
+/* Pulling down */
+.pull-down-action {
+  border-radius: 0 0 var(--medium-radius) var(--medium-radius);
+}
+
+/* Pulling from the left (navigating back
+Trying to target but it's not these:
+*/
+
+/* PLUGINS */
+/* Dataview Tables */
+.table-view-table > thead > tr > th {
+  border-bottom: none !important;
+  font-weight: var(--medium);
+  font-size: var(--editor-font-size);
+  padding: var(--editor-font-size);
+}
+
+tr {
+  border-top: 1px solid var(--background-secondary-alt);
+}

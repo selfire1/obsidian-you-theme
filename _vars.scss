@@ -1,0 +1,172 @@
+:root {
+  /* ------------- */
+  /* # TYPOGRAPHY */
+  /* ------------- */
+
+  /* ## Fonts */
+  --font-preview: "HK Grotesk", Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-editor: "HK Grotesk", Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --default-font: var(--font-preview);
+  --mermaid-font: var(--default-font);
+  --reveal-font: var(--default-font);
+  --font-monospace: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas;
+
+  /* ## Font Sizes */
+  --smallest: 0.75rem; /* Equal to px */
+  --smaller: 0.875rem; /* Equal to 14px */
+
+  /* Roundness */
+  --big-radius: 24px;
+  --medium-radius: 14px;
+  --small-radius: 8px;
+
+  /* ## Font Weights */
+  --light: 350;
+  --regular: 400;
+  --medium: 500;
+  --bold: 650;
+
+  /* ## Heading sizes */
+  --h1: 2.25rem; /* Display Small */
+  --h2: 1.75rem; /* Headline Medium */
+  --h3: 1.5rem; /* Headline Small */
+  --h4: 1.375rem; /* Title Large */
+  --h5: 1rem; /* Title Medium */
+  --h6: 0.875rem; /* Title Small */
+}
+
+.theme-light {
+  /* ------------- */
+  /* # COLOURS */
+  /* ------------- */
+
+  /* Primary (Primary in Hex: #705dcf) */
+  /* HSL */
+  --primary-h: 250;
+  --primary-s: 54%;
+  --primary-l: 59%;
+
+  --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+  --primary-faint: hsl(var(--primary-h), var(--primary-s), 93%);
+  --primary-light: hsl(var(--primary-h), var(--primary-s), 73%);
+  --primary-dark: hsl(var(--primary-h), var(--primary-s), 40%);
+
+  /* Secondary (Default secondary in Hex: #bbce5d)*/
+  /* --secondary-h: 70; */
+  --secondary-h: calc(var(--primary-h) + 180);
+  --secondary-s: var(--primary-s);
+  --secondary-l: var(--primary-l);
+
+  --secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
+  --secondary-faint: hsl(var(--secondary-h), var(--secondary-s), 93%);
+  --secondary-light: hsl(var(--secondary-h), var(--secondary-s), 73%);
+  --secondary-dark: hsl(var(--secondary-h), var(--secondary-s), 40%);
+
+  /* Standard colours */
+  --background-primary: #ffffff;
+  --background-primary-alt: #f5f6f8;
+  --background-secondary: #f2f3f5;
+  --background-secondary-alt: #e3e5e8;
+  --background-modifier-border: #ddd;
+  --background-modifier-form-field: #fff;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: #a4e7c3;
+  --background-modifier-error: #b00020;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #b00020;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: var(--primary);
+  --text-accent-hover: var(--primary-light);
+  --text-normal: #2e3338;
+  --text-muted: #888888;
+  --text-muted-rgb: 136, 136, 136;
+  --text-faint: #999999;
+  --text-error: #800000;
+  --text-error-hover: #990000;
+  --text-highlight-bg: var(--primary-faint);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(204, 230, 255, 0.99);
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #f2f3f5;
+  --interactive-hover: #fcb2b2;
+  --interactive-accent: var(--primary);
+  --interactive-accent-rgb: var(--primary);
+  --interactive-accent-hover: var(--primary);
+  --interactive-success: #197300;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --highlight-mix-blend-mode: darken;
+}
+
+.theme-dark {
+  /* ------------- */
+  /* # COLOURS */
+  /* ------------- */
+
+  /* Primary (Primary in Hex: #705dcf) */
+  /* HSL */
+  --primary-h: 250;
+  --primary-s: 54%;
+  --primary-l: 59%;
+
+  --primary: hsl(var(--primary-h), calc(var(--primary-s) - 10%), var(--primary-l));
+  --primary-faint: hsl(var(--primary-h), calc(var(--primary-s) - 15%), 40%);
+  --primary-light: hsl(var(--primary-h), calc(var(--primary-s) - 10%), 27%);
+  --primary-dark: hsl(var(--primary-h), calc(var(--primary-s) - 20%), 93%);
+
+  /* Secondary (Default secondary in Hex: #bbce5d)*/
+  /* --secondary-h: 70; */
+  --secondary-h: calc(var(--primary-h) + 180);
+  --secondary-s: var(--primary-s);
+  --secondary-l: var(--primary-l);
+
+  --secondary: hsl(var(--secondary-h), calc(var(--secondary-s) - 10%), var(--secondary-l));
+  --secondary-faint: hsl(var(--secondary-h), var(--secondary-s), 40%);
+  --secondary-light: hsl(var(--secondary-h), var(--secondary-s), 27%);
+  --secondary-dark: hsl(var(--secondary-h), var(--secondary-s), 93%);
+
+  /* Background colours */
+
+    /* Standard Colours */
+    --background-primary: hsl(0, 0%, 7%); /* 02dp */
+    --background-primary-alt: hsl(0, 0%, 9%); /* 04dp */
+    --background-secondary: hsl(0, 0%, 12%); /* 08dp */
+    --background-secondary-alt: hsl(0, 0%, 15%); /* 16dp */
+    --background-modifier-border: #333;
+    --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+    --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #197300;
+    --background-modifier-error: #3d0000;
+    --background-modifier-error-rgb: 61, 0, 0;
+    --background-modifier-error-hover: #470000;
+    --background-modifier-cover: rgba(0, 0, 0, 0.8);
+    --text-accent: var(--primary);
+    --text-accent-hover: var(--primary-light);
+    --text-normal: rgba(222, 222, 222,0.87);
+    --text-muted: #999;
+    --text-muted-rgb: 153, 153, 153;
+    --text-faint: #666;
+    --text-error: #cf6679;
+    --text-error-hover: #990000;
+    --text-highlight-bg: var(--primary-faint);
+    --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+    --text-selection: rgba(23, 48, 77, 0.99);
+    --text-on-accent: #dcddde;
+    --interactive-normal: #2a2a2a;
+    --interactive-hover: #303030;
+    --interactive-accent: var(--primary);
+  --interactive-accent-rgb: var(--primary);
+  --interactive-accent-hover: var(--primary);
+    --interactive-success: #197300;
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --highlight-mix-blend-mode: lighten;
+}

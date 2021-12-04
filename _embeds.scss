@@ -1,0 +1,34 @@
+
+
+/* Embeds */
+/* Naked Embeds (modified from death_au (https://forum.obsidian.md/t/naked-embeds-css-tweak/72) */
+.markdown-embed-title {
+  display: none;
+}
+.markdown-preview-view .markdown-embed-content > :first-child {
+  margin-top: 0;
+}
+.markdown-preview-view .markdown-embed-content > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-preview-view .markdown-embed {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.markdown-preview-view .markdown-embed-content {
+  border-radius: var(--big-radius);
+  max-height: unset;
+  background-color: var(--primary-faint);
+}
+
+/* the link on the top right corner*/
+.markdown-embed-link {
+  color: var(--text-faint) !important;
+  top: 15px;
+}
+
+.markdown-embed-link:hover {
+  color: var(--text-accent) !important;
+}

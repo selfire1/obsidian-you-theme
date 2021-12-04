@@ -1,3 +1,8 @@
+## [0.1.7](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.7) (2021-12-04)
+### Improvements
+- style: 💄 Lighten page header buttons
+- style: 💄 Colour code cohesively
+
 ## [0.1.6](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.6) (2021-11-17)
 ### Bug fixes
 - fix: 🐛 Target FAB independent of added buttons (for `Custom Page Header` support)

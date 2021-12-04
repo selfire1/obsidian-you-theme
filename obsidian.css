@@ -638,16 +638,25 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 /* # Title Bar */
 /* ------------- */
 /* Light Mode */
+/* Any pane headers */
 .theme-light .workspace-split.mod-root
   > .workspace-leaf:first-of-type:last-of-type
   .view-header,
+.theme-light .workspace-split.mod-root .view-header,
 .theme-light .workspace-leaf.mod-active .view-header,
 .theme-light .is-mobile .view-header {
   border-bottom: none;
   box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.035),
     2.5px 2.4px 10px rgba(0, 0, 0, 0.05), 6px 5.7px 24.1px rgba(0, 0, 0, 0.065),
     20px 19px 80px rgba(0, 0, 0, 0.1);
-  background-color: var(--primary);
+  background-color: var(--primary-light);
+}
+
+/* Split panes: not active */
+/* For now, this targets the active pane. I could set it to primary.
+The problem then is that without split, the pane is just in light. */
+.theme-light .workspace-leaf.mod-active .view-header {
+  background-color: red;
 }
 
 /* Dark Mode */
@@ -679,14 +688,14 @@ svg.three-horizontal-bars {
 
 /* ## Title */
 .theme-light .is-mobile .view-header-title,
-.theme-light .workspace-leaf.mod-active .view-header-title {
+.theme-light .workspace-leaf-content .view-header-title {
   line-height: 50px;
   font-size: var(--h5);
   font-weight: var(--regular);
   color: var(--background-primary);
 }
 .theme-dark .is-mobile .view-header-title,
-.theme-dark .workspace-leaf.mod-active .view-header-title {
+.theme-dark .workspace-leaf-content .view-header-title {
   line-height: 50px;
   font-size: var(--h5);
   font-weight: var(--regular);

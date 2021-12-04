@@ -653,7 +653,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 }
 
 /* Split panes: not active */
-.workspace-leaf:not(.mod-active) .view-header {
+.theme-light .workspace-leaf:not(.mod-active) .view-header {
     background-color: var(--primary-light) !important;
 }
 
@@ -669,6 +669,11 @@ body:not(.is-grabbing) .nav-folder-title:hover {
     20px 19px 80px rgba(0, 0, 0, 0.1);
   background-color: var(--background-secondary);
   color: var(--primary);
+}
+
+/* Split panes: not active */
+.theme-dark .workspace-leaf:not(.mod-active) .view-header {
+    background-color: var(--background-primary-alt) !important;
 }
 
 /* Style hamburger menu */

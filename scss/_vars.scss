@@ -46,7 +46,6 @@
 // Colour pallettes generated via https://material-foundation.github.io/material-theme-builder/
 
   /* Primary (Obsidian default in Hex: #705dcf) */
-
   --primary0: #000000;
   --primary10: #1a0064;
   --primary20: #30128d;
@@ -101,6 +100,24 @@
 --tertiary99: #fcfcfc;
 --tertiary100: #ffffff;
 
+// Error
+--error0: #000000;
+--error10: #410001;
+--error20: #680003;
+--error25: #7d0004;
+--error30: #930006;
+--error35: #a8060f;
+--error40: #ba1b1b;
+--error50: #dd3730;
+--error60: #ff5449;
+--error70: #ff897a;
+--error80: #ffb4a9;
+--error90: #ffdad4;
+--error95: #ffede9;
+--error98: #fff8f6;
+--error99: #fcfcfc;
+--error100: #ffffff;
+
 // Neutral
 --neutral0: #000000;
 --neutral10: #1c1b1e;
@@ -136,6 +153,40 @@
 --neutral-variant98: #fdf8ff;
 --neutral-variant99: #fffbff;
 --neutral-variant100: #ffffff;
+
+// Tokens
+--primary: var(--primary40);
+--primary-container: var(--primary90);
+--secondary: var(--secondary40);
+--secondary-container: var(--secondary90);
+--tertiary: var(--tertiary40);
+--tertiary-container: var(--tertiary90);
+
+--surface: var(--neutral99);
+--surface-variant: var(--neutral-variant90);
+
+--background: var(--neutral99);
+--error: var(--error40);
+--error-container: var(--error90);
+
+--on-primary: var(--primary100);
+--on-primary-container: var(--primary10);
+--on-secondary: var(--secondary100);
+--on-secondary-container: var(--secondary10);
+--on-tertiary: var(--tertiary100);
+--on-tertiary-container: var(--tertiary10);
+
+--on-surface: var(--neutral10);
+--on-surface-variant: var(--neutral-variant30);
+--on-error: var(--error100);
+--on-error-container: var(--error10);
+--on-background: var(--neutral10);
+
+--outline: var(--neutral-variant50);
+--shadow: var(--neutral0);
+--inverse-surface: var(--neutral20);
+--inverse-on-surface: var(--neutral95);
+--inverse-primary: var(--primary80);
 
   /* HSL */
   --primary-h: 250;

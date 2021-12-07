@@ -171,23 +171,6 @@
   --inverse-surface: var(--neutral20);
   --inverse-on-surface: var(--neutral95);
   --inverse-primary: var(--primary80);
-  /* HSL */
-  --primary-h: 250;
-  --primary-s: 54%;
-  --primary-l: 59%;
-  --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
-  --primary-faint: hsl(var(--primary-h), var(--primary-s), 93%);
-  --primary-light: hsl(var(--primary-h), var(--primary-s), 73%);
-  --primary-dark: hsl(var(--primary-h), var(--primary-s), 40%);
-  /* Secondary (Default secondary in Hex: #bbce5d)*/
-  /* --secondary-h: 70; */
-  --secondary-h: calc(var(--primary-h) + 180);
-  --secondary-s: var(--primary-s);
-  --secondary-l: var(--primary-l);
-  --secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
-  --secondary-faint: hsl(var(--secondary-h), var(--secondary-s), 93%);
-  --secondary-light: hsl(var(--secondary-h), var(--secondary-s), 73%);
-  --secondary-dark: hsl(var(--secondary-h), var(--secondary-s), 40%);
   /* Standard colours */
   --background-primary: #ffffff;
   --background-primary-alt: #f5f6f8;
@@ -254,25 +237,6 @@
   --inverse-surface: var(--neutral90);
   --inverse-on-surface: var(--neutral20);
   --inverse-primary: var(--primary40);
-  /* Primary (Primary in Hex: #705dcf) */
-  /* HSL */
-  --primary-h: 250;
-  --primary-s: 54%;
-  --primary-l: 59%;
-  --primary: hsl(var(--primary-h), calc(var(--primary-s) - 10%), var(--primary-l));
-  --primary-faint: hsl(var(--primary-h), calc(var(--primary-s) - 15%), 40%);
-  --primary-light: hsl(var(--primary-h), calc(var(--primary-s) - 10%), 27%);
-  --primary-dark: hsl(var(--primary-h), calc(var(--primary-s) - 20%), 93%);
-  /* Secondary (Default secondary in Hex: #bbce5d)*/
-  /* --secondary-h: 70; */
-  --secondary-h: calc(var(--primary-h) + 180);
-  --secondary-s: var(--primary-s);
-  --secondary-l: var(--primary-l);
-  --secondary: hsl(var(--secondary-h), calc(var(--secondary-s) - 10%), var(--secondary-l));
-  --secondary-faint: hsl(var(--secondary-h), var(--secondary-s), 40%);
-  --secondary-light: hsl(var(--secondary-h), var(--secondary-s), 27%);
-  --secondary-dark: hsl(var(--secondary-h), var(--secondary-s), 93%);
-  /* Background colours */
   /* Standard Colours */
   --background-primary: hsl(0, 0%, 7%);
   /* 02dp */

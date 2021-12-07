@@ -57,6 +57,7 @@
   --primary30: #4731a4;
   --primary35: #533fb0;
   --primary40: #5f4bbd;
+  // rgb values used to generate elevation surface
   --primary40-r: 95;
   --primary40-g: 75;
   --primary40-b: 189;
@@ -64,6 +65,10 @@
   --primary60: #9380f5;
   --primary70: #af9eff;
   --primary80: #cabeff;
+  // rgb values used to generate elevation surface
+  --primary80-r: 202
+  --primary80-g: 190
+  --primary80-b: 255
   --primary90: #e7deff;
   --primary95: #f5eeff;
   --primary98: #fdf7ff;
@@ -128,6 +133,10 @@
 // Neutral
 --neutral0: #000000;
 --neutral10: #1c1b1e;
+// rgb values used to generate elevation surface
+--neutral10-r: 28;
+--neutral10-g: 27;
+--neutral10-b: 30;
 --neutral20: #313033;
 --neutral25: #3d3b3f;
 --neutral30: #48464a;
@@ -141,6 +150,7 @@
 --neutral95: #f4eff4;
 --neutral98: #fdf8fd;
 --neutral99: #d4bfd4;
+// rgb values used to generate elevation surface
 --neutral99-r: 212;
 --neutral99-g: 191;
 --neutral99-b: 212;
@@ -303,6 +313,32 @@
 --inverse-surface: var(--neutral90);
 --inverse-on-surface: var(--neutral20);
 --inverse-primary: var(--primary40);
+
+--surface1: rgb(
+  calc(var(--primary80-r) * var(--elevation1) + var(--neutral10-r) * (1 - var(--elevation1))),
+  calc(var(--primary80-g) * var(--elevation1) + var(--neutral10-g) * (1 - var(--elevation1))),
+  calc(var(--primary80-b) * var(--elevation1) + var(--neutral10-b) * (1 - var(--elevation1)))
+  );
+--surface2: rgb(
+  calc(var(--primary80-r) * var(--elevation2) + var(--neutral10-r) * (1 - var(--elevation2))),
+  calc(var(--primary80-g) * var(--elevation2) + var(--neutral10-g) * (1 - var(--elevation2))),
+  calc(var(--primary80-b) * var(--elevation2) + var(--neutral10-b) * (1 - var(--elevation2)))
+  );
+--surface3: rgb(
+  calc(var(--primary80-r) * var(--elevation3) + var(--neutral10-r) * (1 - var(--elevation3))),
+  calc(var(--primary80-g) * var(--elevation3) + var(--neutral10-g) * (1 - var(--elevation3))),
+  calc(var(--primary80-b) * var(--elevation3) + var(--neutral10-b) * (1 - var(--elevation3)))
+  );
+--surface4: rgb(
+  calc(var(--primary80-r) * var(--elevation4) + var(--neutral10-r) * (1 - var(--elevation4))),
+  calc(var(--primary80-g) * var(--elevation4) + var(--neutral10-g) * (1 - var(--elevation4))),
+  calc(var(--primary80-b) * var(--elevation4) + var(--neutral10-b) * (1 - var(--elevation4)))
+  );
+--surface5: rgb(
+  calc(var(--primary80-r) * var(--elevation5) + var(--neutral10-r) * (1 - var(--elevation5))),
+  calc(var(--primary80-g) * var(--elevation5) + var(--neutral10-g) * (1 - var(--elevation5))),
+  calc(var(--primary80-b) * var(--elevation5) + var(--neutral10-b) * (1 - var(--elevation5)))
+  );
 
     /* Standard Colours */
     --background-primary: hsl(0, 0%, 7%); /* 02dp */

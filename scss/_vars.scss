@@ -43,8 +43,100 @@
   /* ------------- */
   /* # COLOURS */
   /* ------------- */
+// Colour pallettes generated via https://material-foundation.github.io/material-theme-builder/
 
-  /* Primary (Primary in Hex: #705dcf) */
+  /* Primary (Obsidian default in Hex: #705dcf) */
+
+  --primary0: #000000;
+  --primary10: #1a0064;
+  --primary20: #30128d;
+  --primary25: #3b2398;
+  --primary30: #4731a4;
+  --primary35: #533fb0;
+  --primary40: #5f4bbd;
+  --primary50: #7865d8;
+  --primary60: #9380f5;
+  --primary70: #af9eff;
+  --primary80: #cabeff;
+  --primary90: #e7deff;
+  --primary95: #f5eeff;
+  --primary98: #fdf7ff;
+  --primary99: #fffbff;
+  --primary99: #fffbff;
+  --primary100: #fff;
+
+  // Secondary
+  --secondary0: #000000;
+--secondary10: #1c192c;
+--secondary20: #312e41;
+--secondary25: #3c394c;
+--secondary30: #484459;
+--secondary35: #545065;
+--secondary40: #605c71;
+--secondary50: #79748b;
+--secondary60: #938ea5;
+--secondary70: #aea8c1;
+--secondary80: #c9c3dc;
+--secondary90: #e6dff9;
+--secondary95: #f4eeff;
+--secondary98: #fdf7ff;
+--secondary99: #fffbff;
+--secondary100: #ffffff;
+
+// Tertiary
+--tertiary0: #000000;
+--tertiary10: #301020;
+--tertiary20: #482535;
+--tertiary25: #553041;
+--tertiary30: #623b4c;
+--tertiary35: #6f4758;
+--tertiary40: #7c5264;
+--tertiary50: #976b7d;
+--tertiary60: #b38497;
+--tertiary70: #d09db1;
+--tertiary80: #edb8cd;
+--tertiary90: #ffd9e8;
+--tertiary95: #ffecf2;
+--tertiary98: #fff8f9;
+--tertiary99: #fcfcfc;
+--tertiary100: #ffffff;
+
+// Neutral
+--neutral0: #000000;
+--neutral10: #1c1b1e;
+--neutral20: #313033;
+--neutral25: #3d3b3f;
+--neutral30: #48464a;
+--neutral35: #545256;
+--neutral40: #605d62;
+--neutral50: #79767b;
+--neutral60: #939094;
+--neutral70: #aeaaaf;
+--neutral80: #c9c5ca;
+--neutral90: #e5e1e5;
+--neutral95: #f4eff4;
+--neutral98: #fdf8fd;
+--neutral99: #fffbff;
+--neutral100: #ffffff;
+
+// Neutral variant
+--neutral-variant0: #000000;
+--neutral-variant10: #1c1b22;
+--neutral-variant20: #312f38;
+--neutral-variant25: #3c3a43;
+--neutral-variant30: #48454f;
+--neutral-variant35: #54515a;
+--neutral-variant40: #605d67;
+--neutral-variant50: #79767f;
+--neutral-variant60: #938f99;
+--neutral-variant70: #ada9b3;
+--neutral-variant80: #c9c4d0;
+--neutral-variant90: #e5e0eb;
+--neutral-variant95: #f4effa;
+--neutral-variant98: #fdf8ff;
+--neutral-variant99: #fffbff;
+--neutral-variant100: #ffffff;
+
   /* HSL */
   --primary-h: 250;
   --primary-s: 54%;

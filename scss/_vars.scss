@@ -42,6 +42,12 @@
   /* # COLOURS */
   /* ------------- */
 // Colour pallettes generated via https://material-foundation.github.io/material-theme-builder/
+// Surface elevation multipliers
+--elevation1: 0.05;
+--elevation2: 0.08;
+--elevation3: 0.11;
+--elevation4: 0.12;
+--elevation5: 0.14;
 
   /* Primary (Obsidian default in Hex: #705dcf) */
   --primary0: #000000;
@@ -51,6 +57,9 @@
   --primary30: #4731a4;
   --primary35: #533fb0;
   --primary40: #5f4bbd;
+  --primary40-r: 95;
+  --primary40-g: 75;
+  --primary40-b: 189;
   --primary50: #7865d8;
   --primary60: #9380f5;
   --primary70: #af9eff;
@@ -131,7 +140,10 @@
 --neutral90: #e5e1e5;
 --neutral95: #f4eff4;
 --neutral98: #fdf8fd;
---neutral99: #fffbff;
+--neutral99: #d4bfd4;
+--neutral99-r: 212;
+--neutral99-g: 191;
+--neutral99-b: 212;
 --neutral100: #ffffff;
 
 // Neutral variant
@@ -188,8 +200,39 @@
 --inverse-on-surface: var(--neutral95);
 --inverse-primary: var(--primary80);
 
+--surface1: rgb(
+  calc(var(--primary40-r) * var(--elevation1) + var(--neutral99-r) * (1 - var(--elevation1))),
+  calc(var(--primary40-g) * var(--elevation1) + var(--neutral99-g) * (1 - var(--elevation1))),
+  calc(var(--primary40-b) * var(--elevation1) + var(--neutral99-b) * (1 - var(--elevation1)))
+  );
+--surface2: rgb(
+  calc(var(--primary40-r) * var(--elevation2) + var(--neutral99-r) * (1 - var(--elevation2))),
+  calc(var(--primary40-g) * var(--elevation2) + var(--neutral99-g) * (1 - var(--elevation2))),
+  calc(var(--primary40-b) * var(--elevation2) + var(--neutral99-b) * (1 - var(--elevation2)))
+  );
+--surface3: rgb(
+  calc(var(--primary40-r) * var(--elevation3) + var(--neutral99-r) * (1 - var(--elevation3))),
+  calc(var(--primary40-g) * var(--elevation3) + var(--neutral99-g) * (1 - var(--elevation3))),
+  calc(var(--primary40-b) * var(--elevation3) + var(--neutral99-b) * (1 - var(--elevation3)))
+  );
+--surface4: rgb(
+  calc(var(--primary40-r) * var(--elevation4) + var(--neutral99-r) * (1 - var(--elevation4))),
+  calc(var(--primary40-g) * var(--elevation4) + var(--neutral99-g) * (1 - var(--elevation4))),
+  calc(var(--primary40-b) * var(--elevation4) + var(--neutral99-b) * (1 - var(--elevation4)))
+  );
+--surface5: rgb(
+  calc(var(--primary40-r) * var(--elevation5) + var(--neutral99-r) * (1 - var(--elevation5))),
+  calc(var(--primary40-g) * var(--elevation5) + var(--neutral99-g) * (1 - var(--elevation5))),
+  calc(var(--primary40-b) * var(--elevation5) + var(--neutral99-b) * (1 - var(--elevation5)))
+  );
+
+// --surface2:
+// --surface3:
+// --surface4:
+// --surface5:
+
   /* Standard colours */
-  --background-primary: #ffffff;
+  --background-primary: var(--surface1);
   --background-primary-alt: #f5f6f8;
   --background-secondary: #f2f3f5;
   --background-secondary-alt: #e3e5e8;
@@ -198,14 +241,14 @@
   --background-modifier-form-field-highlighted: #fff;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-success: #a4e7c3;
-  --background-modifier-error: #b00020;
+  --background-modifier-error: var(--error);
   --background-modifier-error-rgb: 230, 135, 135;
   --background-modifier-error-hover: #b00020;
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
   --text-accent: var(--primary);
   --text-accent-hover: var(--primary-light);
-  --text-normal: #2e3338;
-  --text-muted: #888888;
+  --text-normal: var(--on-background);
+  --text-muted: var(--on-surface-variant);
   --text-muted-rgb: 136, 136, 136;
   --text-faint: #999999;
   --text-error: #800000;

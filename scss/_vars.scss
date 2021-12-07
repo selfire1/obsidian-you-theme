@@ -66,9 +66,9 @@
   --primary70: #af9eff;
   --primary80: #cabeff;
   // rgb values used to generate elevation surface
-  --primary80-r: 202
-  --primary80-g: 190
-  --primary80-b: 255
+  --primary80-r: 202;
+  --primary80-g: 190;
+  --primary80-b: 255;
   --primary90: #e7deff;
   --primary95: #f5eeff;
   --primary98: #fdf7ff;
@@ -149,11 +149,11 @@
 --neutral90: #e5e1e5;
 --neutral95: #f4eff4;
 --neutral98: #fdf8fd;
---neutral99: #d4bfd4;
+--neutral99: #fffbff;
 // rgb values used to generate elevation surface
---neutral99-r: 212;
---neutral99-g: 191;
---neutral99-b: 212;
+--neutral99-r: 255;
+--neutral99-g: 251;
+--neutral99-b: 255;
 --neutral100: #ffffff;
 
 // Neutral variant
@@ -242,7 +242,7 @@
 // --surface5:
 
   /* Standard colours */
-  --background-primary: var(--surface1);
+  --background-primary: var(--background);
   --background-primary-alt: #f5f6f8;
   --background-secondary: #f2f3f5;
   --background-secondary-alt: #e3e5e8;

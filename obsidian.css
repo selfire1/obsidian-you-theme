@@ -40,9 +40,6 @@
   /* Title Medium */
   --h6: 0.875rem;
   /* Title Small */
-}
-
-.theme-light {
   /* ------------- */
   /* # COLOURS */
   /* ------------- */
@@ -144,6 +141,9 @@
   --neutral-variant98: #fdf8ff;
   --neutral-variant99: #fffbff;
   --neutral-variant100: #ffffff;
+}
+
+.theme-light {
   --primary: var(--primary40);
   --primary-container: var(--primary90);
   --secondary: var(--secondary40);

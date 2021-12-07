@@ -215,10 +215,10 @@
     );
   /* Standard colours */
   --background-primary: var(--background);
-  --background-primary-alt: #f5f6f8;
-  --background-secondary: #f2f3f5;
-  --background-secondary-alt: #e3e5e8;
-  --background-modifier-border: #ddd;
+  --background-primary-alt: var(--surface1);
+  --background-secondary: var(--surface2);
+  --background-secondary-alt: var(--surface3);
+  --background-modifier-border: var(--outline);
   --background-modifier-form-field: #fff;
   --background-modifier-form-field-highlighted: #fff;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);

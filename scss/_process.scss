@@ -1,38 +1,3 @@
-/* ------------- */
-/* # File explorer */
-/* ------------- */
-/* Folder */
-.nav-folder-title-content {
-  padding-left: 0px;
-}
-
-.nav-file-title-content,
-.nav-folder-title-content {
-  font-size: var(--smaller);
-  padding: 0px 0px;
-  font-weight: var(--medium);
-}
-
-/* Files */
-.is-mobile .nav-file-title,
-.is-mobile .tag-container {
-  padding: 1px 11px 0 11px;
-  color: var(--text-muted);
-  font-size: var(--smaller);
-  font-weight: var(--light);
-}
-
-/* Highlighted file or backlink */
-.nav-file-title.is-active,
-.tree-item-self.is-clickable:hover,
-.nav-folder-title.is-active,
-body:not(.is-grabbing) .nav-file-title:hover,
-body:not(.is-grabbing) .nav-folder-title:hover {
-  background-color: var(--primary-faint);
-  color: var(--primary-dark);
-  border-radius: var(--small-radius);
-}
-
 /* -------------- */
 /* Quick Action */
 /* -------------- */

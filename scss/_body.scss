@@ -141,3 +141,72 @@ span.cm-hmd-frontmatter {
 .is-mobile .mobile-toolbar-option {
   color: var(--secondary-dark);
 }
+
+/* Tags */
+/* Adapted from https://github.com/kepano/obsidian-minimal/blob/master/obsidian.css */
+
+/* Preview */
+.frontmatter-container .tag,
+a.tag {
+  background-color: var(--primary-faint);
+  color: var(--text-normal);
+  font-size: var(--smaller);
+  padding: 3px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 0 0 0;
+  border-radius: var(--medium-radius);
+}
+a.tag:hover {
+  color: var(--text-normal);
+}
+
+/* Hide the # character in front of a tag in Preview */
+/* Thanks to `@Klaas`: https://discord.com/channels/686053708261228577/702656734631821413/890122749459197993 */
+/* Currently not working, review later */
+
+/* a.tag {
+  position: relative;
+  padding-left: 3px;
+}
+
+a.tag:after {
+  background: var(--background-primary);
+  position: absolute;
+  content: " ";
+  top: 0;
+  bottom: 0;
+  width: 0.66rem;
+  left: 0px;
+  border-radius: 4px;
+} */
+
+/* Editor */
+.cm-s-obsidian span.cm-hashtag {
+  background-color: var(--primary-faint);
+  color: var(--text-normal);
+  font-size: var(--smaller);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 0;
+  vertical-align: middle;
+  padding-top: 1px;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 2px;
+  cursor: text;
+}
+span.cm-hashtag.cm-hashtag-begin {
+  border-top-left-radius: var(--medium-radius);
+  border-bottom-left-radius: var(--medium-radius);
+  padding-left: 8px;
+  border-right: none;
+}
+span.cm-hashtag.cm-hashtag-end {
+  border-top-right-radius: var(--medium-radius);
+  border-bottom-right-radius: var(--medium-radius);
+  border-left: none;
+  padding-right: 8px;
+}

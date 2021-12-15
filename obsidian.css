@@ -346,153 +346,6 @@
   --highlight-mix-blend-mode: lighten;
 }
 
-/* -------------- */
-/* Quick Action */
-/* -------------- */
-/* Text input animation */
-.is-mobile input[type=text] {
-  display: block;
-  width: 100%;
-  padding: 10px 14px;
-  height: auto;
-  border-top: none;
-  border-bottom: 2px solid var(--text-faint);
-  border-left: none;
-  border-right: none;
-  font-size: 17px;
-  background: linear-gradient(var(--secondary-dark), var(--secondary-dark)) bottom/0% 2px no-repeat var(--background-secondary-alt);
-  border-radius: var(--small-radius) var(--small-radius) 0px 0px;
-  transition: 0.2s;
-  transition-delay: 0.5s;
-}
-
-input[type=text]:active,
-input[type=search]:active,
-input[type=email]:active,
-input[type=password]:active,
-input[type=number]:active,
-input[type=text]:focus,
-input[type=search]:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=number]:focus {
-  border: none;
-  background-size: 100% 2px;
-}
-
-/* Quick switcher selection item */
-.suggestion-item.is-selected {
-  background-color: var(--primary-faint);
-}
-
-.is-mobile .suggestion-hotkey {
-  display: none;
-}
-
-.suggestion-highlight {
-  font-weight: var(--bold);
-  color: var(--primary);
-}
-
-/* Settings */
-/* Back modal */
-.is-mobile .modal-setting-back-button {
-  background-color: var(--primary-faint);
-}
-
-/* Reduce space between settings */
-.vertical-tab-nav-item {
-  padding: 0px 6px 10px 24px;
-}
-
-/* Style back */
-.is-mobile .modal-setting-back-button {
-  border-top-left-radius: var(--big-radius);
-  border-top-right-radius: var(--big-radius);
-}
-
-/* Style setting headers */
-.vertical-tab-header-group-title {
-  padding: 6px 6px 6px 26px;
-}
-
-/* Add divider line */
-.vertical-tab-header-group {
-  border-bottom: 1px solid var(--background-secondary-alt);
-}
-
-.vertical-tab-header-group:last-of-type {
-  border-bottom: none;
-}
-
-/* Height */
-.is-mobile .modal,
-.is-mobile .prompt,
-.is-mobile .suggestion-container {
-  max-height: calc(100% - 100px);
-  min-height: calc(100% - 100px);
-}
-
-/* Buttons */
-/* Filled button */
-button.mod-cta {
-  background-color: var(--primary);
-  color: var(--background-primary);
-}
-
-/* Outlined buttons */
-.modal.mod-settings button:not(.mod-cta):not(.mod-warning),
-button:not(.mod-cta):not(.mod-warning),
-.is-mobile .empty-state-action:not(:nth-child(2)) {
-  background-color: transparent;
-  border: 1px solid var(--text-faint);
-  color: var(--primary);
-}
-
-.is-mobile button,
-.is-mobile .empty-state-action {
-  font-size: var(--smallest);
-  border-radius: var(--big-radius);
-}
-
-/* Setting Headers */
-.theme-light .vertical-tab-header-group-title {
-  color: var(--primary-light);
-}
-
-.theme-dark .vertical-tab-header-group-title {
-  color: var(--primary-dark);
-}
-
-/* Prompts (Quick switcher) */
-.is-mobile .modal,
-.is-mobile .prompt,
-.is-mobile .suggestion-container {
-  border-radius: var(--big-radius) var(--big-radius) 0 0;
-  padding: 15px 20px;
-}
-
-/* Pulling down */
-.pull-down-action {
-  border-radius: 0 0 var(--medium-radius) var(--medium-radius);
-}
-
-/* Pulling from the left (navigating back
-Trying to target but it's not these:
-*/
-/* PLUGINS */
-/* Dataview Tables */
-.table-view-table > thead > tr > th {
-  border-bottom: none !important;
-  font-weight: var(--medium);
-  font-size: var(--editor-font-size);
-  padding: var(--editor-font-size);
-}
-
-tr {
-  border-top: 1px solid var(--background-secondary-alt);
-}
-
 /* ------------- */
 /* # Title Bar */
 /* ------------- */
@@ -717,6 +570,75 @@ span.cm-hmd-frontmatter {
   color: var(--secondary-dark);
 }
 
+/* Tags */
+/* Adapted from https://github.com/kepano/obsidian-minimal/blob/master/obsidian.css */
+/* Preview */
+.frontmatter-container .tag,
+a.tag {
+  background-color: var(--primary-faint);
+  color: var(--text-normal);
+  font-size: var(--smaller);
+  padding: 3px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 0 0 0;
+  border-radius: var(--medium-radius);
+}
+
+a.tag:hover {
+  color: var(--text-normal);
+}
+
+/* Hide the # character in front of a tag in Preview */
+/* Thanks to `@Klaas`: https://discord.com/channels/686053708261228577/702656734631821413/890122749459197993 */
+/* Currently not working, review later */
+/* a.tag {
+  position: relative;
+  padding-left: 3px;
+}
+
+a.tag:after {
+  background: var(--background-primary);
+  position: absolute;
+  content: " ";
+  top: 0;
+  bottom: 0;
+  width: 0.66rem;
+  left: 0px;
+  border-radius: 4px;
+} */
+/* Editor */
+.cm-s-obsidian span.cm-hashtag {
+  background-color: var(--primary-faint);
+  color: var(--text-normal);
+  font-size: var(--smaller);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 0;
+  vertical-align: middle;
+  padding-top: 1px;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 2px;
+  cursor: text;
+}
+
+span.cm-hashtag.cm-hashtag-begin {
+  border-top-left-radius: var(--medium-radius);
+  border-bottom-left-radius: var(--medium-radius);
+  padding-left: 8px;
+  border-right: none;
+}
+
+span.cm-hashtag.cm-hashtag-end {
+  border-top-right-radius: var(--medium-radius);
+  border-bottom-right-radius: var(--medium-radius);
+  border-left: none;
+  padding-right: 8px;
+}
+
 /* Floating Action Button (FAB)*/
 /* Preview */
 .view-action:nth-last-of-type(5) {
@@ -777,6 +699,153 @@ svg.pencil {
     transform: scale(0.8) translate(-50%, -50%);
   }
 }
+/* -------------- */
+/* Quick Action */
+/* -------------- */
+/* Text input animation */
+.is-mobile input[type=text] {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  height: auto;
+  border-top: none;
+  border-bottom: 2px solid var(--text-faint);
+  border-left: none;
+  border-right: none;
+  font-size: 17px;
+  background: linear-gradient(var(--secondary-dark), var(--secondary-dark)) bottom/0% 2px no-repeat var(--background-secondary-alt);
+  border-radius: var(--small-radius) var(--small-radius) 0px 0px;
+  transition: 0.2s;
+  transition-delay: 0.5s;
+}
+
+input[type=text]:active,
+input[type=search]:active,
+input[type=email]:active,
+input[type=password]:active,
+input[type=number]:active,
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus {
+  border: none;
+  background-size: 100% 2px;
+}
+
+/* Quick switcher selection item */
+.suggestion-item.is-selected {
+  background-color: var(--primary-faint);
+}
+
+.is-mobile .suggestion-hotkey {
+  display: none;
+}
+
+.suggestion-highlight {
+  font-weight: var(--bold);
+  color: var(--primary);
+}
+
+/* Settings */
+/* Back modal */
+.is-mobile .modal-setting-back-button {
+  background-color: var(--primary-faint);
+}
+
+/* Reduce space between settings */
+.vertical-tab-nav-item {
+  padding: 0px 6px 10px 24px;
+}
+
+/* Style back */
+.is-mobile .modal-setting-back-button {
+  border-top-left-radius: var(--big-radius);
+  border-top-right-radius: var(--big-radius);
+}
+
+/* Style setting headers */
+.vertical-tab-header-group-title {
+  padding: 6px 6px 6px 26px;
+}
+
+/* Add divider line */
+.vertical-tab-header-group {
+  border-bottom: 1px solid var(--background-secondary-alt);
+}
+
+.vertical-tab-header-group:last-of-type {
+  border-bottom: none;
+}
+
+/* Height */
+.is-mobile .modal,
+.is-mobile .prompt,
+.is-mobile .suggestion-container {
+  max-height: calc(100% - 100px);
+  min-height: calc(100% - 100px);
+}
+
+/* Buttons */
+/* Filled button */
+button.mod-cta {
+  background-color: var(--primary);
+  color: var(--background-primary);
+}
+
+/* Outlined buttons */
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning),
+button:not(.mod-cta):not(.mod-warning),
+.is-mobile .empty-state-action:not(:nth-child(2)) {
+  background-color: transparent;
+  border: 1px solid var(--text-faint);
+  color: var(--primary);
+}
+
+.is-mobile button,
+.is-mobile .empty-state-action {
+  font-size: var(--smallest);
+  border-radius: var(--big-radius);
+}
+
+/* Setting Headers */
+.theme-light .vertical-tab-header-group-title {
+  color: var(--primary-light);
+}
+
+.theme-dark .vertical-tab-header-group-title {
+  color: var(--primary-dark);
+}
+
+/* Prompts (Quick switcher) */
+.is-mobile .modal,
+.is-mobile .prompt,
+.is-mobile .suggestion-container {
+  border-radius: var(--big-radius) var(--big-radius) 0 0;
+  padding: 15px 20px;
+}
+
+/* Pulling down */
+.pull-down-action {
+  border-radius: 0 0 var(--medium-radius) var(--medium-radius);
+}
+
+/* Pulling from the left (navigating back
+Trying to target but it's not these:
+*/
+/* PLUGINS */
+/* Dataview Tables */
+.table-view-table > thead > tr > th {
+  border-bottom: none !important;
+  font-weight: var(--medium);
+  font-size: var(--editor-font-size);
+  padding: var(--editor-font-size);
+}
+
+tr {
+  border-top: 1px solid var(--background-secondary-alt);
+}
+
 /* ------------- */
 /* # Sidebars */
 /* ------------- */
@@ -948,75 +1017,6 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: var(--primary-faint);
   color: var(--primary-dark);
   border-radius: var(--small-radius);
-}
-
-/* Tags */
-/* Adapted from https://github.com/kepano/obsidian-minimal/blob/master/obsidian.css */
-/* Preview */
-.frontmatter-container .tag,
-a.tag {
-  background-color: var(--primary-faint);
-  color: var(--text-normal);
-  font-size: var(--smaller);
-  padding: 3px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 2px 0 0 0;
-  border-radius: var(--medium-radius);
-}
-
-a.tag:hover {
-  color: var(--text-normal);
-}
-
-/* Hide the # character in front of a tag in Preview */
-/* Thanks to `@Klaas`: https://discord.com/channels/686053708261228577/702656734631821413/890122749459197993 */
-/* Currently not working, review later */
-/* a.tag {
-  position: relative;
-  padding-left: 3px;
-}
-
-a.tag:after {
-  background: var(--background-primary);
-  position: absolute;
-  content: " ";
-  top: 0;
-  bottom: 0;
-  width: 0.66rem;
-  left: 0px;
-  border-radius: 4px;
-} */
-/* Editor */
-.cm-s-obsidian span.cm-hashtag {
-  background-color: var(--primary-faint);
-  color: var(--text-normal);
-  font-size: var(--smaller);
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 2px 0;
-  vertical-align: middle;
-  padding-top: 1px;
-  border-left: none;
-  border-right: none;
-  padding-bottom: 2px;
-  cursor: text;
-}
-
-span.cm-hashtag.cm-hashtag-begin {
-  border-top-left-radius: var(--medium-radius);
-  border-bottom-left-radius: var(--medium-radius);
-  padding-left: 8px;
-  border-right: none;
-}
-
-span.cm-hashtag.cm-hashtag-end {
-  border-top-right-radius: var(--medium-radius);
-  border-bottom-right-radius: var(--medium-radius);
-  border-left: none;
-  padding-right: 8px;
 }
 
 /* Headers */

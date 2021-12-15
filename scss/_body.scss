@@ -40,7 +40,8 @@ img {
     2.5px 2.4px 10px rgba(0, 0, 0, 0.025), 6px 5.7px 24.1px rgba(0, 0, 0, 0.033),
     20px 19px 80px rgba(0, 0, 0, 0.05);
 
-  background-color: var(--background-primary-alt) !important;
+  background-color: var(--secondary-container) !important;
+  color: var(--on-secondary-container);
 }
 
 /* Lists */

@@ -18,6 +18,13 @@
   /* Equal to px */
   --smaller: 0.875rem;
   /* Equal to 14px */
+  --display-s: 2.25rem;
+  --headline-l: 2rem;
+  --headline-m: 1.75rem;
+  --headline-s: 1.5rem;
+  --title-l: 1.375rem;
+  --title-m: 1rem;
+  --title-s: .875rem;
   /* Roundness */
   --big-radius: 24px;
   --medium-radius: 14px;
@@ -28,18 +35,12 @@
   --medium: 500;
   --bold: 650;
   /* ## Heading sizes */
-  --h1: 2.25rem;
-  /* Display Small */
-  --h2: 1.75rem;
-  /* Headline Medium */
-  --h3: 1.5rem;
-  /* Headline Small */
-  --h4: 1.375rem;
-  /* Title Large */
-  --h5: 1rem;
-  /* Title Medium */
-  --h6: 0.875rem;
-  /* Title Small */
+  --h1: var(--display-s);
+  --h2: var(--headline-l);
+  --h3: var(--headline-m);
+  --h4: var(--headline-s);
+  --h5: var(--title-l);
+  --h6: var(--title-m);
   /* ------------- */
   /* # COLOURS */
   /* ------------- */

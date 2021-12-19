@@ -521,6 +521,10 @@ img {
 /* Blockquotes */
 /* Callout boxes from Vileplume: https://github.com/hungsu/vileplume-obsidian */
 .markdown-preview-view blockquote {
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.015625rem;
+  font-weight: var(--medium);
   border-radius: var(--big-radius);
   border: 1px solid rgba(255, 255, 255, 0.03);
   padding: 10px 20px;

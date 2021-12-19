@@ -138,6 +138,7 @@ img {
 /* Blockquotes */
 /* Callout boxes from Vileplume: https://github.com/hungsu/vileplume-obsidian */
 .markdown-preview-view blockquote {
+  @include body-medium();
   border-radius: var(--big-radius);
   border: 1px solid rgba(255, 255, 255, 0.03);
   padding: 10px 20px;

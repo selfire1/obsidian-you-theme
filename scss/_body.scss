@@ -54,12 +54,6 @@
   font-weight: var(--medium);
 }
 
-// Body Text
-.markdown-preview-view,
-.markdown-source-view {
-  @include body-large();
-}
-
 // Headers
 .markdown-preview-view h1,
 .HyperMD-header-1,
@@ -107,7 +101,16 @@
 /* # Body */
 /* ------------- */
 
+
+// Body Text
+.markdown-preview-view,
+.markdown-source-view,
+.cm-line {
+  @include body-large();
+}
+
 /* Fonts */
+// Unsure what this is used for
 .popover,
 .vertical-tab-content-container,
 .workspace-leaf-content[data-type="markdown"] {
@@ -116,12 +119,10 @@
 
 /* Editor */
 .markdown-source-view .cm-s-obsidian .cm-hmd-frontmatter,
-.markdown-source-view.mod-cm6 .cm-scroller,
-.markdown-source-view,
 .cm-s-obsidian .cm-formatting-hashtag,
 .cm-s-obsidian,
 .cm-s-obsidian span.cm-formatting-task {
-  font-family: var(--font-editor);
+  @include body-medium();
 }
 
 /* Checkboxes */

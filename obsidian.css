@@ -423,14 +423,6 @@ svg.vertical-three-dots {
   color: var(--primary-light) !important;
 }
 
-.markdown-preview-view,
-.markdown-source-view {
-  line-height: 1.5rem;
-  font-size: 1rem;
-  letter-spacing: 0.009375rem;
-  font-weight: var(--medium);
-}
-
 .markdown-preview-view h1,
 .HyperMD-header-1,
 .cm-header-1,
@@ -489,6 +481,15 @@ svg.vertical-three-dots {
 /* ------------- */
 /* # Body */
 /* ------------- */
+.markdown-preview-view,
+.markdown-source-view,
+.cm-line {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.009375rem;
+  font-weight: var(--medium);
+}
+
 /* Fonts */
 .popover,
 .vertical-tab-content-container,
@@ -498,12 +499,13 @@ svg.vertical-three-dots {
 
 /* Editor */
 .markdown-source-view .cm-s-obsidian .cm-hmd-frontmatter,
-.markdown-source-view.mod-cm6 .cm-scroller,
-.markdown-source-view,
 .cm-s-obsidian .cm-formatting-hashtag,
 .cm-s-obsidian,
 .cm-s-obsidian span.cm-formatting-task {
-  font-family: var(--font-editor);
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.015625rem;
+  font-weight: var(--medium);
 }
 
 /* Checkboxes */

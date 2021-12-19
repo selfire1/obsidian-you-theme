@@ -109,22 +109,6 @@
   @include body-large();
 }
 
-/* Fonts */
-// Unsure what this is used for
-.popover,
-.vertical-tab-content-container,
-.workspace-leaf-content[data-type="markdown"] {
-  font-family: var(--font-preview);
-}
-
-/* Editor */
-.markdown-source-view .cm-s-obsidian .cm-hmd-frontmatter,
-.cm-s-obsidian .cm-formatting-hashtag,
-.cm-s-obsidian,
-.cm-s-obsidian span.cm-formatting-task {
-  @include body-medium();
-}
-
 /* Checkboxes */
 input[type="checkbox"]:checked {
   filter: grayscale(100%);

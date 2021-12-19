@@ -490,24 +490,6 @@ svg.vertical-three-dots {
   font-weight: var(--medium);
 }
 
-/* Fonts */
-.popover,
-.vertical-tab-content-container,
-.workspace-leaf-content[data-type=markdown] {
-  font-family: var(--font-preview);
-}
-
-/* Editor */
-.markdown-source-view .cm-s-obsidian .cm-hmd-frontmatter,
-.cm-s-obsidian .cm-formatting-hashtag,
-.cm-s-obsidian,
-.cm-s-obsidian span.cm-formatting-task {
-  line-height: 1.25rem;
-  font-size: 0.875rem;
-  letter-spacing: 0.015625rem;
-  font-weight: var(--medium);
-}
-
 /* Checkboxes */
 input[type=checkbox]:checked {
   filter: grayscale(100%);

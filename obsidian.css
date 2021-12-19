@@ -430,58 +430,58 @@ svg.vertical-three-dots {
   color: var(--primary-light) !important;
 }
 
-/* Display Small */
 .markdown-preview-view h1,
 .HyperMD-header-1,
 .cm-header-1,
 .cm-s-obsidian .cm-header-1 {
-  font-size: var(--h1);
+  line-height: 2.75rem;
+  font-size: var(--display-s);
   font-weight: var(--regular);
-  color: var(--text-muted);
 }
 
-/* Headline Medium */
 .markdown-preview-view h2,
 .HyperMD-header-2,
 .cm-header-2,
 .cm-s-obsidian .cm-header-2 {
-  font-size: var(--h2);
+  line-height: 2.5rem;
+  font-size: var(--headline-l);
   font-weight: var(--regular);
 }
 
-/* Headline Small */
 .markdown-preview-view h3,
 .HyperMD-header-3,
 .cm-header-3,
 .cm-s-obsidian .cm-header-3 {
-  font-size: var(--h3);
+  line-height: 2.25rem;
+  font-size: var(--headline-m);
   font-weight: var(--regular);
 }
 
-/* Title Large */
 .markdown-preview-view h4,
 .HyperMD-header-4,
 .cm-header-4,
 .cm-s-obsidian .cm-header-4 {
-  font-size: var(--h4);
+  line-height: 2rem;
+  font-size: var(--headline-s);
   font-weight: var(--regular);
 }
 
-/* Title Medium */
 .markdown-preview-view h5,
 .HyperMD-header-5,
 .cm-header-5,
 .cm-s-obsidian .cm-header-5 {
-  font-size: var(--h5);
-  font-weight: var(--medium);
+  line-height: 1.75rem;
+  font-size: var(--title-l);
+  font-weight: var(--regular);
 }
 
-/* Title Small */
 .markdown-preview-view h6,
 .HyperMD-header-6,
 .cm-header-6,
 .cm-s-obsidian .cm-header-6 {
-  font-size: var(--h6);
+  line-height: 1.5rem;
+  font-size: var(--title-m);
+  letter-spacing: 0.009375rem;
   font-weight: var(--medium);
 }
 

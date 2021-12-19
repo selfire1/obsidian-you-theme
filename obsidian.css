@@ -427,7 +427,7 @@ svg.vertical-three-dots {
 .markdown-source-view {
   line-height: 1.5rem;
   font-size: 1rem;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.009375rem;
   font-weight: var(--medium);
 }
 

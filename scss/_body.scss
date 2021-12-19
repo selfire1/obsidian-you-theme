@@ -6,7 +6,14 @@
 @mixin body-large {
   line-height: 1.5rem;
   font-size: 1rem;
-  letter-spacing: 0.15px;
+  letter-spacing: .009375rem;
+  font-weight: var(--medium);
+}
+
+@mixin body-medium {
+  line-height: 1.25rem;
+  font-size: .875rem;
+  letter-spacing: .015625rem;
   font-weight: var(--medium);
 }
 

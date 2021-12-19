@@ -425,6 +425,66 @@ svg.vertical-three-dots {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z' /%3E%3C/svg%3E");
 }
 
+/* Headers */
+.cm-formatting-header {
+  color: var(--primary-light) !important;
+}
+
+/* Display Small */
+.markdown-preview-view h1,
+.HyperMD-header-1,
+.cm-header-1,
+.cm-s-obsidian .cm-header-1 {
+  font-size: var(--h1);
+  font-weight: var(--regular);
+  color: var(--text-muted);
+}
+
+/* Headline Medium */
+.markdown-preview-view h2,
+.HyperMD-header-2,
+.cm-header-2,
+.cm-s-obsidian .cm-header-2 {
+  font-size: var(--h2);
+  font-weight: var(--regular);
+}
+
+/* Headline Small */
+.markdown-preview-view h3,
+.HyperMD-header-3,
+.cm-header-3,
+.cm-s-obsidian .cm-header-3 {
+  font-size: var(--h3);
+  font-weight: var(--regular);
+}
+
+/* Title Large */
+.markdown-preview-view h4,
+.HyperMD-header-4,
+.cm-header-4,
+.cm-s-obsidian .cm-header-4 {
+  font-size: var(--h4);
+  font-weight: var(--regular);
+}
+
+/* Title Medium */
+.markdown-preview-view h5,
+.HyperMD-header-5,
+.cm-header-5,
+.cm-s-obsidian .cm-header-5 {
+  font-size: var(--h5);
+  font-weight: var(--medium);
+}
+
+/* Title Small */
+.markdown-preview-view h6,
+.HyperMD-header-6,
+.cm-header-6,
+.cm-s-obsidian .cm-header-6 {
+  font-size: var(--h6);
+  font-weight: var(--medium);
+}
+
 /* ------------- */
 /* # Body */
 /* ------------- */
@@ -1015,66 +1075,6 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: var(--primary-faint);
   color: var(--primary-dark);
   border-radius: var(--small-radius);
-}
-
-/* Headers */
-.cm-formatting-header {
-  color: var(--primary-light) !important;
-}
-
-/* Display Small */
-.markdown-preview-view h1,
-.HyperMD-header-1,
-.cm-header-1,
-.cm-s-obsidian .cm-header-1 {
-  font-size: var(--h1);
-  font-weight: var(--regular);
-  color: var(--text-muted);
-}
-
-/* Headline Medium */
-.markdown-preview-view h2,
-.HyperMD-header-2,
-.cm-header-2,
-.cm-s-obsidian .cm-header-2 {
-  font-size: var(--h2);
-  font-weight: var(--regular);
-}
-
-/* Headline Small */
-.markdown-preview-view h3,
-.HyperMD-header-3,
-.cm-header-3,
-.cm-s-obsidian .cm-header-3 {
-  font-size: var(--h3);
-  font-weight: var(--regular);
-}
-
-/* Title Large */
-.markdown-preview-view h4,
-.HyperMD-header-4,
-.cm-header-4,
-.cm-s-obsidian .cm-header-4 {
-  font-size: var(--h4);
-  font-weight: var(--regular);
-}
-
-/* Title Medium */
-.markdown-preview-view h5,
-.HyperMD-header-5,
-.cm-header-5,
-.cm-s-obsidian .cm-header-5 {
-  font-size: var(--h5);
-  font-weight: var(--medium);
-}
-
-/* Title Small */
-.markdown-preview-view h6,
-.HyperMD-header-6,
-.cm-header-6,
-.cm-s-obsidian .cm-header-6 {
-  font-size: var(--h6);
-  font-weight: var(--medium);
 }
 
 /* Embeds */

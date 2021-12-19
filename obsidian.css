@@ -34,13 +34,6 @@
   --regular: 400;
   --medium: 500;
   --bold: 650;
-  /* ## Heading sizes */
-  --h1: var(--display-s);
-  --h2: var(--headline-l);
-  --h3: var(--headline-m);
-  --h4: var(--headline-s);
-  --h5: var(--title-l);
-  --h6: var(--title-m);
   /* ------------- */
   /* # COLOURS */
   /* ------------- */

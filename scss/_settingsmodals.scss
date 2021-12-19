@@ -1,3 +1,25 @@
+@mixin label-l {
+  line-height: 1.25rem;
+  font-size: .875rem;
+  letter-spacing: .00625rem;
+  font-weight: var(--medium);
+}
+
+@mixin label-m {
+  line-height: 1rem;
+  font-size: .75rem;
+  letter-spacing: .03125rem;
+  font-weight: var(--medium);
+}
+
+@mixin label-s {
+  line-height: .375rem;
+  font-size: .6875rem;
+  letter-spacing: .03125rem;
+  font-weight: var(--medium);
+}
+
+
 /* -------------- */
 /* Quick Action */
 /* -------------- */

@@ -423,6 +423,14 @@ svg.vertical-three-dots {
   color: var(--primary-light) !important;
 }
 
+.markdown-preview-view,
+.markdown-source-view {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.15px;
+  font-weight: var(--medium);
+}
+
 .markdown-preview-view h1,
 .HyperMD-header-1,
 .cm-header-1,

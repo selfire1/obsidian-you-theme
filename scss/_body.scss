@@ -3,6 +3,13 @@
   color: var(--primary-light) !important;
 }
 
+@mixin body-large {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.15px;
+  font-weight: var(--medium);
+}
+
 @mixin display-s {
   line-height: 2.75rem;
   font-size: var(--display-s);
@@ -40,6 +47,11 @@
   font-weight: var(--medium);
 }
 
+.markdown-preview-view,
+.markdown-source-view {
+  @include body-large();
+}
+
 .markdown-preview-view h1,
 .HyperMD-header-1,
 .cm-header-1,
@@ -54,12 +66,14 @@
   @include headline-l();
 }
 
+
 .markdown-preview-view h3,
 .HyperMD-header-3,
 .cm-header-3,
 .cm-s-obsidian .cm-header-3 {
   @include headline-m();
 }
+
 
 .markdown-preview-view h4,
 .HyperMD-header-4,
@@ -68,12 +82,14 @@
   @include headline-s();
 }
 
+
 .markdown-preview-view h5,
 .HyperMD-header-5,
 .cm-header-5,
 .cm-s-obsidian .cm-header-5 {
   @include title-l();
 }
+
 
 .markdown-preview-view h6,
 .HyperMD-header-6,

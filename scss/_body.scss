@@ -147,19 +147,17 @@ ol > li::marker {
 }
 
 /* Frontmatter */
-span.cm-hmd-frontmatter {
-  font-size: var(--smaller);
-  color: var(--text-muted);
-  font-family: var(--default-font) !important;
+.markdown-preview-section .frontmatter code,
+.frontmatter .token,
+.cm-s-obsidian .cm-hmd-frontmatter,
+pre.frontmatter[class*="language-yaml"],
+span.cm-hmd-frontmatter,
+span.cm-def.cm-hmd-frontmatter {
+  @include body-medium();
+  color: var(--secondary);
+  font-family: var(--default-font);
 }
 
-.markdown-preview-section .frontmatter code,
-.theme-dark .frontmatter .token,
-.theme-light .frontmatter .token,
-.theme-dark pre.frontmatter[class*="language-yaml"],
-.theme-light pre.frontmatter[class*="language-yaml"] {
-  font-family: var(--font-preview);
-}
 
 /* Frontmatter / Metadata container */
 .frontmatter-container {

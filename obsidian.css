@@ -525,22 +525,21 @@ ol > li::marker {
 /* Internal links */
 .markdown-preview-view .internal-link {
   text-decoration: none;
-  font-weight: var(--medium);
 }
 
 /* Frontmatter */
-span.cm-hmd-frontmatter {
-  font-size: var(--smaller);
-  color: var(--text-muted);
-  font-family: var(--default-font) !important;
-}
-
 .markdown-preview-section .frontmatter code,
-.theme-dark .frontmatter .token,
-.theme-light .frontmatter .token,
-.theme-dark pre.frontmatter[class*=language-yaml],
-.theme-light pre.frontmatter[class*=language-yaml] {
-  font-family: var(--font-preview);
+.frontmatter .token,
+.cm-s-obsidian .cm-hmd-frontmatter,
+pre.frontmatter[class*=language-yaml],
+span.cm-hmd-frontmatter,
+span.cm-def.cm-hmd-frontmatter {
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.015625rem;
+  font-weight: var(--medium);
+  color: var(--secondary);
+  font-family: var(--default-font);
 }
 
 /* Frontmatter / Metadata container */

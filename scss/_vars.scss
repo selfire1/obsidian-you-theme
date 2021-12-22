@@ -51,6 +51,10 @@
 --elevation4: 0.12;
 --elevation5: 0.14;
 
+// Interaction states
+--focus: var(--surface4);
+--hover: var(--surface2);
+
   /* Primary (Obsidian default in Hex: #705dcf) */
   --primary0: #000000;
   --primary10: #1a0064;

@@ -54,6 +54,12 @@
   font-weight: var(--medium);
 }
 
+@mixin label-medium {
+  line-height: 1rem;
+  font-size: .75rem;
+  letter-spacing: .03125rem;
+  font-weight: var(--medium);
+}
 // Headers
 .markdown-preview-view h1,
 .HyperMD-header-1,

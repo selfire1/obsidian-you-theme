@@ -54,6 +54,14 @@
   font-weight: var(--medium);
 }
 
+@mixin label-large {
+  text-transform: none;
+  line-height: 1.25rem;
+  font-size: .875rem;
+  letter-spacing: .00625rem;
+  font-weight: var(--medium);
+}
+
 @mixin label-medium {
   line-height: 1rem;
   font-size: .75rem;
@@ -168,12 +176,40 @@ span.cm-def.cm-hmd-frontmatter {
 /* Frontmatter / Metadata container */
 .frontmatter-container {
   border: none;
-  border-radius: var(--small-radius);
+  background-color: var(--focus);
+  
+  &.is-collapsed {
+    background-color: var(--surface-variant);
+  }
+
+  .frontmatter-container-header {
+  @include label-large();
+  color: var(--tertiary);
+  // display: block;
+  // position: relative;
+  // float: right;
+  border: none;
+  display: block;
+  left: 0;
 }
-.frontmatter-container .frontmatter-container-header {
-  font-weight: var(--medium);
-  font-size: var(--smallest);
+
+.frontmatter-collapse-indicator {
+  margin-left: auto;
+  position: sticky;
+  left: 20%;
 }
+
+.frontmatter-tag,
+.frontmatter-alias {
+  background-color: var(--tertiary-container);
+  color: var(--on-tertiary-container);
+}
+}
+
+.frontmatter-section {
+  @include label-medium();
+}
+
 
 /* Code blocks */
 /* Inline:  .cm-s-obsidian span.cm-inline-code  */
@@ -241,7 +277,6 @@ span.cm-def.cm-hmd-frontmatter {
 /* Adapted from https://github.com/kepano/obsidian-minimal/blob/master/obsidian.css */
 
 /* Preview */
-.frontmatter-container .tag,
 a.tag {
   background-color: var(--primary-faint);
   color: var(--text-normal);

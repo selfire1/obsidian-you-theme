@@ -207,6 +207,8 @@
     calc(var(--primary40-g) * var(--elevation5) + var(--neutral99-g) * (1 - var(--elevation5))),
     calc(var(--primary40-b) * var(--elevation5) + var(--neutral99-b) * (1 - var(--elevation5)))
     );
+  --focus: var(--surface4);
+  --hover: var(--surface2);
   /* Standard colours */
   --background-primary: var(--background);
   --background-primary-alt: var(--surface1);
@@ -545,12 +547,38 @@ span.cm-def.cm-hmd-frontmatter {
 /* Frontmatter / Metadata container */
 .frontmatter-container {
   border: none;
-  border-radius: var(--small-radius);
+  background-color: var(--focus);
+}
+.frontmatter-container.is-collapsed {
+  background-color: var(--surface-variant);
+}
+.frontmatter-container .frontmatter-container-header {
+  text-transform: none;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.00625rem;
+  font-weight: var(--medium);
+  color: var(--tertiary);
+  border: none;
+  display: block;
+  left: 0;
+}
+.frontmatter-container .frontmatter-collapse-indicator {
+  margin-left: auto;
+  position: sticky;
+  left: 20%;
+}
+.frontmatter-container .frontmatter-tag,
+.frontmatter-container .frontmatter-alias {
+  background-color: var(--tertiary-container);
+  color: var(--on-tertiary-container);
 }
 
-.frontmatter-container .frontmatter-container-header {
+.frontmatter-section {
+  line-height: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.03125rem;
   font-weight: var(--medium);
-  font-size: var(--smallest);
 }
 
 /* Code blocks */
@@ -619,7 +647,6 @@ span.cm-def.cm-hmd-frontmatter {
 /* Tags */
 /* Adapted from https://github.com/kepano/obsidian-minimal/blob/master/obsidian.css */
 /* Preview */
-.frontmatter-container .tag,
 a.tag {
   background-color: var(--primary-faint);
   color: var(--text-normal);

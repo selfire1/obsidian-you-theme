@@ -590,13 +590,38 @@ span.cm-def.cm-hmd-frontmatter {
 }
 
 /* Code blocks */
-/* Inline:  .cm-s-obsidian span.cm-inline-code  */
-.markdown-preview-view pre,
+/* Inline */
 .markdown-preview-view code,
 .cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
 .cm-s-obsidian .HyperMD-codeblock {
-  color: var(--primary-dark);
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.015625rem;
+  font-weight: var(--medium);
+  background-color: var(--surface-variant);
+  color: var(--on-surface-variant);
   font-family: var(--font-monospace);
+  font-size: inherit;
+  border-radius: 0;
+}
+
+.markdown-preview-view pre {
+  border-radius: var(--small-radius);
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.015625rem;
+  font-weight: var(--medium);
+  background-color: var(--surface-variant);
+  color: var(--on-surface-variant);
+  font-family: var(--font-monospace);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+.cm-s-obsidian div.HyperMD-codeblock-end-bg,
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background-color: var(--surface-variant);
+  border: none;
 }
 
 /* Empty State screen */

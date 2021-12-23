@@ -174,35 +174,42 @@ span.cm-def.cm-hmd-frontmatter {
 
 
 /* Frontmatter / Metadata container */
+// To-Do: Improve performance by using opacity for animation
 .frontmatter-container {
   border: none;
   background-color: var(--focus);
+  transition: background-color 125ms ease-out;
   
   &.is-collapsed {
-    background-color: var(--surface-variant);
+    transition: background-color 450ms ease-in;
+    background-color: var(--surface);
+    color: var(--on-surface);
   }
 
   .frontmatter-container-header {
   @include label-large();
-  color: var(--tertiary);
-  // display: block;
-  // position: relative;
-  // float: right;
+  color: var(--primary);
   border: none;
-  display: block;
-  left: 0;
+
+  &:hover {
+    color: var(--primary);
+  }
 }
 
 .frontmatter-collapse-indicator {
-  margin-left: auto;
-  position: sticky;
-  left: 20%;
+  &:hover {
+    color: var(--primary);
+  }
+  color: var(--primary);
 }
 
-.frontmatter-tag,
+.tag {
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
 .frontmatter-alias {
-  background-color: var(--tertiary-container);
-  color: var(--on-tertiary-container);
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
 }
 }
 

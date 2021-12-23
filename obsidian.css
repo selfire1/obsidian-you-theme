@@ -548,9 +548,12 @@ span.cm-def.cm-hmd-frontmatter {
 .frontmatter-container {
   border: none;
   background-color: var(--focus);
+  transition: background-color 125ms ease-out;
 }
 .frontmatter-container.is-collapsed {
-  background-color: var(--surface-variant);
+  transition: background-color 450ms ease-in;
+  background-color: var(--surface);
+  color: var(--on-surface);
 }
 .frontmatter-container .frontmatter-container-header {
   text-transform: none;
@@ -558,20 +561,25 @@ span.cm-def.cm-hmd-frontmatter {
   font-size: 0.875rem;
   letter-spacing: 0.00625rem;
   font-weight: var(--medium);
-  color: var(--tertiary);
+  color: var(--primary);
   border: none;
-  display: block;
-  left: 0;
+}
+.frontmatter-container .frontmatter-container-header:hover {
+  color: var(--primary);
 }
 .frontmatter-container .frontmatter-collapse-indicator {
-  margin-left: auto;
-  position: sticky;
-  left: 20%;
+  color: var(--primary);
 }
-.frontmatter-container .frontmatter-tag,
+.frontmatter-container .frontmatter-collapse-indicator:hover {
+  color: var(--primary);
+}
+.frontmatter-container .tag {
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
 .frontmatter-container .frontmatter-alias {
-  background-color: var(--tertiary-container);
-  color: var(--on-tertiary-container);
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
 }
 
 .frontmatter-section {

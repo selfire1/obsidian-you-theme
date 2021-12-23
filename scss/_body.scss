@@ -70,13 +70,13 @@
 }
 
 // Buttons
-@mixin button-filled($icon) {
+@mixin button-filled($icon: "") {
   background-color: var(--primary);
   color: var(--on-primary);
-  @include label-medium();
+  @include label-large();
   height: 40px;
   border-radius: 1.25rem;
-  padding-top: .75rem;
+  padding-top: 10px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   display: block;
@@ -89,30 +89,28 @@
     height: $size;
     width: $size;
     background-size: $size $size;
-    // background: url($icon) no-repeat;
     background-position: center;
     background-color: var(--on-primary);
     display: inline-block;
+    margin-top: -4px;
 
     mask: url($icon);
     -webkit-mask-image: url($icon);
     mask-image: url($icon);
     -webkit-mask-size: cover;
-    transform: translateY(-5px);
-    color: var(--primary);
-    padding-right: 8px;
+    mask-size: cover;
+    transform: translateY(4px);
+    margin-right: 8px;
     
   }
   padding-left: 16px;
+  padding-right: 24px;
+  vertical-align: middle;
   }
-
-  // with icon:
-  // padding-left: 1.5rem;
-  // padding-right: 1.5rem;
 
 }
 
-@mixin button-outline() {
+@mixin button-outline($icon: "") {
   background-color: inherit;
   color: var(--primary);
   @include label-large();
@@ -126,9 +124,30 @@
   display: block;
   margin: auto;
   
-  // with icon:
-  // padding-left: 1.5rem;
-  // padding-right: 1.5rem;
+  @if $icon != "" {
+    &::before {
+    $size: 1.125rem;
+    content: '';
+    height: $size;
+    width: $size;
+    background-size: $size $size;
+    background-position: center;
+    background-color: var(--primary);
+    display: inline-block;
+    margin-top: -4px;
+    mask: url($icon);
+    -webkit-mask-image: url($icon);
+    mask-image: url($icon);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    transform: translateY(4px);
+    margin-right: 8px;
+    
+  }
+  padding-left: 16px;
+  padding-right: 24px;
+  vertical-align: middle;
+  }
 
 }
 
@@ -334,16 +353,21 @@ span.cm-def.cm-hmd-frontmatter {
 }
 
 .is-mobile .empty-state-action {
-  @include button-outline();
 
+  // New File button
   &:first-of-type {
     transform: translate(0px, 30px);
+    @include button-outline("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z' /%3E%3C/svg%3E");
   }
 
-  // Go to file button
+  // Go to File button
   &:nth-child(2) {
   transform: translate(0px, -60px);
   @include button-filled("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' d='M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z' /%3E%3C/svg%3E");
+}
+  // Recent files button
+  &:nth-child(3) {
+    @include button-outline("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3' /%3E%3C/svg%3E");
 }
 }
 

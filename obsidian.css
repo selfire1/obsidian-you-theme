@@ -777,9 +777,13 @@ span.cm-def.cm-hmd-frontmatter {
 /* Adapted from https://github.com/kepano/obsidian-minimal/blob/master/obsidian.css */
 /* Preview */
 a.tag {
-  background-color: var(--primary-faint);
-  color: var(--text-normal);
-  font-size: var(--smaller);
+  text-transform: none;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.00625rem;
+  font-weight: var(--medium);
+  background-color: var(--tertiary-container);
+  color: var(--on-tertiary-container);
   padding: 3px 12px;
   text-align: center;
   text-decoration: none;
@@ -788,8 +792,37 @@ a.tag {
   border-radius: var(--medium-radius);
 }
 
-a.tag:hover {
-  color: var(--text-normal);
+/* Editor */
+.cm-s-obsidian span.cm-hashtag {
+  text-transform: none;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.00625rem;
+  font-weight: var(--medium);
+  background-color: var(--tertiary-container);
+  color: var(--on-tertiary-container);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 0;
+  vertical-align: middle;
+  padding-top: 1px;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 2px;
+  cursor: text;
+}
+.cm-s-obsidian span.cm-hashtag.cm-hashtag-begin {
+  border-top-left-radius: var(--medium-radius);
+  border-bottom-left-radius: var(--medium-radius);
+  padding-left: 8px;
+  border-right: none;
+}
+.cm-s-obsidian span.cm-hashtag.cm-hashtag-end {
+  border-top-right-radius: var(--medium-radius);
+  border-bottom-right-radius: var(--medium-radius);
+  border-left: none;
+  padding-right: 8px;
 }
 
 /* Hide the # character in front of a tag in Preview */
@@ -810,37 +843,6 @@ a.tag:after {
   left: 0px;
   border-radius: 4px;
 } */
-/* Editor */
-.cm-s-obsidian span.cm-hashtag {
-  background-color: var(--primary-faint);
-  color: var(--text-normal);
-  font-size: var(--smaller);
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 2px 0;
-  vertical-align: middle;
-  padding-top: 1px;
-  border-left: none;
-  border-right: none;
-  padding-bottom: 2px;
-  cursor: text;
-}
-
-span.cm-hashtag.cm-hashtag-begin {
-  border-top-left-radius: var(--medium-radius);
-  border-bottom-left-radius: var(--medium-radius);
-  padding-left: 8px;
-  border-right: none;
-}
-
-span.cm-hashtag.cm-hashtag-end {
-  border-top-right-radius: var(--medium-radius);
-  border-bottom-right-radius: var(--medium-radius);
-  border-left: none;
-  padding-right: 8px;
-}
-
 /* Floating Action Button (FAB)*/
 /* Preview */
 .view-action:nth-last-of-type(5) {

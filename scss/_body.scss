@@ -375,11 +375,15 @@ span.cm-def.cm-hmd-frontmatter {
 .is-mobile .mobile-toolbar {
   border-top: none;
   border-radius: 0;
-  background-color: var(--background-primary);
+  background-color: var(--surface1);
 }
 
 .is-mobile .mobile-toolbar-option {
-  color: var(--secondary-dark);
+  color: var(--on-surface-variant);
+
+  &:focus, &:active {
+    color: var(--on-secondary-container);
+  }
 }
 
 /* Tags */

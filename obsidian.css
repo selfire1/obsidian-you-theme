@@ -763,11 +763,14 @@ span.cm-def.cm-hmd-frontmatter {
 .is-mobile .mobile-toolbar {
   border-top: none;
   border-radius: 0;
-  background-color: var(--background-primary);
+  background-color: var(--surface1);
 }
 
 .is-mobile .mobile-toolbar-option {
-  color: var(--secondary-dark);
+  color: var(--on-surface-variant);
+}
+.is-mobile .mobile-toolbar-option:focus, .is-mobile .mobile-toolbar-option:active {
+  color: var(--on-secondary-container);
 }
 
 /* Tags */

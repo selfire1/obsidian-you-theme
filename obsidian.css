@@ -497,6 +497,10 @@ input[type=checkbox]:checked {
   filter: grayscale(100%);
 }
 
+.theme-dark .task-list-item-checkbox {
+  filter: invert(1);
+}
+
 /* Images */
 img {
   border-radius: var(--small-radius);

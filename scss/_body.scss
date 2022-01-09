@@ -54,6 +54,13 @@
   font-weight: var(--medium);
 }
 
+@mixin body-small {
+  line-height: 1rem;
+  font-size: .75rem;
+  letter-spacing: .025rem;
+  font-weight: var(--medium);
+}
+
 @mixin label-large {
   text-transform: none;
   line-height: 1.25rem;
@@ -395,7 +402,7 @@ span.cm-def.cm-hmd-frontmatter {
 
 /* Preview */
 a.tag {
-  @include label-large();
+  @include body-medium();
   background-color: var(--tertiary-container);
   color: var(--on-tertiary-container);
   padding: 3px 12px;
@@ -408,7 +415,7 @@ a.tag {
 
 /* Editor */
 .cm-s-obsidian span.cm-hashtag {
-  @include label-large();
+  @include body-medium();
   background-color: var(--tertiary-container);
   color: var(--on-tertiary-container);
   text-align: center;

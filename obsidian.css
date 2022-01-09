@@ -783,10 +783,9 @@ span.cm-def.cm-hmd-frontmatter {
 /* Adapted from https://github.com/kepano/obsidian-minimal/blob/master/obsidian.css */
 /* Preview */
 a.tag {
-  text-transform: none;
   line-height: 1.25rem;
   font-size: 0.875rem;
-  letter-spacing: 0.00625rem;
+  letter-spacing: 0.015625rem;
   font-weight: var(--medium);
   background-color: var(--tertiary-container);
   color: var(--on-tertiary-container);
@@ -800,10 +799,9 @@ a.tag {
 
 /* Editor */
 .cm-s-obsidian span.cm-hashtag {
-  text-transform: none;
   line-height: 1.25rem;
   font-size: 0.875rem;
-  letter-spacing: 0.00625rem;
+  letter-spacing: 0.015625rem;
   font-weight: var(--medium);
   background-color: var(--tertiary-container);
   color: var(--on-tertiary-container);

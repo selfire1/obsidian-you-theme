@@ -274,6 +274,11 @@
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
   --highlight-mix-blend-mode: darken;
+
+  // Interaction states
+  --focus: var(--surface4);
+  --hover: var(--surface2);
+
 }
 
 .theme-dark {

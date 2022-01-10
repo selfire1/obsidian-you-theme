@@ -1,8 +1,9 @@
+@use 'body';
+
 /* ------------- */
 /* # Title Bar */
 /* ------------- */
 /* Light Mode */
-.theme-light {
   // Title Bar
   .workspace-split.mod-root
     > .workspace-leaf:first-of-type:last-of-type
@@ -13,13 +14,15 @@
     box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.035),
       2.5px 2.4px 10px rgba(0, 0, 0, 0.05),
       6px 5.7px 24.1px rgba(0, 0, 0, 0.065), 20px 19px 80px rgba(0, 0, 0, 0.1);
-    background-color: var(--primary-light);
+    background-color: var(--surface2);
+    @include body.title-l();
+    color: var(--on-surface);
   }
 //   Hamburger icon
   .view-header-icon {
-  color: var(--primary);
+  color: var(--on-surface);
 }
-}
+
 
 /* Dark Mode */
 .theme-dark {

@@ -798,23 +798,6 @@ svg.three-horizontal-bars {
 }
 
 /* ## Title */
-.is-mobile .view-header-title,
-.workspace-leaf.mod-active .view-header-title {
-  line-height: 50px;
-  font-size: var(--h4);
-  font-weight: var(--regular);
-}
-
-.theme-light .is-mobile .view-header-title,
-.theme-light .workspace-leaf.mod-active .view-header-title {
-  color: var(--text-normal);
-}
-
-.theme-dark .is-mobile .view-header-title,
-.theme-dark .workspace-leaf.mod-active .view-header-title {
-  color: var(--text-normal);
-}
-
 .view-action:not(.page-header-button) {
   display: none;
 }

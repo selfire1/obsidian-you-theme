@@ -768,7 +768,6 @@ a.tag:after {
 /* ------------- */
 /* # Title Bar */
 /* ------------- */
-/* Light Mode */
 .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header,
 .workspace-leaf.mod-active .view-header,
 .is-mobile .view-header {
@@ -781,18 +780,15 @@ a.tag:after {
   color: var(--on-surface);
 }
 
+/* Style hamburger menu */
+/* Replace icon */
 .three-horizontal-bars {
+  background-color: currentColor;
   color: var(--on-surface);
 }
 
 .view-header-icon {
   color: var(--background-primary-alt);
-}
-
-/* Style hamburger menu */
-/* Replace icon */
-.three-horizontal-bars {
-  background-color: currentColor;
 }
 
 svg.three-horizontal-bars {

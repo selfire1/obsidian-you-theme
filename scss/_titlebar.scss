@@ -3,7 +3,6 @@
 /* ------------- */
 /* # Title Bar */
 /* ------------- */
-/* Light Mode */
   // Title Bar
   .workspace-split.mod-root
     > .workspace-leaf:first-of-type:last-of-type
@@ -19,20 +18,18 @@
     color: var(--on-surface);
   }
 
-  //   Hamburger Bar
+  /* Style hamburger menu */
+  /* Replace icon */
   .three-horizontal-bars {
+    background-color: currentColor;
     color: var(--on-surface);
   }
+
   .view-header-icon {
   color: var(--background-primary-alt);
 }
 
 
-/* Style hamburger menu */
-/* Replace icon */
-.three-horizontal-bars {
-  background-color: currentColor;
-}
 
 svg.three-horizontal-bars {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' /%3E%3C/svg%3E");

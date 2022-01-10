@@ -781,23 +781,11 @@ a.tag:after {
   color: var(--on-surface);
 }
 
-.view-header-icon {
+.three-horizontal-bars {
   color: var(--on-surface);
 }
 
-/* Dark Mode */
-.theme-dark .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header,
-.theme-dark .workspace-leaf.mod-active .view-header,
-.theme-dark .is-mobile .view-header {
-  border-bottom: none;
-  box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.035), 2.5px 2.4px 10px rgba(0, 0, 0, 0.05), 6px 5.7px 24.1px rgba(0, 0, 0, 0.065), 20px 19px 80px rgba(0, 0, 0, 0.1);
-  background-color: var(--background-secondary);
-  color: var(--primary-light);
-}
-.theme-dark .three-horizontal-bars {
-  color: var(--text-normal);
-}
-.theme-dark .view-header-icon {
+.view-header-icon {
   color: var(--background-primary-alt);
 }
 

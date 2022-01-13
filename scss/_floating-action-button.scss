@@ -1,13 +1,13 @@
 /* Floating Action Button (FAB)*/
-/* Preview */
+/* Switch to editor */
 .view-action:nth-last-of-type(5) {
-  color: var(--background-primary);
-  background-color: var(--primary);
+  color: var(--on-primary-container);
+  background-color: var(--primary-container);
 }
-/* Editor */
+/* Switch to preview */
 .view-action:nth-last-of-type(4) {
-  color: var(--background-primary);
-  background-color: var(--secondary);
+  color: var(--on-tertiary-container);
+  background-color: var(--tertiary-container);
 }
 
 /* Shared styling */

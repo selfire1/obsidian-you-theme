@@ -27,7 +27,7 @@
   --title-s: .875rem;
   /* Roundness */
   --big-radius: 24px;
-  --medium-radius: 14px;
+  --medium-radius: 16px;
   --small-radius: 8px;
   /* ## Font Weights */
   --light: 350;
@@ -837,22 +837,23 @@ svg.three-horizontal-bars {
 .view-action:nth-last-of-type(5),
 .view-action:nth-last-of-type(4) {
   display: flex;
-  padding: 5px;
+  padding: 0px;
+  margin: 0;
+  margin: 16px;
   position: absolute;
-  left: 82vw;
-  transform: translate(-50%, -50%);
+  left: calc(100vw - 72px);
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
-  border-radius: var(--big-radius);
+  width: 56px;
+  height: 56px;
+  border-radius: var(--medium-radius);
   box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.07), 2.5px 2.4px 10px rgba(0, 0, 0, 0.1), 6px 5.7px 24.1px rgba(0, 0, 0, 0.13), 20px 19px 80px rgba(0, 0, 0, 0.2);
 }
 
 /* Advanced Mobile Toolbar Mode disabled */
 body:not(.advanced-toolbar-mode) .view-action:nth-last-of-type(5),
 body:not(.advanced-toolbar-mode) .view-action:nth-last-of-type(4) {
-  top: calc(90vh - 48px);
+  top: calc(100vh - 96px);
 }
 
 /* Pencil SVG */

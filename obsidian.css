@@ -341,7 +341,7 @@
 }
 
 .cm-formatting-header {
-  color: var(--primary-container) !important;
+  color: var(--surface-variant) !important;
 }
 
 .markdown-preview-view h1,

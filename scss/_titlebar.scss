@@ -49,4 +49,9 @@
 
 .view-action {
   color: var(--on-surface-variant);
+  padding-left: 24px;
+  &:last-of-type {
+    padding-right: 16px;
+    margin: 0;
+  }
 }

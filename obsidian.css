@@ -810,6 +810,11 @@ svg.three-horizontal-bars {
 
 .view-action {
   color: var(--on-surface-variant);
+  padding-left: 24px;
+}
+.view-action:last-of-type {
+  padding-right: 16px;
+  margin: 0;
 }
 
 /* Floating Action Button (FAB)*/

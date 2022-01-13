@@ -10,9 +10,9 @@
   .workspace-leaf.mod-active .view-header,
   .is-mobile .view-header {
     border-bottom: none;
-    box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.035),
-      2.5px 2.4px 10px rgba(0, 0, 0, 0.05),
-      6px 5.7px 24.1px rgba(0, 0, 0, 0.065), 20px 19px 80px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.035),
+    //   2.5px 2.4px 10px rgba(0, 0, 0, 0.05),
+    //   6px 5.7px 24.1px rgba(0, 0, 0, 0.065), 20px 19px 80px rgba(0, 0, 0, 0.1);
     background-color: var(--surface2);
     height: 64px;
     align-items: center;
@@ -34,7 +34,11 @@
     @include body.title-l();
     color: var(--on-surface);
   }
-  
+  .is-mobile .view-header-title {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
   .is-mobile .view-header-icon {
     color: var(--on-surface);
     padding-left: 16px;

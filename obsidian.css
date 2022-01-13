@@ -340,7 +340,6 @@
   --highlight-mix-blend-mode: lighten;
 }
 
-/* Headers */
 .cm-formatting-header {
   color: var(--primary-container) !important;
 }

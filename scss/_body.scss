@@ -1,7 +1,3 @@
-/* Headers */
-.cm-formatting-header {
-  color: var(--primary-container) !important;
-}
 // MIXINS
 @mixin display-s {
   line-height: 2.75rem;
@@ -160,6 +156,10 @@
 
 
 // Headers
+.cm-formatting-header {
+  color: var(--primary-container) !important;
+}
+
 .markdown-preview-view h1,
 .HyperMD-header-1,
 .cm-header-1,

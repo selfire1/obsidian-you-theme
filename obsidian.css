@@ -342,7 +342,7 @@
 
 /* Headers */
 .cm-formatting-header {
-  color: var(--primary-light) !important;
+  color: var(--primary-container) !important;
 }
 
 .markdown-preview-view h1,

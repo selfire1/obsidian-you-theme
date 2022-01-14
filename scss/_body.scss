@@ -72,6 +72,13 @@
   font-weight: var(--medium);
 }
 
+@mixin label-small {
+  line-height: .375rem;
+  font-size: .6875rem;
+  letter-spacing: .03125rem;
+  font-weight: var(--medium);
+}
+
 // Buttons
 @mixin button-filled($icon: "") {
   background-color: var(--primary);

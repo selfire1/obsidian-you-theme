@@ -1279,6 +1279,10 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: var(--background-modifier-border-focus);
 }
 
+.BC-trail {
+  margin-top: 5px !important;
+}
+
 /* Style Settings */
 /* @settings
 

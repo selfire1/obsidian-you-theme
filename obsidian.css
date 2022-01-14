@@ -492,10 +492,10 @@ span.cm-def.cm-hmd-frontmatter {
   color: var(--secondary);
 }
 .frontmatter-container .frontmatter-collapse-indicator {
-  color: var(--primary);
+  color: var(--secondary);
 }
 .frontmatter-container .frontmatter-collapse-indicator:hover {
-  color: var(--primary);
+  color: var(--secondary);
 }
 .frontmatter-container .tag {
   background-color: var(--secondary-container);

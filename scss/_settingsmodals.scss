@@ -36,9 +36,44 @@ input[type="number"]:focus {
   background-size: 100% 2px;
 }
 
-/* Quick switcher selection item */
-.suggestion-item.is-selected {
-  background-color: var(--primary-faint);
+/* Quick switcher selection items */
+.is-mobile .suggestion-item {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-color: var(--surface-variant);
+  border-radius: 0;
+  @include body.body-large();
+  // display: flex;
+
+  &:first-child:empty {
+    background-color: red;
+  }
+  
+  // .suggestion-content {
+  //   position: absolute;
+  //   left: 0vw;
+  //   // padding: 10px;
+  // // border-bottom: 50px;
+  // margin-top: 20px;
+// }
+
+.suggestion-prefix {
+    // padding-top: 20px;
+    position: absolute;
+    top: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: var(--secondary);
+    // right: 100px;
+    // background: var(--background-primary);
+    // padding-left: 8px;
+    @include body.body-small();
+}
+
+  &.is-selected {
+  background-color: var(--surface);
+}
 }
 
 .is-mobile .suggestion-hotkey {
@@ -46,9 +81,22 @@ input[type="number"]:focus {
 }
 
 .suggestion-highlight {
-  font-weight: var(--bold);
-  color: var(--primary);
+  color: var(--secondary);
 }
+
+/* Height */
+.is-mobile .modal,
+.is-mobile .prompt,
+.is-mobile .suggestion-container {
+  max-height: calc(100% - 100px);
+  min-height: calc(100% - 100px);
+}
+// Prompts (Quick Switcher, etc …)
+.is-mobile .prompt {
+  min-width: 100%;
+  background-color: var(--surface);
+}
+
 
 /* Settings */
 /* Back modal */
@@ -79,14 +127,6 @@ input[type="number"]:focus {
 }
 .vertical-tab-header-group:last-of-type {
   border-bottom: none;
-}
-
-/* Height */
-.is-mobile .modal,
-.is-mobile .prompt,
-.is-mobile .suggestion-container {
-  max-height: calc(100% - 100px);
-  min-height: calc(100% - 100px);
 }
 
 /* Buttons */

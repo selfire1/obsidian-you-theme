@@ -917,9 +917,34 @@ input[type=number]:focus {
   background-size: 100% 2px;
 }
 
-/* Quick switcher selection item */
-.suggestion-item.is-selected {
-  background-color: var(--primary-faint);
+/* Quick switcher selection items */
+.is-mobile .suggestion-item {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-color: var(--surface-variant);
+  border-radius: 0;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.009375rem;
+  font-weight: var(--medium);
+}
+.is-mobile .suggestion-item:first-child:empty {
+  background-color: red;
+}
+.is-mobile .suggestion-item .suggestion-prefix {
+  position: absolute;
+  top: 0px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: var(--secondary);
+  line-height: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.025rem;
+  font-weight: var(--medium);
+}
+.is-mobile .suggestion-item.is-selected {
+  background-color: var(--surface);
 }
 
 .is-mobile .suggestion-hotkey {
@@ -927,8 +952,20 @@ input[type=number]:focus {
 }
 
 .suggestion-highlight {
-  font-weight: var(--bold);
-  color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Height */
+.is-mobile .modal,
+.is-mobile .prompt,
+.is-mobile .suggestion-container {
+  max-height: calc(100% - 100px);
+  min-height: calc(100% - 100px);
+}
+
+.is-mobile .prompt {
+  min-width: 100%;
+  background-color: var(--surface);
 }
 
 /* Settings */
@@ -960,14 +997,6 @@ input[type=number]:focus {
 
 .vertical-tab-header-group:last-of-type {
   border-bottom: none;
-}
-
-/* Height */
-.is-mobile .modal,
-.is-mobile .prompt,
-.is-mobile .suggestion-container {
-  max-height: calc(100% - 100px);
-  min-height: calc(100% - 100px);
 }
 
 /* Buttons */

@@ -5,35 +5,15 @@
 /* -------------- */
 
 /* Text input animation */
-.is-mobile input[type="text"] {
-  display: block;
-  width: 100%;
-  padding: 10px 14px;
-  height: auto;
-  border-top: none;
-  border-bottom: 2px solid var(--text-faint);
-  border-left: none;
-  border-right: none;
-  font-size: 17px;
-  background: linear-gradient(var(--secondary-dark), var(--secondary-dark)) bottom / 0%
-    2px no-repeat var(--background-secondary-alt);
-  border-radius: var(--small-radius) var(--small-radius) 0px 0px;
-  transition: 0.2s;
-  transition-delay: 0.5s;
-}
+.is-mobile input.prompt-input {
+  background-color: var(--primary-container);
+  border-radius: var(--big-radius);
+  @include body.body-large();
+  color: var(--on-primary-container);
 
-input[type="text"]:active,
-input[type="search"]:active,
-input[type="email"]:active,
-input[type="password"]:active,
-input[type="number"]:active,
-input[type="text"]:focus,
-input[type="search"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus {
-  border: none;
-  background-size: 100% 2px;
+  &:active, &:focus {
+    border: 0;
+  }
 }
 
 /* Quick switcher selection items */

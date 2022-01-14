@@ -4,7 +4,7 @@
 /* Quick Action */
 /* -------------- */
 
-/* Text input animation */
+/* Text input */
 .is-mobile input.prompt-input {
   background-color: var(--primary-container);
   border-radius: var(--big-radius);
@@ -16,7 +16,7 @@
   }
 }
 
-/* Quick switcher selection items */
+/* Selection items */
 .is-mobile .suggestion-item {
   border-bottom: 1px solid;
   padding-bottom: 10px;
@@ -24,20 +24,8 @@
   border-color: var(--surface-variant);
   border-radius: 0;
   @include body.body-large();
-  // display: flex;
 
-  &:first-child:empty {
-    background-color: red;
-  }
-  
-  // .suggestion-content {
-  //   position: absolute;
-  //   left: 0vw;
-  //   // padding: 10px;
-  // // border-bottom: 50px;
-  // margin-top: 20px;
-// }
-
+  // Command palette plugin names (WIP)
 .suggestion-prefix {
     // padding-top: 20px;
     position: absolute;

@@ -886,7 +886,7 @@ svg.pencil {
 /* -------------- */
 /* Quick Action */
 /* -------------- */
-/* Text input animation */
+/* Text input */
 .is-mobile input.prompt-input {
   background-color: var(--primary-container);
   border-radius: var(--big-radius);
@@ -900,7 +900,7 @@ svg.pencil {
   border: 0;
 }
 
-/* Quick switcher selection items */
+/* Selection items */
 .is-mobile .suggestion-item {
   border-bottom: 1px solid;
   padding-bottom: 10px;
@@ -911,9 +911,6 @@ svg.pencil {
   font-size: 1rem;
   letter-spacing: 0.009375rem;
   font-weight: var(--medium);
-}
-.is-mobile .suggestion-item:first-child:empty {
-  background-color: red;
 }
 .is-mobile .suggestion-item .suggestion-prefix {
   position: absolute;

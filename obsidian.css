@@ -452,7 +452,7 @@ ol > li::marker {
   text-decoration: none;
 }
 
-/* Frontmatter */
+/* Frontmatter Edit Mode */
 .markdown-preview-section .frontmatter code,
 .frontmatter .token,
 .cm-s-obsidian .cm-hmd-frontmatter,
@@ -469,14 +469,15 @@ span.cm-def.cm-hmd-frontmatter {
 
 /* Frontmatter / Metadata container */
 .frontmatter-container {
-  border: none;
-  background-color: var(--focus);
-  transition: background-color 125ms ease-out;
+  border: 1px solid var(--surface-variant);
+  background-color: var(--surface);
+  transition: border 250ms ease-in;
 }
 .frontmatter-container.is-collapsed {
-  transition: background-color 450ms ease-in;
-  background-color: var(--surface);
+  border: 0;
   color: var(--on-surface);
+  background-color: var(--surface);
+  transition: border 450ms ease-out;
 }
 .frontmatter-container .frontmatter-container-header {
   text-transform: none;
@@ -484,11 +485,11 @@ span.cm-def.cm-hmd-frontmatter {
   font-size: 0.875rem;
   letter-spacing: 0.00625rem;
   font-weight: var(--medium);
-  color: var(--primary);
+  color: var(--secondary);
   border: none;
 }
 .frontmatter-container .frontmatter-container-header:hover {
-  color: var(--primary);
+  color: var(--secondary);
 }
 .frontmatter-container .frontmatter-collapse-indicator {
   color: var(--primary);

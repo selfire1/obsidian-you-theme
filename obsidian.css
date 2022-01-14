@@ -769,8 +769,7 @@ a.tag:after {
 /* # Title Bar */
 /* ------------- */
 .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header,
-.workspace-leaf.mod-active .view-header,
-.is-mobile .view-header {
+.workspace-leaf.mod-active .view-header {
   border-bottom: none;
   background-color: var(--surface2);
   height: 64px;

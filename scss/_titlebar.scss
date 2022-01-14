@@ -51,11 +51,8 @@
   display: none;
 }
 
-.view-action {
+.view-action.page-header-button {
   color: var(--on-surface-variant);
-  padding-left: 24px;
-  &:last-of-type {
-    padding-right: 16px;
-    margin: 0;
-  }
+  margin-left: 12px;
+  margin-right: 12px;
 }

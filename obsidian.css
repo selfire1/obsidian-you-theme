@@ -1034,7 +1034,7 @@ button:not(.mod-cta):not(.mod-warning),
 .is-mobile .modal,
 .is-mobile .prompt,
 .is-mobile .suggestion-container {
-  border-radius: var(--big-radius) var(--big-radius) 0 0;
+  border-radius: var(--medium-radius) var(--medium-radius) 0 0;
   padding: 15px 20px;
 }
 

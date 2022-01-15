@@ -959,13 +959,16 @@ svg.pencil {
 .is-mobile .modal,
 .is-mobile .prompt,
 .is-mobile .suggestion-container {
-  max-height: calc(100% - 100px);
-  min-height: calc(100% - 100px);
+  height: calc(100% - 100px);
 }
 
 .is-mobile .prompt {
   min-width: 100%;
   background-color: var(--surface);
+}
+
+.is-mobile .suggestion-container:not(.modal-container) {
+  height: 200px;
 }
 
 /* Settings */

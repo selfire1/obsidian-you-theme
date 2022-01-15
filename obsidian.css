@@ -502,8 +502,11 @@ span.cm-def.cm-hmd-frontmatter {
   color: var(--on-secondary-container);
 }
 .frontmatter-container .frontmatter-alias {
-  background-color: var(--primary-container);
-  color: var(--on-primary-container);
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
+.frontmatter-container .frontmatter-alias-icon {
+  color: var(--on-secondary-container);
 }
 
 .frontmatter-section {

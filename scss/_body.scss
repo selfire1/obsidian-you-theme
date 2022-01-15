@@ -389,6 +389,21 @@ span.cm-def.cm-hmd-frontmatter {
 }
 }
 
+// Progress element
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+}
+progress::-webkit-progress-bar {
+  border-radius: var(--medium-radius);
+  background: var(--primary-container);
+  height: 0.6em;
+}
+progress::-webkit-progress-value {
+  border-radius: var(--medium-radius);
+    background: var(--on-primary-container);
+    height: 0.6em;
+}
 
 /* Mobile Toolbar */
 .is-mobile .mobile-toolbar {

@@ -1,7 +1,11 @@
+@use 'body';
+
 // -----------------------
 // Breadcrumbs
 // -----------------------
 
 .BC-trail {
     margin-top: 5px !important;
+    @include body.label-medium();
+    color: var(--secondary);
 }

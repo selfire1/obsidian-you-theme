@@ -1281,6 +1281,11 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 
 .BC-trail {
   margin-top: 5px !important;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.03125rem;
+  font-weight: var(--medium);
+  color: var(--secondary);
 }
 
 /* Style Settings */

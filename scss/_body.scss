@@ -235,6 +235,13 @@ img {
   border-radius: var(--small-radius);
 }
 
+// Lists
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1,
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1
+ {
+  color: var(--secondary);
+}
+
 /* Blockquotes */
 /* Callout boxes from Vileplume: https://github.com/hungsu/vileplume-obsidian */
 .markdown-preview-view blockquote,

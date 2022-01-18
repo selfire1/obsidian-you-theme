@@ -858,6 +858,9 @@ svg.pencil {
 .is-mobile input.prompt-input:active, .is-mobile input.prompt-input:focus {
   border: 0;
 }
+.is-mobile input.prompt-input::placeholder {
+  color: var(--secondary);
+}
 
 /* Selection items */
 .is-mobile .suggestion-item {

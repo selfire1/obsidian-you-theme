@@ -1185,6 +1185,11 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   border-radius: var(--small-radius);
 }
 
+.markdown-source-view .markdown-embed, .markdown-source-view .file-embed {
+  border: 2px solid var(--surface-variant);
+  border-radius: var(--small-radius);
+}
+
 /* Embeds */
 /* Naked Embeds (modified from death_au (https://forum.obsidian.md/t/naked-embeds-css-tweak/72) */
 .markdown-embed-title {
@@ -1205,15 +1210,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   margin: 0;
 }
 
-.markdown-preview-view .markdown-embed-content {
-  border-radius: var(--big-radius);
-  max-height: unset;
-  background-color: var(--primary-faint);
-}
-
 /* the link on the top right corner*/
 .markdown-embed-link {
-  color: var(--text-faint) !important;
+  color: var(--secondary) !important;
   top: 15px;
 }
 

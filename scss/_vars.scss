@@ -159,7 +159,7 @@
   --text-normal: var(--on-background);
   --text-muted: var(--on-surface-variant);
   --text-muted-rgb: 136, 136, 136;
-  --text-faint: #999999;
+  --text-faint: var(--secondary);
   --text-error: #800000;
   --text-error-hover: #990000;
   --text-highlight-bg: var(--surface-variant)

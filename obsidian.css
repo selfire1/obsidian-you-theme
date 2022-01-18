@@ -42,170 +42,85 @@
   --elevation3: 0.11;
   --elevation4: 0.12;
   --elevation5: 0.14;
-  /* Primary (Obsidian default in Hex: #705dcf) */
-  --primary0: #000000;
-  --primary10: #1a0064;
-  --primary20: #30128d;
-  --primary25: #3b2398;
-  --primary30: #4731a4;
-  --primary35: #533fb0;
-  --primary40: #5f4bbd;
-  --primary40-r: 95;
-  --primary40-g: 75;
-  --primary40-b: 189;
-  --primary50: #7865d8;
-  --primary60: #9380f5;
-  --primary70: #af9eff;
-  --primary80: #cabeff;
-  --primary80-r: 202;
-  --primary80-g: 190;
-  --primary80-b: 255;
-  --primary90: #e7deff;
-  --primary95: #f5eeff;
-  --primary98: #fdf7ff;
-  --primary99: #fffbff;
-  --primary99: #fffbff;
-  --primary100: #fff;
-  --secondary0: #000000;
-  --secondary10: #1c192c;
-  --secondary20: #312e41;
-  --secondary25: #3c394c;
-  --secondary30: #484459;
-  --secondary35: #545065;
-  --secondary40: #605c71;
-  --secondary50: #79748b;
-  --secondary60: #938ea5;
-  --secondary70: #aea8c1;
-  --secondary80: #c9c3dc;
-  --secondary90: #e6dff9;
-  --secondary95: #f4eeff;
-  --secondary98: #fdf7ff;
-  --secondary99: #fffbff;
-  --secondary100: #ffffff;
-  --tertiary0: #000000;
-  --tertiary10: #301020;
-  --tertiary20: #482535;
-  --tertiary25: #553041;
-  --tertiary30: #623b4c;
-  --tertiary35: #6f4758;
-  --tertiary40: #7c5264;
-  --tertiary50: #976b7d;
-  --tertiary60: #b38497;
-  --tertiary70: #d09db1;
-  --tertiary80: #edb8cd;
-  --tertiary90: #ffd9e8;
-  --tertiary95: #ffecf2;
-  --tertiary98: #fff8f9;
-  --tertiary99: #fcfcfc;
-  --tertiary100: #ffffff;
-  --error0: #000000;
-  --error10: #410001;
-  --error20: #680003;
-  --error25: #7d0004;
-  --error30: #930006;
-  --error35: #a8060f;
-  --error40: #ba1b1b;
-  --error50: #dd3730;
-  --error60: #ff5449;
-  --error70: #ff897a;
-  --error80: #ffb4a9;
-  --error90: #ffdad4;
-  --error95: #ffede9;
-  --error98: #fff8f6;
-  --error99: #fcfcfc;
-  --error100: #ffffff;
-  --neutral0: #000000;
-  --neutral10: #1c1b1e;
-  --neutral10-r: 28;
-  --neutral10-g: 27;
-  --neutral10-b: 30;
-  --neutral20: #313033;
-  --neutral25: #3d3b3f;
-  --neutral30: #48464a;
-  --neutral35: #545256;
-  --neutral40: #605d62;
-  --neutral50: #79767b;
-  --neutral60: #939094;
-  --neutral70: #aeaaaf;
-  --neutral80: #c9c5ca;
-  --neutral90: #e5e1e5;
-  --neutral95: #f4eff4;
-  --neutral98: #fdf8fd;
-  --neutral99: #fffbff;
-  --neutral99-r: 255;
-  --neutral99-g: 251;
-  --neutral99-b: 255;
-  --neutral100: #ffffff;
-  --neutral-variant0: #000000;
-  --neutral-variant10: #1c1b22;
-  --neutral-variant20: #312f38;
-  --neutral-variant25: #3c3a43;
-  --neutral-variant30: #48454f;
-  --neutral-variant35: #54515a;
-  --neutral-variant40: #605d67;
-  --neutral-variant50: #79767f;
-  --neutral-variant60: #938f99;
-  --neutral-variant70: #ada9b3;
-  --neutral-variant80: #c9c4d0;
-  --neutral-variant90: #e5e0eb;
-  --neutral-variant95: #f4effa;
-  --neutral-variant98: #fdf8ff;
-  --neutral-variant99: #fffbff;
-  --neutral-variant100: #ffffff;
 }
 
 .theme-light {
-  --primary: var(--primary40);
-  --primary-container: var(--primary90);
-  --secondary: var(--secondary40);
-  --secondary-container: var(--secondary90);
-  --tertiary: var(--tertiary40);
-  --tertiary-container: var(--tertiary90);
-  --surface: var(--neutral99);
-  --surface-variant: var(--neutral-variant90);
-  --background: var(--neutral99);
-  --error: var(--error40);
-  --error-container: var(--error90);
-  --on-primary: var(--primary100);
-  --on-primary-container: var(--primary10);
-  --on-secondary: var(--secondary100);
-  --on-secondary-container: var(--secondary10);
-  --on-tertiary: var(--tertiary100);
-  --on-tertiary-container: var(--tertiary10);
-  --on-surface: var(--neutral10);
-  --on-surface-variant: var(--neutral-variant30);
-  --on-error: var(--error100);
-  --on-error-container: var(--error10);
-  --on-background: var(--neutral10);
-  --outline: var(--neutral-variant50);
-  --shadow: var(--neutral0);
-  --inverse-surface: var(--neutral20);
-  --inverse-on-surface: var(--neutral95);
-  --inverse-primary: var(--primary80);
+  --primary: #5F4BBD;
+  --primary-r: 95;
+  --primary-g: 75;
+  --primary-b: 189;
+  --onPrimary: #FFFFFF;
+  --primaryContainer: #E7DEFF;
+  --onPrimaryContainer: #1A0064;
+  --secondary: #605C71;
+  --onSecondary: #FFFFFF;
+  --secondaryContainer: #E6DFF9;
+  --onSecondaryContainer: #1C192C;
+  --tertiary: #7C5264;
+  --onTertiary: #FFFFFF;
+  --tertiaryContainer: #FFD9E8;
+  --onTertiaryContainer: #301020;
+  --error: #BA1B1B;
+  --errorContainer: #FFDAD4;
+  --onError: #FFFFFF;
+  --onErrorContainer: #410001;
+  --background: #FFFBFF;
+  --onBackground: #1C1B1E;
+  --surface: #FFFBFF;
+  --surface-r: 255;
+  --surface-g: 251;
+  --surface-b: 255;
+  --surface: #FFFBFF;
+  --onSurface: #1C1B1E;
+  --surfaceVariant: #E5E0EB;
+  --onSurfaceVariant: #48454F;
+  --outline: #79767F;
+  --inverseOnSurface: #F4EFF4;
+  --inverseSurface: #313033;
+  --primaryInverse: #CABEFF;
+  --on-primary: var(--onPrimary);
+  --primary-container: var(--primaryContainer);
+  --on-primary-container: var(--onPrimaryContainer);
+  --on-secondary: var(--onSecondary);
+  --secondary-container: var(--secondaryContainer);
+  --on-secondary-container: var(--onSecondaryContainer);
+  --on-tertiary: var(--onTertiary);
+  --tertiary-container: var(--tertiaryContainer);
+  --on-tertiary-container: var(--onTertiaryContainer);
+  --error-container: var(--errorContainer);
+  --on-error: var(--onError);
+  --on-error-container: var(--onErrorContainer);
+  --on-background: var(--onBackground);
+  --on-surface: var(--onSurface);
+  --surface-variant: var(--surfaceVariant);
+  --on-surface-variant: var(--onSurfaceVariant);
+  --inverse-on-surface: var(--inverseOnSurface);
+  --inverse-surface: var(--inverseSurface);
+  --primary-inverse: var(--primaryInverse);
   --surface1: rgb(
-    calc(var(--primary40-r) * var(--elevation1) + var(--neutral99-r) * (1 - var(--elevation1))),
-    calc(var(--primary40-g) * var(--elevation1) + var(--neutral99-g) * (1 - var(--elevation1))),
-    calc(var(--primary40-b) * var(--elevation1) + var(--neutral99-b) * (1 - var(--elevation1)))
+    calc(var(--primary-r) * var(--elevation1) + var(--surface-r) * (1 - var(--elevation1))),
+    calc(var(--primary-g) * var(--elevation1) + var(--surface-g) * (1 - var(--elevation1))),
+    calc(var(--primary-b) * var(--elevation1) + var(--surface-b) * (1 - var(--elevation1)))
     );
   --surface2: rgb(
-    calc(var(--primary40-r) * var(--elevation2) + var(--neutral99-r) * (1 - var(--elevation2))),
-    calc(var(--primary40-g) * var(--elevation2) + var(--neutral99-g) * (1 - var(--elevation2))),
-    calc(var(--primary40-b) * var(--elevation2) + var(--neutral99-b) * (1 - var(--elevation2)))
+    calc(var(--primary-r) * var(--elevation2) + var(--surface-r) * (1 - var(--elevation2))),
+    calc(var(--primary-g) * var(--elevation2) + var(--surface-g) * (1 - var(--elevation2))),
+    calc(var(--primary-b) * var(--elevation2) + var(--surface-b) * (1 - var(--elevation2)))
     );
   --surface3: rgb(
-    calc(var(--primary40-r) * var(--elevation3) + var(--neutral99-r) * (1 - var(--elevation3))),
-    calc(var(--primary40-g) * var(--elevation3) + var(--neutral99-g) * (1 - var(--elevation3))),
-    calc(var(--primary40-b) * var(--elevation3) + var(--neutral99-b) * (1 - var(--elevation3)))
+    calc(var(--primary-r) * var(--elevation3) + var(--surface-r) * (1 - var(--elevation3))),
+    calc(var(--primary-g) * var(--elevation3) + var(--surface-g) * (1 - var(--elevation3))),
+    calc(var(--primary-b) * var(--elevation3) + var(--surface-b) * (1 - var(--elevation3)))
     );
   --surface4: rgb(
-    calc(var(--primary40-r) * var(--elevation4) + var(--neutral99-r) * (1 - var(--elevation4))),
-    calc(var(--primary40-g) * var(--elevation4) + var(--neutral99-g) * (1 - var(--elevation4))),
-    calc(var(--primary40-b) * var(--elevation4) + var(--neutral99-b) * (1 - var(--elevation4)))
+    calc(var(--primary-r) * var(--elevation4) + var(--surface-r) * (1 - var(--elevation4))),
+    calc(var(--primary-g) * var(--elevation4) + var(--surface-g) * (1 - var(--elevation4))),
+    calc(var(--primary-b) * var(--elevation4) + var(--surface-b) * (1 - var(--elevation4)))
     );
   --surface5: rgb(
-    calc(var(--primary40-r) * var(--elevation5) + var(--neutral99-r) * (1 - var(--elevation5))),
-    calc(var(--primary40-g) * var(--elevation5) + var(--neutral99-g) * (1 - var(--elevation5))),
-    calc(var(--primary40-b) * var(--elevation5) + var(--neutral99-b) * (1 - var(--elevation5)))
+    calc(var(--primary-r) * var(--elevation5) + var(--surface-r) * (1 - var(--elevation5))),
+    calc(var(--primary-g) * var(--elevation5) + var(--surface-g) * (1 - var(--elevation5))),
+    calc(var(--primary-b) * var(--elevation5) + var(--surface-b) * (1 - var(--elevation5)))
     );
   /* Standard colours */
   --background-primary: var(--background);
@@ -248,57 +163,81 @@
 }
 
 .theme-dark {
-  --primary: var(--primary80);
-  --primary-container: var(--primary30);
-  --secondary: var(--secondary80);
-  --secondary-container: var(--secondary30);
-  --tertiary: var(--tertiary80);
-  --tertiary-container: var(--tertiary30);
-  --surface: var(--neutral10);
-  --surface-variant: var(--neutral-variant30);
-  --background: var(--neutral10);
-  --error: var(--error80);
-  --error-container: var(--error30);
-  --on-primary: var(--primary20);
-  --on-primary-container: var(--primary90);
-  --on-secondary: var(--secondary20);
-  --on-secondary-container: var(--secondary90);
-  --on-tertiary: var(--tertiary20);
-  --on-tertiary-container: var(--tertiary90);
-  --on-surface: var(--neutral90);
-  --on-surface-variant: var(--neutral-variant80);
-  --on-error: var(--error20);
-  --on-error-container: var(--error80);
-  --on-background: var(--neutral90);
-  --outline: var(--neutral-variant60);
-  --shadow: var(--neutral0);
-  --inverse-surface: var(--neutral90);
-  --inverse-on-surface: var(--neutral20);
-  --inverse-primary: var(--primary40);
+  --primary: #CABEFF;
+  --primary-r: 202;
+  --primary-g: 190;
+  --primary-b: 255;
+  --onPrimary: #30128D;
+  --primaryContainer: #4731A4;
+  --onPrimaryContainer: #E7DEFF;
+  --secondary: #C9C3DC;
+  --onSecondary: #312E41;
+  --secondaryContainer: #484459;
+  --onSecondaryContainer: #E6DFF9;
+  --tertiary: #EDB8CD;
+  --onTertiary: #482535;
+  --tertiaryContainer: #623B4C;
+  --onTertiaryContainer: #FFD9E8;
+  --error: #FFB4A9;
+  --errorContainer: #930006;
+  --onError: #680003;
+  --onErrorContainer: #FFDAD4;
+  --background: #1C1B1E;
+  --onBackground: #E5E1E5;
+  --surface: #1C1B1E;
+  --surface-r: 28;
+  --surface-g: 27;
+  --surface-b: 30;
+  --onSurface: #E5E1E5;
+  --surfaceVariant: #48454F;
+  --onSurfaceVariant: #C9C4D0;
+  --outline: #938F99;
+  --inverseOnSurface: #1C1B1E;
+  --inverseSurface: #E5E1E5;
+  --primaryInverse: #5F4BBD;
+  --on-primary: var(--onPrimary);
+  --primary-container: var(--primaryContainer);
+  --on-primary-container: var(--onPrimaryContainer);
+  --on-secondary: var(--onSecondary);
+  --secondary-container: var(--secondaryContainer);
+  --on-secondary-container: var(--onSecondaryContainer);
+  --on-tertiary: var(--onTertiary);
+  --tertiary-container: var(--tertiaryContainer);
+  --on-tertiary-container: var(--onTertiaryContainer);
+  --error-container: var(--errorContainer);
+  --on-error: var(--onError);
+  --on-error-container: var(--onErrorContainer);
+  --on-background: var(--onBackground);
+  --on-surface: var(--onSurface);
+  --surface-variant: var(--surfaceVariant);
+  --on-surface-variant: var(--onSurfaceVariant);
+  --inverse-on-surface: var(--inverseOnSurface);
+  --inverse-surface: var(--inverseSurface);
+  --primary-inverse: var(--primaryInverse);
   --surface1: rgb(
-    calc(var(--primary80-r) * var(--elevation1) + var(--neutral10-r) * (1 - var(--elevation1))),
-    calc(var(--primary80-g) * var(--elevation1) + var(--neutral10-g) * (1 - var(--elevation1))),
-    calc(var(--primary80-b) * var(--elevation1) + var(--neutral10-b) * (1 - var(--elevation1)))
+    calc(var(--primary-r) * var(--elevation1) + var(--surface-r) * (1 - var(--elevation1))),
+    calc(var(--primary-g) * var(--elevation1) + var(--surface-g) * (1 - var(--elevation1))),
+    calc(var(--primary-b) * var(--elevation1) + var(--surface-b) * (1 - var(--elevation1)))
     );
   --surface2: rgb(
-    calc(var(--primary80-r) * var(--elevation2) + var(--neutral10-r) * (1 - var(--elevation2))),
-    calc(var(--primary80-g) * var(--elevation2) + var(--neutral10-g) * (1 - var(--elevation2))),
-    calc(var(--primary80-b) * var(--elevation2) + var(--neutral10-b) * (1 - var(--elevation2)))
+    calc(var(--primary-r) * var(--elevation2) + var(--surface-r) * (1 - var(--elevation2))),
+    calc(var(--primary-g) * var(--elevation2) + var(--surface-g) * (1 - var(--elevation2))),
+    calc(var(--primary-b) * var(--elevation2) + var(--surface-b) * (1 - var(--elevation2)))
     );
   --surface3: rgb(
-    calc(var(--primary80-r) * var(--elevation3) + var(--neutral10-r) * (1 - var(--elevation3))),
-    calc(var(--primary80-g) * var(--elevation3) + var(--neutral10-g) * (1 - var(--elevation3))),
-    calc(var(--primary80-b) * var(--elevation3) + var(--neutral10-b) * (1 - var(--elevation3)))
+    calc(var(--primary-r) * var(--elevation3) + var(--surface-r) * (1 - var(--elevation3))),
+    calc(var(--primary-g) * var(--elevation3) + var(--surface-g) * (1 - var(--elevation3))),
+    calc(var(--primary-b) * var(--elevation3) + var(--surface-b) * (1 - var(--elevation3)))
     );
   --surface4: rgb(
-    calc(var(--primary80-r) * var(--elevation4) + var(--neutral10-r) * (1 - var(--elevation4))),
-    calc(var(--primary80-g) * var(--elevation4) + var(--neutral10-g) * (1 - var(--elevation4))),
-    calc(var(--primary80-b) * var(--elevation4) + var(--neutral10-b) * (1 - var(--elevation4)))
+    calc(var(--primary-r) * var(--elevation4) + var(--surface-r) * (1 - var(--elevation4))),
+    calc(var(--primary-g) * var(--elevation4) + var(--surface-g) * (1 - var(--elevation4))),
+    calc(var(--primary-b) * var(--elevation4) + var(--surface-b) * (1 - var(--elevation4)))
     );
   --surface5: rgb(
-    calc(var(--primary80-r) * var(--elevation5) + var(--neutral10-r) * (1 - var(--elevation5))),
-    calc(var(--primary80-g) * var(--elevation5) + var(--neutral10-g) * (1 - var(--elevation5))),
-    calc(var(--primary80-b) * var(--elevation5) + var(--neutral10-b) * (1 - var(--elevation5)))
+    calc(var(--primary-r) * var(--elevation5) + var(--surface-r) * (1 - var(--elevation5))),
+    calc(var(--primary-g) * var(--elevation5) + var(--surface-g) * (1 - var(--elevation5))),
+    calc(var(--primary-b) * var(--elevation5) + var(--surface-b) * (1 - var(--elevation5)))
     );
   --focus: var(--surface4);
   --hover: var(--surface2);
@@ -325,7 +264,7 @@
   --text-error: #cf6679;
   --text-error-hover: #990000;
   --text-highlight-bg: var(--surface-variant)
-   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: rgba(23, 48, 77, 0.99);
   --text-on-accent: #dcddde;
   --interactive-normal: #2a2a2a;
@@ -1292,26 +1231,18 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 name: Obsidian You
 id: title
 settings:
-    - 
+    -
         id: colour-header
-        title: Colours
+        title: Colour schemes
         type: heading
         level: 2
-        collapsed: false
-    - 
-        id: primary
-        title: Primary Colour
-        description: Automatically generates a colour palette
-        type: variable-color
-        opacity: false
-        format: hsl-split
-        default: '#705dcf'
+        collapsed: true
     - 
         id: font-header
         title: Fonts
         type: heading
         level: 2
-        collapsed: false
+        collapsed: true
     - 
         id: font-preview
         title: Preview Font
@@ -1332,10 +1263,10 @@ settings:
         default: Menlo,"Roboto Mono",monospace,SFMono-Regular,Consolas;
     - 
         id: other-header
-        title: Additional settings
+        title: Misc settings
         type: heading
         level: 2
-        collapsed: false
+        collapsed: true
     - 
         id: advanced-toolbar-mode
         title: Advanced toolbar mode

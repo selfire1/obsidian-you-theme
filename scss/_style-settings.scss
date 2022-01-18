@@ -4,26 +4,18 @@
 name: Obsidian You
 id: title
 settings:
-    - 
+    -
         id: colour-header
-        title: Colours
+        title: Colour schemes
         type: heading
         level: 2
-        collapsed: false
-    - 
-        id: primary
-        title: Primary Colour
-        description: Automatically generates a colour palette
-        type: variable-color
-        opacity: false
-        format: hsl-split
-        default: '#705dcf'
+        collapsed: true
     - 
         id: font-header
         title: Fonts
         type: heading
         level: 2
-        collapsed: false
+        collapsed: true
     - 
         id: font-preview
         title: Preview Font
@@ -44,10 +36,10 @@ settings:
         default: Menlo,"Roboto Mono",monospace,SFMono-Regular,Consolas;
     - 
         id: other-header
-        title: Additional settings
+        title: Misc settings
         type: heading
         level: 2
-        collapsed: false
+        collapsed: true
     - 
         id: advanced-toolbar-mode
         title: Advanced toolbar mode

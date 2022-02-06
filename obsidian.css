@@ -785,21 +785,10 @@ svg.three-horizontal-bars {
 }
 
 /* Floating Action Button (FAB)*/
-/* Switch to editor */
-.view-action:nth-last-of-type(5) {
-  color: var(--on-primary-container);
-  background-color: var(--primary-container);
-}
-
-/* Switch to preview */
-.view-action:nth-last-of-type(4) {
+/* Toggle */
+.view-action:nth-of-type(4) {
   color: var(--on-tertiary-container);
   background-color: var(--tertiary-container);
-}
-
-/* Shared styling */
-.view-action:nth-last-of-type(5),
-.view-action:nth-last-of-type(4) {
   display: flex;
   padding: 0px;
   margin: 0;
@@ -815,14 +804,13 @@ svg.three-horizontal-bars {
   box-shadow: 0.8px 0.8px 4px rgba(0, 0, 0, 0.028), 2.7px 2.7px 13.4px rgba(0, 0, 0, 0.042), 12px 12px 60px rgba(0, 0, 0, 0.07);
 }
 
-.view-action:nth-last-of-type(4) > *:first-child {
+.view-action:nth-of-type(4) > *:first-child {
   width: 24px;
   height: 24px;
 }
 
 /* Advanced Mobile Toolbar Mode disabled */
-body:not(.advanced-toolbar-mode) .view-action:nth-last-of-type(5),
-body:not(.advanced-toolbar-mode) .view-action:nth-last-of-type(4) {
+body:not(.advanced-toolbar-mode) .view-action:nth-of-type(4) {
   top: calc(100vh - 48px - 44px - 8px);
 }
 
@@ -838,15 +826,13 @@ svg.pencil {
 }
 
 /* Advanced Mobile Toolbar Mode */
-.view-action:nth-last-of-type(5),
-.view-action:nth-last-of-type(4) {
+.view-action:nth-of-type(4) {
   top: calc(90vh - var(--at-button-height) * var(--at-row-count));
 }
 
 /* Shrink FAB on small displays */
 @media screen and (max-height: 400px) {
-  .view-action:nth-last-of-type(5),
-.view-action:nth-last-of-type(4) {
+  .view-action:nth-of-type(4) {
     transform: scale(0.8) translate(-50%, -50%);
   }
 }

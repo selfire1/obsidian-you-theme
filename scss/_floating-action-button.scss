@@ -1,18 +1,11 @@
 /* Floating Action Button (FAB)*/
-/* Switch to editor */
-.view-action:nth-last-of-type(5) {
-  color: var(--on-primary-container);
-  background-color: var(--primary-container);
-}
-/* Switch to preview */
-.view-action:nth-last-of-type(4) {
+/* Toggle */
+.view-action:nth-of-type(4) {
+  // Colour
   color: var(--on-tertiary-container);
   background-color: var(--tertiary-container);
-}
 
-/* Shared styling */
-.view-action:nth-last-of-type(5),
-.view-action:nth-last-of-type(4) {
+  // Positioning
   display: flex;
   padding: 0px;
   margin: 0;
@@ -35,15 +28,14 @@
 
 }
 
-.view-action:nth-last-of-type(4) > *:first-child  {
+.view-action:nth-of-type(4) > *:first-child  {
   width: 24px;
   height: 24px;
 }
 
 /* Advanced Mobile Toolbar Mode disabled */
 body:not(.advanced-toolbar-mode) {
-  .view-action:nth-last-of-type(5),
-  .view-action:nth-last-of-type(4) {
+  .view-action:nth-of-type(4) {
     // No idea how those numbers work but they give me 16px padding from the toolbar
     top: calc(100vh - 48px - 44px - 8px);
   // 44px to align to the right
@@ -64,15 +56,15 @@ svg.pencil {
 }
 
 /* Advanced Mobile Toolbar Mode */
-.view-action:nth-last-of-type(5),
-.view-action:nth-last-of-type(4) {
+
+.view-action:nth-of-type(4) {
   top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
 }
 
 /* Shrink FAB on small displays */
 @media screen and (max-height: 400px) {
-  .view-action:nth-last-of-type(5),
-  .view-action:nth-last-of-type(4) {
+  
+  .view-action:nth-of-type(4) {
     transform: scale(0.8) translate(-50%, -50%);
   }
 }

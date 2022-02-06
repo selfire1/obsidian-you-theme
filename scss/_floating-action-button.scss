@@ -32,8 +32,15 @@
 }
 
 /* Floating Action Button (FAB)*/
-/* Toggle */
-.view-action:nth-of-type(4) {
+// Custom page header mode disabled
+body:not(.custom-page-header) {
+  .view-action:nth-of-type(4) {
+    @include fab-styling();
+  }
+}
+
+// Custom page header mode enabled, target first action button
+body:not(:not(.custom-page-header)) .view-action.page-header-button:first-of-type {
   @include fab-styling();
 }
 

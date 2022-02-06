@@ -785,8 +785,7 @@ svg.three-horizontal-bars {
 }
 
 /* Floating Action Button (FAB)*/
-/* Toggle */
-.view-action:nth-of-type(4) {
+body:not(.custom-page-header) .view-action:nth-of-type(4) {
   color: var(--on-tertiary-container);
   background-color: var(--tertiary-container);
   display: flex;
@@ -803,7 +802,29 @@ svg.three-horizontal-bars {
   border-radius: var(--medium-radius);
   box-shadow: 0.8px 0.8px 4px rgba(0, 0, 0, 0.028), 2.7px 2.7px 13.4px rgba(0, 0, 0, 0.042), 12px 12px 60px rgba(0, 0, 0, 0.07);
 }
-.view-action:nth-of-type(4) > *:first-child {
+body:not(.custom-page-header) .view-action:nth-of-type(4) > *:first-child {
+  width: 24px;
+  height: 24px;
+}
+
+body:not(:not(.custom-page-header)) .view-action.page-header-button:first-of-type {
+  color: var(--on-tertiary-container);
+  background-color: var(--tertiary-container);
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  margin: 16px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: calc(100% - 44px - 16px);
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--medium-radius);
+  box-shadow: 0.8px 0.8px 4px rgba(0, 0, 0, 0.028), 2.7px 2.7px 13.4px rgba(0, 0, 0, 0.042), 12px 12px 60px rgba(0, 0, 0, 0.07);
+}
+body:not(:not(.custom-page-header)) .view-action.page-header-button:first-of-type > *:first-child {
   width: 24px;
   height: 24px;
 }

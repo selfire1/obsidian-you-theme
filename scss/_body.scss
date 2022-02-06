@@ -275,6 +275,7 @@ ol > li::marker {
 .cm-s-obsidian span.cm-formatting-link,
 .markdown-source-view.mod-cm6 .cm-underline {
   text-decoration: none;
+  font-weight: var(--medium);
 }
 
 /* Frontmatter Edit Mode */

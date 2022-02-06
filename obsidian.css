@@ -806,7 +806,7 @@ svg.three-horizontal-bars {
   margin: 16px;
   position: absolute;
   transform: translate(-50%, -50%);
-  left: calc(100% - 44px);
+  left: calc(100% - 44px - 16px);
   justify-content: center;
   align-items: center;
   width: 56px;
@@ -823,7 +823,7 @@ svg.three-horizontal-bars {
 /* Advanced Mobile Toolbar Mode disabled */
 body:not(.advanced-toolbar-mode) .view-action:nth-last-of-type(5),
 body:not(.advanced-toolbar-mode) .view-action:nth-last-of-type(4) {
-  top: calc(100vh - 48px - 44px);
+  top: calc(100vh - 48px - 44px - 8px);
 }
 
 /* Pencil SVG */

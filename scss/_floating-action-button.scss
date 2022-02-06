@@ -19,9 +19,9 @@
   margin: 16px;
   position: absolute;
   transform: translate(-50%, -50%);
-  // No idea how those numbers get me the right edge and 16px padding but they do
-  // left: calc(100% - 10px - 50px);
-  left: calc(100% - 44px);
+  left: calc(100% - 44px - 16px);
+  // 44px to align to the right
+  // 16px margin
   justify-content: center;
   align-items: center;
   width: 56px;
@@ -45,7 +45,10 @@ body:not(.advanced-toolbar-mode) {
   .view-action:nth-last-of-type(5),
   .view-action:nth-last-of-type(4) {
     // No idea how those numbers work but they give me 16px padding from the toolbar
-    top: calc(100vh - 48px - 44px);
+    top: calc(100vh - 48px - 44px - 8px);
+  // 44px to align to the right
+  // 48px toolbar
+  // 8px margin
   }
 }
 

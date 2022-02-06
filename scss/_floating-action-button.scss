@@ -56,15 +56,13 @@ svg.pencil {
 }
 
 /* Advanced Mobile Toolbar Mode */
-
 .view-action:nth-of-type(4) {
   top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
 }
 
 /* Shrink FAB on small displays */
 @media screen and (max-height: 400px) {
-  
-  .view-action:nth-of-type(4) {
+.view-action:nth-of-type(4) {
     transform: scale(0.8) translate(-50%, -50%);
   }
 }

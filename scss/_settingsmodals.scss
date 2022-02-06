@@ -144,8 +144,18 @@ button:not(.mod-cta):not(.mod-warning),
 }
 
 /* Pulling down */
-.pull-down-action {
-  border-radius: 0 0 var(--medium-radius) var(--medium-radius);
+.pull-action {
+  &.pull-down-action {
+    border-radius: 0 0 var(--medium-radius) var(--medium-radius);
+    background-color: var(--secondary-container);
+    color: var(--on-secondary-container);
+    @include body.label-large();
+  }
+}
+.pull-action.mod-activated {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  @include body.label-large();
 }
 
 /* Pulling from the left (navigating back

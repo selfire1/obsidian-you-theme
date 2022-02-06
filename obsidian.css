@@ -1007,8 +1007,25 @@ button:not(.mod-cta):not(.mod-warning),
 }
 
 /* Pulling down */
-.pull-down-action {
+.pull-action.pull-down-action {
   border-radius: 0 0 var(--medium-radius) var(--medium-radius);
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+  text-transform: none;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.00625rem;
+  font-weight: var(--medium);
+}
+
+.pull-action.mod-activated {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  text-transform: none;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.00625rem;
+  font-weight: var(--medium);
 }
 
 /* Pulling from the left (navigating back

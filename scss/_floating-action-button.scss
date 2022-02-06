@@ -1,6 +1,4 @@
-/* Floating Action Button (FAB)*/
-/* Toggle */
-.view-action:nth-of-type(4) {
+@mixin fab-styling {
   // Colour
   color: var(--on-tertiary-container);
   background-color: var(--tertiary-container);
@@ -26,11 +24,17 @@
   12px 12px 60px rgba(0, 0, 0, 0.07)
 ;
 
-}
-
-.view-action:nth-of-type(4) > *:first-child  {
+& > *:first-child  {
   width: 24px;
   height: 24px;
+}
+
+}
+
+/* Floating Action Button (FAB)*/
+/* Toggle */
+.view-action:nth-of-type(4) {
+  @include fab-styling();
 }
 
 /* Advanced Mobile Toolbar Mode disabled */

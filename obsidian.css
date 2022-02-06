@@ -350,6 +350,10 @@
   font-weight: var(--medium);
 }
 
+.cm-s-obsidian .cm-strong {
+  font-weight: var(--bold);
+}
+
 /* Checkboxes */
 input[type=checkbox]:checked {
   filter: grayscale(100%);

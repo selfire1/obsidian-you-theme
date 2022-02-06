@@ -221,6 +221,11 @@
   @include body-large();
 }
 
+// Bold text
+.cm-s-obsidian .cm-strong {
+  font-weight: var(--bold);
+}
+
 /* Checkboxes */
 input[type="checkbox"]:checked {
   filter: grayscale(100%);

@@ -801,12 +801,28 @@ body:not(.custom-page-header) .view-action:nth-of-type(4) {
   height: 56px;
   border-radius: var(--medium-radius);
   box-shadow: 0.8px 0.8px 4px rgba(0, 0, 0, 0.028), 2.7px 2.7px 13.4px rgba(0, 0, 0, 0.042), 12px 12px 60px rgba(0, 0, 0, 0.07);
+  top: calc(100vh - 48px - 44px - 8px);
 }
 body:not(.custom-page-header) .view-action:nth-of-type(4) > *:first-child {
   width: 24px;
   height: 24px;
 }
 
+/* Advanced Mobile Toolbar Mode */
+body:not(:not(.advanced-toolbar-mode)) .view-action:nth-of-type(4) {
+  top: calc(90vh - var(--at-button-height) * var(--at-row-count));
+}
+
+/* Shrink FAB on small displays */
+@media screen and (max-height: 400px) {
+  .view-action:nth-of-type(4) {
+    transform: scale(0.8) translate(-50%, -50%);
+  }
+}
+body:not(:not(.custom-page-header)) {
+  /* Advanced Mobile Toolbar Mode */
+  /* Shrink FAB on small displays */
+}
 body:not(:not(.custom-page-header)) .view-action.page-header-button:first-of-type {
   color: var(--on-tertiary-container);
   background-color: var(--tertiary-container);
@@ -823,15 +839,19 @@ body:not(:not(.custom-page-header)) .view-action.page-header-button:first-of-typ
   height: 56px;
   border-radius: var(--medium-radius);
   box-shadow: 0.8px 0.8px 4px rgba(0, 0, 0, 0.028), 2.7px 2.7px 13.4px rgba(0, 0, 0, 0.042), 12px 12px 60px rgba(0, 0, 0, 0.07);
+  top: calc(100vh - 48px - 44px - 8px);
 }
 body:not(:not(.custom-page-header)) .view-action.page-header-button:first-of-type > *:first-child {
   width: 24px;
   height: 24px;
 }
-
-/* Advanced Mobile Toolbar Mode disabled */
-body:not(.advanced-toolbar-mode) .view-action:nth-of-type(4) {
-  top: calc(100vh - 48px - 44px - 8px);
+body:not(:not(.custom-page-header)) body:not(:not(.advanced-toolbar-mode)) .view-action:nth-of-type(4) {
+  top: calc(90vh - var(--at-button-height) * var(--at-row-count));
+}
+@media screen and (max-height: 400px) {
+  body:not(:not(.custom-page-header)) .view-action:nth-of-type(4) {
+    transform: scale(0.8) translate(-50%, -50%);
+  }
 }
 
 /* Pencil SVG */
@@ -845,17 +865,6 @@ svg.pencil {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:50px;height:50px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z' /%3E%3C/svg%3E");
 }
 
-/* Advanced Mobile Toolbar Mode */
-.view-action:nth-of-type(4) {
-  top: calc(90vh - var(--at-button-height) * var(--at-row-count));
-}
-
-/* Shrink FAB on small displays */
-@media screen and (max-height: 400px) {
-  .view-action:nth-of-type(4) {
-    transform: scale(0.8) translate(-50%, -50%);
-  }
-}
 /* -------------- */
 /* Quick Action */
 /* -------------- */

@@ -22,7 +22,12 @@
   0.8px 0.8px 4px rgba(0, 0, 0, 0.028),
   2.7px 2.7px 13.4px rgba(0, 0, 0, 0.042),
   12px 12px 60px rgba(0, 0, 0, 0.07)
-;
+  ;
+  // No idea how those numbers work but they give me 16px padding from the toolbar
+    top: calc(100vh - 48px - 44px - 8px);
+  // 44px to align to the right
+  // 48px toolbar
+  // 8px margin
 
 & > *:first-child  {
   width: 24px;
@@ -30,31 +35,43 @@
 }
 
 }
-
+// --------------
 /* Floating Action Button (FAB)*/
-// Custom page header mode disabled
+// Custom page header mode DISABLED
 body:not(.custom-page-header) {
   .view-action:nth-of-type(4) {
     @include fab-styling();
   }
 }
 
-// Custom page header mode enabled, target first action button
-body:not(:not(.custom-page-header)) .view-action.page-header-button:first-of-type {
-  @include fab-styling();
+/* Advanced Mobile Toolbar Mode */
+body:not(:not(.advanced-toolbar-mode)) .view-action:nth-of-type(4) {
+  top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
 }
-
-/* Advanced Mobile Toolbar Mode disabled */
-body:not(.advanced-toolbar-mode) {
-  .view-action:nth-of-type(4) {
-    // No idea how those numbers work but they give me 16px padding from the toolbar
-    top: calc(100vh - 48px - 44px - 8px);
-  // 44px to align to the right
-  // 48px toolbar
-  // 8px margin
+/* Shrink FAB on small displays */
+@media screen and (max-height: 400px) {
+.view-action:nth-of-type(4) {
+    transform: scale(0.8) translate(-50%, -50%);
   }
 }
-
+// -----------------
+// Custom page header mode ENABLED, target first action button
+body:not(:not(.custom-page-header)) {
+.view-action.page-header-button:first-of-type {
+  @include fab-styling();
+}
+/* Advanced Mobile Toolbar Mode */
+body:not(:not(.advanced-toolbar-mode)) .view-action:nth-of-type(4) {
+  top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
+}
+/* Shrink FAB on small displays */
+@media screen and (max-height: 400px) {
+.view-action:nth-of-type(4) {
+    transform: scale(0.8) translate(-50%, -50%);
+  }
+}
+}
+// -----------------
 /* Pencil SVG */
 svg.pencil > path {
   display: none;
@@ -66,14 +83,4 @@ svg.pencil {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:50px;height:50px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z' /%3E%3C/svg%3E");
 }
 
-/* Advanced Mobile Toolbar Mode */
-.view-action:nth-of-type(4) {
-  top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
-}
 
-/* Shrink FAB on small displays */
-@media screen and (max-height: 400px) {
-.view-action:nth-of-type(4) {
-    transform: scale(0.8) translate(-50%, -50%);
-  }
-}

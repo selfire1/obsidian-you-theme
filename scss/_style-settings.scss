@@ -35,16 +35,27 @@ settings:
         type: variable-text
         default: Menlo,"Roboto Mono",monospace,SFMono-Regular,Consolas;
     - 
-        id: other-header
-        title: Misc settings
+        id: plugin-header
+        title: Plugin settings
         type: heading
         level: 2
         collapsed: true
+    - 
+        id: custom-page-header
+        title: Customizable Page Header
+        description: Uses the first Customizable Page Header icon for the FAB
+        type: class-toggle
     - 
         id: advanced-toolbar-mode
         title: Advanced toolbar mode
         description: Adapts automatically to avanced mobile toolbar
         type: class-toggle
+    - 
+        id: other-header
+        title: Misc settings
+        type: heading
+        level: 2
+        collapsed: true
     - 
         id: branding
         title: Obsidian You branding

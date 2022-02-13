@@ -281,13 +281,71 @@
 }
 
 /* Color schemes */
-/* Atom */
+/* Forest */
 .theme-light.obsidian-you-theme.forest {
-  --primary:green;
+  --primary: #006d43;
+  --on-primary: #ffffff;
+  --primary-container: #91f7be;
+  --on-primary-container: #002111;
+  --secondary: #4e6355;
+  --on-secondary: #ffffff;
+  --secondary-container: #d0e8d6;
+  --on-secondary-container: #0b1f14;
+  --tertiary: #3c6471;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #bfe9f9;
+  --on-tertiary-container: #001f28;
+  --error: #ba1b1b;
+  --on-error: #ffffff;
+  --error-container: #ffdad4;
+  --on-error-container: #410001;
+  --outline: #717972;
+  --background: #fbfdf8;
+  --on-background: #191c1a;
+  --surface: #fbfdf8;
+  --on-surface: #191c1a;
+  --surface-variant: #dce5dc;
+  --on-surface-variant: #404942;
+  --inverse-surface: #2e312e;
+  --inverse-on-surface: #f0f1ed;
+  --surface1: #eef5ee;
+  --surface2: #e6f1e9;
+  --surface3: #dfede4;
+  --surface4: #dcebe2;
+  --surface5: #d7e8de;
 }
 
 .theme-dark.obsidian-you-theme.forest {
-  --primary:lightgreen;
+  --primary: #74daa3;
+  --on-primary: #003920;
+  --primary-container: #005231;
+  --on-primary-container: #91f7be;
+  --secondary: #b5ccbb;
+  --on-secondary: #213529;
+  --secondary-container: #364b3e;
+  --on-secondary-container: #d0e8d6;
+  --tertiary: #a4cddc;
+  --on-tertiary: #043541;
+  --tertiary-container: #224c59;
+  --on-tertiary-container: #bfe9f9;
+  --error: #ffb4a9;
+  --on-error: #680003;
+  --error-container: #930006;
+  --on-error-container: #ffdad4;
+  --outline: #8a938b;
+  --background: #191c1a;
+  --on-background: #e2e3df;
+  --surface: #191c1a;
+  --on-surface: #e2e3df;
+  --surface-variant: #404942;
+  --on-surface-variant: #c0c9c1;
+  --inverse-surface: #e2e3df;
+  --inverse-on-surface: #191c1a;
+  --surface1: #1d2520;
+  --surface2: #202b24;
+  --surface3: #233029;
+  --surface4: #23322a;
+  --surface5: #25362d;
 }
 
 .obsidian-you-theme.old-diary {

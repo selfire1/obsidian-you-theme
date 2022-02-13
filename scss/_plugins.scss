@@ -9,3 +9,27 @@
     @include body.label-medium();
     color: var(--secondary);
 }
+
+// -----------------------
+// Cooklang
+// -----------------------
+
+.timer {
+    font-style: italic;
+}
+
+.timer::before {
+    content: "⏱ ";
+    font-style: normal;
+}
+
+.cm-metadata,
+.cm-metadata-key {
+    @include body.body-medium();
+    color: var(--secondary);
+    font-family: var(--font-monospace);
+}
+
+.workspace-leaf-content[data-type=cook] .cm-formatting {
+    color: var(--surface-variant) !important;
+}

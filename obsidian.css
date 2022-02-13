@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   /* ------------- */
   /* # TYPOGRAPHY */
@@ -1270,6 +1271,29 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   letter-spacing: 0.03125rem;
   font-weight: var(--medium);
   color: var(--secondary);
+}
+
+.timer {
+  font-style: italic;
+}
+
+.timer::before {
+  content: "⏱ ";
+  font-style: normal;
+}
+
+.cm-metadata,
+.cm-metadata-key {
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.015625rem;
+  font-weight: var(--medium);
+  color: var(--secondary);
+  font-family: var(--font-monospace);
+}
+
+.workspace-leaf-content[data-type=cook] .cm-formatting {
+  color: var(--surface-variant) !important;
 }
 
 /* Style Settings */

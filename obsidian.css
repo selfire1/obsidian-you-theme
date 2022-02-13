@@ -280,6 +280,20 @@
   --highlight-mix-blend-mode: lighten;
 }
 
+/* Color schemes */
+/* Atom */
+.theme-light.obsidian-you-theme.forest {
+  --primary:green;
+}
+
+.theme-dark.obsidian-you-theme.forest {
+  --primary:lightgreen;
+}
+
+.obsidian-you-theme.old-diary {
+  --primary:blue;
+}
+
 .cm-formatting-header {
   color: var(--surface-variant) !important;
 }

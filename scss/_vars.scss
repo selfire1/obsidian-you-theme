@@ -1,0 +1,314 @@
+:root {
+  /* ------------- */
+  /* # TYPOGRAPHY */
+  /* ------------- */
+
+  /* ## Fonts */
+  --font-preview: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-editor: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --default-font: var(--font-preview);
+  --mermaid-font: var(--default-font);
+  --reveal-font: var(--default-font);
+  --font-monospace: "Roboto Mono", monospace, Menlo, SFMono-Regular, Consolas;
+
+  /* ## Font Sizes */
+  --smallest: 0.75rem; /* Equal to px */
+  --smaller: 0.875rem; /* Equal to 14px */
+
+  // Topography type scale
+  --display-s: 2.25rem;
+  --headline-l: 2rem;
+  --headline-m: 1.75rem;
+  --headline-s: 1.5rem;
+  --title-l: 1.375rem;
+  --title-m: 1rem;
+  --title-s: .875rem;
+
+  /* Roundness */
+  --big-radius: 24px;
+  --medium-radius: 16px;
+  --small-radius: 8px;
+
+  /* ## Font Weights */
+  --light: 350;
+  --regular: 400;
+  --medium: 500;
+  --bold: 650;
+
+  /* ------------- */
+  /* # COLOURS */
+  /* ------------- */
+// Colour pallettes generated via https://material-foundation.github.io/material-theme-builder/
+// Surface elevation multipliers
+--elevation1: 0.05;
+--elevation2: 0.08;
+--elevation3: 0.11;
+--elevation4: 0.12;
+--elevation5: 0.14;
+}
+
+.theme-light {
+  // Light Tokens
+--primary: #5F4BBD;
+--primary-r: 95;
+--primary-g: 75;
+--primary-b: 189;
+--onPrimary: #FFFFFF;
+--primaryContainer: #E7DEFF;
+--onPrimaryContainer: #1A0064;
+--secondary: #605C71;
+--onSecondary: #FFFFFF;
+--secondaryContainer: #E6DFF9;
+--onSecondaryContainer: #1C192C;
+--tertiary: #7C5264;
+--onTertiary: #FFFFFF;
+--tertiaryContainer: #FFD9E8;
+--onTertiaryContainer: #301020;
+--error: #BA1B1B;
+--errorContainer: #FFDAD4;
+--onError: #FFFFFF;
+--onErrorContainer: #410001;
+--background: #FFFBFF;
+--onBackground: #1C1B1E;
+--surface: #FFFBFF;
+--surface-r: 255;
+--surface-g: 251;
+--surface-b: 255;
+--surface: #FFFBFF;
+--onSurface: #1C1B1E;
+--surfaceVariant: #E5E0EB;
+--onSurfaceVariant: #48454F;
+--outline: #79767F;
+--inverseOnSurface: #F4EFF4;
+--inverseSurface: #313033;
+--primaryInverse: #CABEFF;
+
+// Change camel case variabels into Hyphen Delimited Strings
+--on-primary: var(--onPrimary);
+--primary-container: var(--primaryContainer);
+--on-primary-container: var(--onPrimaryContainer);
+
+--on-secondary: var(--onSecondary);
+--secondary-container: var(--secondaryContainer);
+--on-secondary-container: var(--onSecondaryContainer);
+
+--on-tertiary: var(--onTertiary);
+--tertiary-container: var(--tertiaryContainer);
+--on-tertiary-container: var(--onTertiaryContainer);
+
+--error-container: var(--errorContainer);
+--on-error: var(--onError);
+--on-error-container: var(--onErrorContainer);
+
+--on-background: var(--onBackground);
+--on-surface: var(--onSurface);
+--surface-variant: var(--surfaceVariant);
+--on-surface-variant: var(--onSurfaceVariant);
+
+--inverse-on-surface: var(--inverseOnSurface);
+--inverse-surface: var(--inverseSurface);
+--primary-inverse: var(--primaryInverse);
+
+// Calculating surface elevation
+--surface1: rgb(
+  calc(var(--primary-r) * var(--elevation1) + var(--surface-r) * (1 - var(--elevation1))),
+  calc(var(--primary-g) * var(--elevation1) + var(--surface-g) * (1 - var(--elevation1))),
+  calc(var(--primary-b) * var(--elevation1) + var(--surface-b) * (1 - var(--elevation1)))
+  );
+--surface2: rgb(
+  calc(var(--primary-r) * var(--elevation2) + var(--surface-r) * (1 - var(--elevation2))),
+  calc(var(--primary-g) * var(--elevation2) + var(--surface-g) * (1 - var(--elevation2))),
+  calc(var(--primary-b) * var(--elevation2) + var(--surface-b) * (1 - var(--elevation2)))
+  );
+--surface3: rgb(
+  calc(var(--primary-r) * var(--elevation3) + var(--surface-r) * (1 - var(--elevation3))),
+  calc(var(--primary-g) * var(--elevation3) + var(--surface-g) * (1 - var(--elevation3))),
+  calc(var(--primary-b) * var(--elevation3) + var(--surface-b) * (1 - var(--elevation3)))
+  );
+--surface4: rgb(
+  calc(var(--primary-r) * var(--elevation4) + var(--surface-r) * (1 - var(--elevation4))),
+  calc(var(--primary-g) * var(--elevation4) + var(--surface-g) * (1 - var(--elevation4))),
+  calc(var(--primary-b) * var(--elevation4) + var(--surface-b) * (1 - var(--elevation4)))
+  );
+--surface5: rgb(
+  calc(var(--primary-r) * var(--elevation5) + var(--surface-r) * (1 - var(--elevation5))),
+  calc(var(--primary-g) * var(--elevation5) + var(--surface-g) * (1 - var(--elevation5))),
+  calc(var(--primary-b) * var(--elevation5) + var(--surface-b) * (1 - var(--elevation5)))
+  );
+
+  /* Standard colours */
+  --background-primary: var(--background);
+  --background-primary-alt: var(--surface1);
+  --background-secondary: var(--surface-variant);
+  --background-secondary-alt: var(--surface3);
+  --background-modifier-border: var(--surface-variant);
+  --background-modifier-form-field: #fff;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: #a4e7c3;
+  --background-modifier-error: var(--error);
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #b00020;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: var(--primary);
+  --text-accent-hover: var(--primary-container);
+  --text-normal: var(--on-background);
+  --text-muted: var(--on-surface-variant);
+  --text-muted-rgb: 136, 136, 136;
+  --text-faint: var(--secondary);
+  --text-error: #800000;
+  --text-error-hover: #990000;
+  --text-highlight-bg: var(--surface-variant)
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(204, 230, 255, 0.99);
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #f2f3f5;
+  --interactive-hover: #fcb2b2;
+  --interactive-accent: var(--primary);
+  --interactive-accent-rgb: var(--primary);
+  --interactive-accent-hover: var(--primary);
+  --interactive-success: #197300;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --highlight-mix-blend-mode: darken;
+
+  // Interaction states
+  --focus: var(--surface4);
+  --hover: var(--surface2);
+
+}
+
+.theme-dark {
+  // Dark Tokens
+--primary: #CABEFF;
+--primary-r: 202;
+--primary-g: 190;
+--primary-b: 255;
+--onPrimary: #30128D;
+--primaryContainer: #4731A4;
+--onPrimaryContainer: #E7DEFF;
+--secondary: #C9C3DC;
+--onSecondary: #312E41;
+--secondaryContainer: #484459;
+--onSecondaryContainer: #E6DFF9;
+--tertiary: #EDB8CD;
+--onTertiary: #482535;
+--tertiaryContainer: #623B4C;
+--onTertiaryContainer: #FFD9E8;
+--error: #FFB4A9;
+--errorContainer: #930006;
+--onError: #680003;
+--onErrorContainer: #FFDAD4;
+--background: #1C1B1E;
+--onBackground: #E5E1E5;
+--surface: #1C1B1E;
+--surface-r: 28;
+--surface-g: 27;
+--surface-b: 30;
+--onSurface: #E5E1E5;
+--surfaceVariant: #48454F;
+--onSurfaceVariant: #C9C4D0;
+--outline: #938F99;
+--inverseOnSurface: #1C1B1E;
+--inverseSurface: #E5E1E5;
+--primaryInverse: #5F4BBD;
+
+// Change camel case variabels into Hyphen Delimited Strings
+--on-primary: var(--onPrimary);
+--primary-container: var(--primaryContainer);
+--on-primary-container: var(--onPrimaryContainer);
+
+--on-secondary: var(--onSecondary);
+--secondary-container: var(--secondaryContainer);
+--on-secondary-container: var(--onSecondaryContainer);
+
+--on-tertiary: var(--onTertiary);
+--tertiary-container: var(--tertiaryContainer);
+--on-tertiary-container: var(--onTertiaryContainer);
+
+--error-container: var(--errorContainer);
+--on-error: var(--onError);
+--on-error-container: var(--onErrorContainer);
+
+--on-background: var(--onBackground);
+--on-surface: var(--onSurface);
+--surface-variant: var(--surfaceVariant);
+--on-surface-variant: var(--onSurfaceVariant);
+
+--inverse-on-surface: var(--inverseOnSurface);
+--inverse-surface: var(--inverseSurface);
+--primary-inverse: var(--primaryInverse);
+
+// Calculating surface elevation
+--surface1: rgb(
+  calc(var(--primary-r) * var(--elevation1) + var(--surface-r) * (1 - var(--elevation1))),
+  calc(var(--primary-g) * var(--elevation1) + var(--surface-g) * (1 - var(--elevation1))),
+  calc(var(--primary-b) * var(--elevation1) + var(--surface-b) * (1 - var(--elevation1)))
+  );
+--surface2: rgb(
+  calc(var(--primary-r) * var(--elevation2) + var(--surface-r) * (1 - var(--elevation2))),
+  calc(var(--primary-g) * var(--elevation2) + var(--surface-g) * (1 - var(--elevation2))),
+  calc(var(--primary-b) * var(--elevation2) + var(--surface-b) * (1 - var(--elevation2)))
+  );
+--surface3: rgb(
+  calc(var(--primary-r) * var(--elevation3) + var(--surface-r) * (1 - var(--elevation3))),
+  calc(var(--primary-g) * var(--elevation3) + var(--surface-g) * (1 - var(--elevation3))),
+  calc(var(--primary-b) * var(--elevation3) + var(--surface-b) * (1 - var(--elevation3)))
+  );
+--surface4: rgb(
+  calc(var(--primary-r) * var(--elevation4) + var(--surface-r) * (1 - var(--elevation4))),
+  calc(var(--primary-g) * var(--elevation4) + var(--surface-g) * (1 - var(--elevation4))),
+  calc(var(--primary-b) * var(--elevation4) + var(--surface-b) * (1 - var(--elevation4)))
+  );
+--surface5: rgb(
+  calc(var(--primary-r) * var(--elevation5) + var(--surface-r) * (1 - var(--elevation5))),
+  calc(var(--primary-g) * var(--elevation5) + var(--surface-g) * (1 - var(--elevation5))),
+  calc(var(--primary-b) * var(--elevation5) + var(--surface-b) * (1 - var(--elevation5)))
+  );
+
+  // Interaction states
+  --focus: var(--surface4);
+  --hover: var(--surface2);
+
+    /* Standard Colours */
+  --background-primary: var(--background);
+  --background-primary-alt: var(--surface1);
+  --background-secondary: var(--surface-variant);
+  --background-secondary-alt: var(--surface3);
+  --background-modifier-border: var(--surface-variant);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #197300;
+  --background-modifier-error: var(--error);
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: var(--primary);
+  --text-accent-hover: var(--primary-container);
+  --text-normal: var(--on-background);
+  --text-muted: var(--on-surface-variant);
+  --text-muted-rgb: 153, 153, 153;
+  --text-faint: #666;
+  --text-error: #cf6679;
+  --text-error-hover: #990000;
+  --text-highlight-bg: var(--surface-variant)
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(23, 48, 77, 0.99);
+  --text-on-accent: #dcddde;
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #303030;
+  --interactive-accent: var(--primary);
+  --interactive-accent-rgb: var(--primary);
+  --interactive-accent-hover: var(--primary);
+  --interactive-success: #197300;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --highlight-mix-blend-mode: lighten;
+}

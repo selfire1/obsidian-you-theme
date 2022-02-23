@@ -1,0 +1,174 @@
+
+/* ------------- */
+/* # Sidebars */
+/* ------------- */
+
+/* Branding "Obsidian You" */
+body:not(:not(.branding)) .workspace-drawer-header {
+  padding: 10px 20px 0 10px;
+}
+
+body:not(:not(.branding)) .workspace-drawer-header::before {
+  content: "Obsidian ";
+  margin: 10px 12px 10px 12px;
+  font-size: var(--h4);
+  color: var(--primary-dark);
+  clear: right;
+  display: block;
+}
+
+body:not(:not(.branding)) .workspace-drawer-header::after {
+  content: "You";
+  margin: 10px;
+  font-weight: var(--bold);
+  font-size: var(--h4);
+  color: var(--secondary);
+  transform: translate(-15px, 0px);
+  clear: right;
+  display: block;
+}
+
+body:not(:not(.branding)) .workspace-drawer-header {
+  border-bottom: 1px solid var(--background-secondary-alt);
+}
+
+/* Title of 'File explorer' and the like */
+.workspace-drawer-active-tab-header {
+  margin: 20px -1px 20px 11px;
+}
+
+.workspace-drawer-header-name-text {
+  color: var(--text-muted);
+  font-size: var(--smaller);
+}
+
+/* Icons */
+.workspace-drawer-tab-option-item-icon, .workspace-drawer-active-tab-icon {
+  color: var(--primary-dark);
+}
+
+/* Search */
+.workspace-leaf-content[data-type="search"] .nav-action-button {
+  transform: scale(0.8);
+  margin: none;
+  padding: none;
+}
+
+/* Suggestions */
+.is-mobile .suggestion-container.mod-search-suggestion {
+  max-height: 40%;
+  min-height: 30%;
+  min-width: 100%;
+}
+
+/* Top buttons */
+.is-mobile .workspace-drawer-actions,
+.is-mobile .nav-buttons-container {
+  background-color: var(--background-secondary);
+  border-radius: var(--big-radius);
+  margin: 0 11px 10px;
+}
+
+.is-mobile .workspace-leaf-content[data-type="search"] .nav-action-button {
+  margin: 0px 2px 2px 0;
+  text-align: center;
+  height: 36px;
+  cursor: var(--cursor);
+}
+
+.nav-action-button {
+  color: var(--text-muted);
+  transform: scale(0.8);
+  padding: 5px 8px 0px 8px;
+  margin: 0px 6px 0px 6px;
+}
+
+.workspace-drawer-tab-container > * {
+  border-top: none !important;
+}
+
+/* Significantly simplify left and right bars */
+.nav-folder.mod-root > .nav-file-title,
+.nav-folder.mod-root > .nav-folder-title,
+.workspace-drawer-header-name,
+.workspace-drawer-header-icon,
+.workspace-drawer-header-left {
+  display: none;
+}
+
+/* Right sidebar */
+.workspace-drawer.mod-right {
+  border: none;
+}
+
+.backlink-pane,
+.outgoing-link-pane {
+  padding: 0 11px;
+}
+
+/* Backlink counts */
+.tree-item-flair-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left sidebar */
+.workspace-drawer.mod-left {
+  border-right: 1px var(--background-primary) solid !important;
+}
+
+/* Ribbon */
+.workspace-drawer-ribbon {
+  background-color: var(--background-primary);
+}
+
+.workspace-drawer-tab-option-item {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.workspace-drawer-tab-option-item-title,
+.workspace-drawer-active-tab-title {
+  color: var(--text-normal);
+  font-size: var(--regular);
+}
+
+.workspace-drawer-tab-container > * {
+  border-top: 1px solid var(--background-secondary-alt);
+}
+
+/* ------------- */
+/* # File explorer */
+/* ------------- */
+/* Folder */
+.nav-folder-title-content {
+  padding-left: 0px;
+}
+
+.nav-file-title-content,
+.nav-folder-title-content {
+  font-size: var(--smaller);
+  padding: 0px 0px;
+  font-weight: var(--medium);
+}
+
+/* Files */
+.is-mobile .nav-file-title,
+.is-mobile .tag-container {
+  padding: 1px 11px 0 11px;
+  color: var(--text-muted);
+  font-size: var(--smaller);
+  font-weight: var(--light);
+}
+
+/* Highlighted file or backlink */
+.nav-file-title.is-active,
+.tree-item-self.is-clickable:hover,
+.nav-folder-title.is-active,
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  background-color: var(--primary-faint);
+  color: var(--primary-dark);
+  border-radius: var(--small-radius);
+}

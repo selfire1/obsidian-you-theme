@@ -1,0 +1,176 @@
+@use 'body';
+
+/* -------------- */
+/* Quick Action */
+/* -------------- */
+
+/* Text input */
+.is-mobile input.prompt-input {
+  background-color: var(--primary-container);
+  border-radius: var(--big-radius);
+  @include body.body-large();
+  color: var(--on-primary-container);
+
+  &:active, &:focus {
+    border: 0;
+  }
+
+  &::placeholder {
+    color: var(--secondary);
+  }
+}
+
+/* Selection items */
+.is-mobile .suggestion-item {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-color: var(--surface-variant);
+  border-radius: 0;
+  @include body.body-large();
+
+  // Command palette plugin names (WIP)
+.suggestion-prefix {
+    // padding-top: 20px;
+    position: absolute;
+    top: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: var(--secondary);
+    // right: 100px;
+    // background: var(--background-primary);
+    // padding-left: 8px;
+    @include body.body-small();
+}
+
+  &.is-selected {
+  background-color: var(--surface);
+}
+}
+
+.is-mobile .suggestion-hotkey {
+  display: none;
+}
+
+.suggestion-highlight {
+  color: var(--secondary);
+}
+
+/* Height */
+.is-mobile .modal,
+.is-mobile .prompt,
+.is-mobile .suggestion-container {
+  height: calc(100% - 100px);
+}
+// Prompts (Quick Switcher, etc …)
+.is-mobile .prompt {
+  min-width: 100%;
+  background-color: var(--surface);
+}
+
+// For link suggestions
+.is-mobile .suggestion-container:not(.modal-container) {
+height: 200px;
+}
+
+/* Settings */
+/* Back modal */
+.is-mobile .modal-setting-back-button {
+  background-color: var(--primary-faint);
+}
+
+
+/* Reduce space between settings */
+.vertical-tab-nav-item {
+  padding: 0px 6px 10px 24px;
+}
+
+/* Style back */
+.is-mobile .modal-setting-back-button {
+  border-top-left-radius: var(--big-radius);
+  border-top-right-radius: var(--big-radius);
+}
+
+/* Style setting headers */
+.vertical-tab-header-group-title {
+  padding: 6px 6px 6px 26px;
+}
+
+/* Add divider line */
+.vertical-tab-header-group {
+  border-bottom: 1px solid var(--background-secondary-alt);
+}
+.vertical-tab-header-group:last-of-type {
+  border-bottom: none;
+}
+
+/* Buttons */
+
+/* Filled button */
+button.mod-cta {
+  background-color: var(--primary);
+  color: var(--background-primary);
+}
+
+/* Outlined buttons */
+.modal.mod-settings button:not(.mod-cta):not(.mod-warning),
+button:not(.mod-cta):not(.mod-warning),
+.is-mobile .empty-state-action:not(:nth-child(2)) {
+    background-color: transparent;
+    border: 1px solid var(--text-faint);
+    color: var(--primary);
+}
+
+.is-mobile button,
+.is-mobile .empty-state-action {
+  font-size: var(--smallest);
+  border-radius: var(--big-radius);
+}
+
+/* Setting Headers */
+.theme-light .vertical-tab-header-group-title {
+  color: var(--primary-light);
+}
+.theme-dark .vertical-tab-header-group-title {
+  color: var(--primary-dark);
+}
+
+/* Prompts (Quick switcher) */
+.is-mobile .modal,
+.is-mobile .prompt,
+.is-mobile .suggestion-container {
+  border-radius: var(--medium-radius) var(--medium-radius) 0 0;
+  padding: 15px 20px;
+}
+
+/* Pulling down */
+.pull-action {
+  &.pull-down-action {
+    border-radius: 0 0 var(--medium-radius) var(--medium-radius);
+    background-color: var(--secondary-container);
+    color: var(--on-secondary-container);
+    @include body.label-large();
+  }
+}
+.pull-action.mod-activated {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  @include body.label-large();
+}
+
+/* Pulling from the left (navigating back
+Trying to target but it's not these:
+*/
+
+/* PLUGINS */
+/* Dataview Tables */
+.table-view-table > thead > tr > th {
+  border-bottom: none !important;
+  font-weight: var(--medium);
+  font-size: var(--editor-font-size);
+  padding: var(--editor-font-size);
+}
+
+tr {
+  border-top: 1px solid var(--background-secondary-alt);
+}

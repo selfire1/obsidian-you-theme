@@ -1,0 +1,33 @@
+// In live preview
+.markdown-source-view .markdown-embed, .markdown-source-view .file-embed {
+  border: 2px solid var(--surface-variant);
+  border-radius: var(--small-radius);
+}
+
+/* Embeds */
+/* Naked Embeds (modified from death_au (https://forum.obsidian.md/t/naked-embeds-css-tweak/72) */
+.markdown-embed-title {
+  display: none;
+}
+.markdown-preview-view .markdown-embed-content > :first-child {
+  margin-top: 0;
+}
+.markdown-preview-view .markdown-embed-content > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-preview-view .markdown-embed {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* the link on the top right corner*/
+.markdown-embed-link {
+  color: var(--secondary) !important;
+  top: 15px;
+}
+
+.markdown-embed-link:hover {
+  color: var(--text-accent) !important;
+}

@@ -351,6 +351,7 @@
   font-weight: var(--medium);
 }
 
+strong,
 .cm-s-obsidian .cm-strong {
   font-weight: var(--bold);
 }
@@ -399,7 +400,9 @@ ol > li::marker {
 
 /* Internal links */
 .markdown-preview-view .internal-link,
-.cm-s-obsidian span.cm-formatting-link,
+.cm-s-obsidian .cm-formatting-link,
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link,
 .markdown-source-view.mod-cm6 .cm-underline {
   text-decoration: none;
   font-weight: var(--medium);

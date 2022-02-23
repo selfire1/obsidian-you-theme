@@ -1,3 +1,16 @@
+## [1.0.0](https://github.com/selfire1/obsidian-you-theme/releases/tag/1.0.0) (2022-02-23)
+### ✨ NEW
+- Rewrite theme into SCSS
+- Apply Material 3 Typography
+- Implement Material 3 Colour Scheme
+- Add styling for plugins (breadcrumbs, cooklang)
+- Redesign elements like buttons, metadata container and FAB
+- Add option for a custom Floating Action Button
+- Style Obsidian Live Preview
+
+### Deletions
+- 🔥 Remove custom colours. In the future, adaptive colour schemes will be added through a plugin.
+
 ## [0.1.7](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.7) (2021-12-04)
 ### Improvements
 - style: 💄 Lighten page header buttons

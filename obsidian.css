@@ -810,7 +810,7 @@ body:not(.custom-page-header) .view-action:nth-of-type(4) {
   height: 56px;
   border-radius: var(--medium-radius);
   box-shadow: 0.8px 0.8px 4px rgba(0, 0, 0, 0.028), 2.7px 2.7px 13.4px rgba(0, 0, 0, 0.042), 12px 12px 60px rgba(0, 0, 0, 0.07);
-  top: calc(100vh - 48px - 44px - 8px);
+  top: calc(100vh - 48px - 44px - 16px);
 }
 body:not(.custom-page-header) .view-action:nth-of-type(4) > *:first-child {
   width: 24px;
@@ -848,7 +848,7 @@ body:not(:not(.custom-page-header)) .view-action.page-header-button:first-of-typ
   height: 56px;
   border-radius: var(--medium-radius);
   box-shadow: 0.8px 0.8px 4px rgba(0, 0, 0, 0.028), 2.7px 2.7px 13.4px rgba(0, 0, 0, 0.042), 12px 12px 60px rgba(0, 0, 0, 0.07);
-  top: calc(100vh - 48px - 44px - 8px);
+  top: calc(100vh - 48px - 44px - 16px);
 }
 body:not(:not(.custom-page-header)) .view-action.page-header-button:first-of-type > *:first-child {
   width: 24px;

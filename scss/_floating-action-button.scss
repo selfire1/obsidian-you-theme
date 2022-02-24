@@ -45,19 +45,19 @@
 /* Floating Action Button (FAB)*/
 // Custom page header mode DISABLED
 body:not(.custom-page-header) {
-  .view-action:nth-of-type(4) {
+  .view-action:nth-last-of-type(4) {
     @include fab-styling();
   }
-}
-
-/* Advanced Mobile Toolbar Mode */
-body:not(:not(.advanced-toolbar-mode)) .view-action:nth-of-type(4) {
-  top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
-}
-/* Shrink FAB on small displays */
-@media screen and (max-height: 400px) {
-.view-action:nth-of-type(4) {
-    transform: scale(0.8) translate(-50%, -50%);
+  
+  /* Advanced Mobile Toolbar Mode */
+  body:not(:not(.advanced-toolbar-mode)) .view-action:nth-of-type(4) {
+    top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
+  }
+  /* Shrink FAB on small displays */
+  @media screen and (max-height: 400px) {
+    .view-action:nth-of-type(4) {
+      transform: scale(0.8) translate(-50%, -50%);
+    }
   }
 }
 // -----------------
@@ -67,12 +67,12 @@ body:not(:not(.custom-page-header)) {
   @include fab-styling();
 }
 /* Advanced Mobile Toolbar Mode */
-body:not(:not(.advanced-toolbar-mode)) .view-action:nth-of-type(4) {
+body:not(:not(.advanced-toolbar-mode)) .view-action:nth-last-of-type(5) {
   top: calc(90vh - calc(var(--at-button-height) * var(--at-row-count)));
 }
 /* Shrink FAB on small displays */
 @media screen and (max-height: 400px) {
-.view-action:nth-of-type(4) {
+.view-action:nth-last-of-type(5) {
     transform: scale(0.8) translate(-50%, -50%);
   }
 }

@@ -35,6 +35,12 @@
 }
 
 }
+
+// Hide all buttons
+.view-action:not(.page-header-button) {
+    display: none;
+}
+
 // --------------
 /* Floating Action Button (FAB)*/
 // Custom page header mode DISABLED

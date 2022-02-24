@@ -782,7 +782,6 @@ svg.three-horizontal-bars {
   padding-right: 16px;
 }
 
-/* ## Title */
 .view-action:not(.page-header-button) {
   display: none;
 }
@@ -791,6 +790,10 @@ svg.three-horizontal-bars {
   color: var(--on-surface-variant);
   margin-left: 12px;
   margin-right: 12px;
+}
+
+.view-action:not(.page-header-button) {
+  display: none;
 }
 
 /* Floating Action Button (FAB)*/

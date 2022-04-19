@@ -167,31 +167,37 @@
 }
 
 .markdown-reading-view h1,
+.cm-s-obsidian .cm-header-1,
 .mod-cm6 .cm-editor .HyperMD-header-1 {
   @include display-s();
 }
 
 .markdown-reading-view h2,
+.cm-s-obsidian .cm-header-2,
 .mod-cm6 .cm-editor .HyperMD-header-2 {
    @include headline-l();
 }
 
 .markdown-reading-view h3,
+.cm-s-obsidian .cm-header-3,
 .mod-cm6 .cm-editor .HyperMD-header-3 {
   @include headline-m();
 }
 
 .markdown-reading-view h4,
+.cm-s-obsidian .cm-header-4,
 .mod-cm6 .cm-editor .HyperMD-header-4 {
   @include headline-s();
 }
 
 .markdown-reading-view h5,
+.cm-s-obsidian .cm-header-5,
 .mod-cm6 .cm-editor .HyperMD-header-5 {
   @include title-l();
 }
 
 .markdown-reading-view h6,
+.cm-s-obsidian .cm-header-6,
 .mod-cm6 .cm-editor .HyperMD-header-6 {
   @include title-m();
 }

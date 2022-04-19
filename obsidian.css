@@ -284,6 +284,7 @@
 }
 
 .markdown-reading-view h1,
+.cm-s-obsidian .cm-header-1,
 .mod-cm6 .cm-editor .HyperMD-header-1 {
   line-height: 2.75rem;
   font-size: var(--h1);
@@ -291,6 +292,7 @@
 }
 
 .markdown-reading-view h2,
+.cm-s-obsidian .cm-header-2,
 .mod-cm6 .cm-editor .HyperMD-header-2 {
   line-height: 2.5rem;
   font-size: var(--h2);
@@ -298,6 +300,7 @@
 }
 
 .markdown-reading-view h3,
+.cm-s-obsidian .cm-header-3,
 .mod-cm6 .cm-editor .HyperMD-header-3 {
   line-height: 2.25rem;
   font-size: var(--h3);
@@ -305,6 +308,7 @@
 }
 
 .markdown-reading-view h4,
+.cm-s-obsidian .cm-header-4,
 .mod-cm6 .cm-editor .HyperMD-header-4 {
   line-height: 2rem;
   font-size: var(--h4);
@@ -312,6 +316,7 @@
 }
 
 .markdown-reading-view h5,
+.cm-s-obsidian .cm-header-5,
 .mod-cm6 .cm-editor .HyperMD-header-5 {
   line-height: 1.75rem;
   font-size: var(--h5);
@@ -319,6 +324,7 @@
 }
 
 .markdown-reading-view h6,
+.cm-s-obsidian .cm-header-6,
 .mod-cm6 .cm-editor .HyperMD-header-6 {
   line-height: 1.5rem;
   font-size: var(--h6);

@@ -1,37 +1,37 @@
 // MIXINS
 @mixin display-s {
   line-height: 2.75rem;
-  font-size: var(--display-s);
+  font-size: var(--h1);
   font-weight: var(--regular);
 }
 
 @mixin headline-l {
   line-height: 2.5rem;
-  font-size: var(--headline-l);
+  font-size: var(--h2);
   font-weight: var(--regular);
 }
 
 @mixin headline-m {
   line-height: 2.25rem;
-  font-size: var(--headline-m);
+  font-size: var(--h3);
   font-weight: var(--regular);
 }
 
 @mixin headline-s {
   line-height: 2rem;
-  font-size: var(--headline-s);
+  font-size: var(--h4);
   font-weight: var(--regular);
 }
 
 @mixin title-l {
   line-height: 1.75rem;
-  font-size: var(--title-l);
+  font-size: var(--h5);
   font-weight: var(--regular);
 }
 
 @mixin title-m {
   line-height: 1.5rem;
-  font-size: var(--title-m);
+  font-size: var(--h6);
   letter-spacing: .009375rem;
   font-weight: var(--medium);
 }
@@ -167,45 +167,33 @@
   color: var(--surface-variant) !important;
 }
 
-.markdown-preview-view h1,
-.HyperMD-header-1,
-.cm-header-1,
-.cm-s-obsidian .cm-header-1 {
+.markdown-reading-view h1,
+.mod-cm6 .cm-editor .HyperMD-header-1 {
   @include display-s();
 }
 
-.markdown-preview-view h2,
-.HyperMD-header-2,
-.cm-header-2,
-.cm-s-obsidian .cm-header-2 {
-  @include headline-l();
+.markdown-reading-view h2,
+.mod-cm6 .cm-editor .HyperMD-header-2 {
+   @include headline-l();
 }
 
-.markdown-preview-view h3,
-.HyperMD-header-3,
-.cm-header-3,
-.cm-s-obsidian .cm-header-3 {
+.markdown-reading-view h3,
+.mod-cm6 .cm-editor .HyperMD-header-3 {
   @include headline-m();
 }
 
-.markdown-preview-view h4,
-.HyperMD-header-4,
-.cm-header-4,
-.cm-s-obsidian .cm-header-4 {
+.markdown-reading-view h4,
+.mod-cm6 .cm-editor .HyperMD-header-4 {
   @include headline-s();
 }
 
-.markdown-preview-view h5,
-.HyperMD-header-5,
-.cm-header-5,
-.cm-s-obsidian .cm-header-5 {
+.markdown-reading-view h5,
+.mod-cm6 .cm-editor .HyperMD-header-5 {
   @include title-l();
 }
 
-.markdown-preview-view h6,
-.HyperMD-header-6,
-.cm-header-6,
-.cm-s-obsidian .cm-header-6 {
+.markdown-reading-view h6,
+.mod-cm6 .cm-editor .HyperMD-header-6 {
   @include title-m();
 }
 

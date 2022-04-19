@@ -19,13 +19,12 @@
   /* Equal to px */
   --smaller: 0.875rem;
   /* Equal to 14px */
-  --display-s: 2.25rem;
-  --headline-l: 2rem;
-  --headline-m: 1.75rem;
-  --headline-s: 1.5rem;
-  --title-l: 1.375rem;
-  --title-m: 1rem;
-  --title-s: .875rem;
+  --h1: 2.25rem;
+  --h2: 2rem;
+  --h3: 1.75rem;
+  --h4: 1.5rem;
+  --h5: 1.375rem;
+  --h6: 1rem;
   /* Roundness */
   --big-radius: 24px;
   --medium-radius: 16px;
@@ -284,57 +283,45 @@
   color: var(--surface-variant) !important;
 }
 
-.markdown-preview-view h1,
-.HyperMD-header-1,
-.cm-header-1,
-.cm-s-obsidian .cm-header-1 {
+.markdown-reading-view h1,
+.mod-cm6 .cm-editor .HyperMD-header-1 {
   line-height: 2.75rem;
-  font-size: var(--display-s);
+  font-size: var(--h1);
   font-weight: var(--regular);
 }
 
-.markdown-preview-view h2,
-.HyperMD-header-2,
-.cm-header-2,
-.cm-s-obsidian .cm-header-2 {
+.markdown-reading-view h2,
+.mod-cm6 .cm-editor .HyperMD-header-2 {
   line-height: 2.5rem;
-  font-size: var(--headline-l);
+  font-size: var(--h2);
   font-weight: var(--regular);
 }
 
-.markdown-preview-view h3,
-.HyperMD-header-3,
-.cm-header-3,
-.cm-s-obsidian .cm-header-3 {
+.markdown-reading-view h3,
+.mod-cm6 .cm-editor .HyperMD-header-3 {
   line-height: 2.25rem;
-  font-size: var(--headline-m);
+  font-size: var(--h3);
   font-weight: var(--regular);
 }
 
-.markdown-preview-view h4,
-.HyperMD-header-4,
-.cm-header-4,
-.cm-s-obsidian .cm-header-4 {
+.markdown-reading-view h4,
+.mod-cm6 .cm-editor .HyperMD-header-4 {
   line-height: 2rem;
-  font-size: var(--headline-s);
+  font-size: var(--h4);
   font-weight: var(--regular);
 }
 
-.markdown-preview-view h5,
-.HyperMD-header-5,
-.cm-header-5,
-.cm-s-obsidian .cm-header-5 {
+.markdown-reading-view h5,
+.mod-cm6 .cm-editor .HyperMD-header-5 {
   line-height: 1.75rem;
-  font-size: var(--title-l);
+  font-size: var(--h5);
   font-weight: var(--regular);
 }
 
-.markdown-preview-view h6,
-.HyperMD-header-6,
-.cm-header-6,
-.cm-s-obsidian .cm-header-6 {
+.markdown-reading-view h6,
+.mod-cm6 .cm-editor .HyperMD-header-6 {
   line-height: 1.5rem;
-  font-size: var(--title-m);
+  font-size: var(--h6);
   letter-spacing: 0.009375rem;
   font-weight: var(--medium);
 }
@@ -766,7 +753,7 @@ svg.three-horizontal-bars {
 
 .view-header-title {
   line-height: 1.75rem;
-  font-size: var(--title-l);
+  font-size: var(--h5);
   font-weight: var(--regular);
   color: var(--on-surface);
 }

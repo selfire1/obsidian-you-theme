@@ -241,23 +241,32 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1
   color: var(--secondary);
 }
 
-/* Blockquotes */
 /* Callout boxes from Vileplume: https://github.com/hungsu/vileplume-obsidian */
+// .markdown-preview-view blockquote,
+// .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+//   @include body-medium();
+//   border-radius: var(--big-radius);
+//   border: 1px solid rgba(255, 255, 255, 0.03);
+//   padding: 10px 20px;
+//   position: relative;
+//   box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.017),
+//     2.5px 2.4px 10px rgba(0, 0, 0, 0.025), 6px 5.7px 24.1px rgba(0, 0, 0, 0.033),
+//     20px 19px 80px rgba(0, 0, 0, 0.05);
+
+//   background-color: var(--secondary-container) !important;
+//   color: var(--on-secondary-container);
+// }
+
+/* Blockquotes */
 .markdown-preview-view blockquote,
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
   @include body-medium();
-  border-radius: var(--big-radius);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  padding: 10px 20px;
-  position: relative;
-  box-shadow: 0.9px 0.9px 3.6px rgba(0, 0, 0, 0.017),
-    2.5px 2.4px 10px rgba(0, 0, 0, 0.025), 6px 5.7px 24.1px rgba(0, 0, 0, 0.033),
-    20px 19px 80px rgba(0, 0, 0, 0.05);
-
-  background-color: var(--secondary-container) !important;
-  color: var(--on-secondary-container);
+  border-left: 3px solid var(--tertiary);
+  background-color: var(--surface);
 }
-
+.cm-s-obsidian span.cm-quote {
+  color: var(--tertiary);
+}
 /* Lists */
 ul > li::marker,
 ol > li::marker {

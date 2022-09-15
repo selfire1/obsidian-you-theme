@@ -144,7 +144,7 @@
   --text-faint: var(--secondary);
   --text-error: #800000;
   --text-error-hover: #990000;
-  --text-highlight-bg: var(--surface-variant)
+  --text-highlight-bg: var(--surface-variant);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: rgba(204, 230, 255, 0.99);
   --text-on-accent: #f2f2f2;
@@ -263,7 +263,7 @@
   --text-faint: #666;
   --text-error: #cf6679;
   --text-error-hover: #990000;
-  --text-highlight-bg: var(--surface-variant)
+  --text-highlight-bg: var(--surface-variant);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: rgba(23, 48, 77, 0.99);
   --text-on-accent: #dcddde;

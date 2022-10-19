@@ -1,17 +1,42 @@
+## [1.0.4](https://github.com/selfire1/obsidian-you-theme/releases/tag/1.0.4) (2022-09-29)
+
+### Features
+
+- feat: ✨ Add compatibality with custom fonts
+
+### Fixes
+
+- fix: add semicolon
+- fix: 💄 Restyle blockquotes
+- refactor: 💄 Increase blockquote font size
+
+### Misc
+
+- chore: 🔖 Add compatability for Obsidian 0.16.0
+- docs: 📝 Add Obsidian hub support
+
 ## [1.0.3](https://github.com/selfire1/obsidian-you-theme/releases/tag/1.0.3) (2022-04-19)
+
 ### Bug fixes
+
 - fix: 🐛 Fix targeting of header weights
 
 ## [1.0.2](https://github.com/selfire1/obsidian-you-theme/releases/tag/1.0.2) (2022-04-19)
+
 ### Bug fixes
+
 - fix: 🐛 Fix targeting of headers
 
 ## [1.0.1](https://github.com/selfire1/obsidian-you-theme/releases/tag/1.0.1) (2022-02-24)
+
 ### Bug fixes
+
 - fix: 🐛 Show FAB with custom page header mode disabled ([#12](https://github.com/selfire1/obsidian-you-theme/issues/12))
 
 ## [1.0.0](https://github.com/selfire1/obsidian-you-theme/releases/tag/1.0.0) (2022-02-23)
+
 ### ✨ NEW
+
 - Rewrite theme into SCSS
 - Apply Material 3 Typography
 - Implement Material 3 Colour Scheme
@@ -21,46 +46,68 @@
 - Style Obsidian Live Preview
 
 ### Deletions
+
 - 🔥 Remove custom colours. In the future, adaptive colour schemes will be added through a plugin.
 
 ## [0.1.7](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.7) (2021-12-04)
+
 ### Improvements
+
 - style: 💄 Lighten page header buttons
 - style: 💄 Colour code cohesively
 
 ## [0.1.6](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.6) (2021-11-17)
+
 ### Bug fixes
+
 - fix: 🐛 Target FAB independent of added buttons (for `Custom Page Header` support)
 
 ### Deletions
+
 - revert: 🔥 Remove option for minimal tite bar
 
 ## [0.1.5](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.5) (2021-11-16)
+
 ### Bug fixes
+
 - fix: 🚑️ Fix logic of style settings
 
 ## [0.1.4](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.4) (2021-11-16)
+
 ### ✨ NEW
+
 - feat: ✨ Add setting to hide title bar buttons
 - feat: ✨ Support iOS safe area insets
 
 ### Bug fixes
+
 - fix: 🐛 Fix incorrect colour of hamburger menu
 
 ## [0.1.3](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.3) (2021-11-06)
+
 ### ✨ NEW
+
 - feat: ✨ Make FAB independent of language
-***
+
+---
+
 ## [0.1.2](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.2) (2021-11-05)
+
 ### Bug fixes
+
 - fix: 🐛 Set default branding toggle to true
-***
+
+---
+
 ## [0.1.1](https://github.com/selfire1/obsidian-you-theme/releases/tag/0.1.1) (2021-11-05)
+
 ### ✨ NEW
+
 - feat: ✨ Add German support for FAB [#5](https://github.com/selfire1/obsidian-you-theme/issues/5)
 - feat: ✨ Add toggle for branding in Style Settings [#2](https://github.com/selfire1/obsidian-you-theme/issues/2)
 
 ### Misc
+
 - style: 💄 Show branding based on style settings toggle
 - fix: 🐛 Fix height of community plugins back button [#4](https://github.com/selfire1/obsidian-you-theme/issues/4)
 - fix: 🐛 Target correct setting
@@ -69,9 +116,11 @@
 ---
 
 ## [0.1.0](https://github.com/selfire1/obsidian-you-theme/releases)
+
 The first release! Plenty of new things:
 
 ### ✨ NEW
+
 - ✨ NEW: Update FAB to Material 3
 - ✨ NEW: Initialise dark theme colours
 - ✨ NEW: Style empty state screen

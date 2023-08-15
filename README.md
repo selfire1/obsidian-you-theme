@@ -1,4 +1,6 @@
 # Obsidian You 🎨
+⚠️ **LEGACY**: This theme is not built for Obsidian 1.0.
+
 ![Obsidian You Overview](https://github.com/selfire1/obsidian-you-theme/blob/main/theme-picker.png?raw=true)
 
 **Take Obsidian on the go, your way.** A theme exclusively designed for mobile.
